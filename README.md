@@ -1,2 +1,2 @@
 # ekt003.github.io
-Finalized (for now) website repository
+Final (for now) website repository
