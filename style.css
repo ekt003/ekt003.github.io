@@ -1,0 +1,387 @@
+/*Universal Selectors*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Grid Formatting*/
+#grid{
+    display:grid;
+    grid-template-columns: 11% 26% 26% 26% 11%;
+    font-family: 'Dosis', sans-serif;
+    font-size:20px;
+}
+
+.artGrid{
+    margin: 5px 0px;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    grid-column: 2/ span 3;
+}
+
+/*Home Page CSS*/
+#title{
+    grid-column: 1/ span 5;
+    height: 100vh;
+    background-image: url("backgroundEvening.svg");
+    background-color: #0d83c2;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#titleBox p{
+    font-size: 35px;
+    font-family: 'Dosis', sans-serif;
+    margin: 10px 0px 10px 0px;
+}
+
+h2{
+    margin-bottom:1%;
+}
+
+#titleBox{
+    width: 79%;
+    margin:auto;
+    text-align:center;
+    background-color: black;
+    color:white;
+    font-family: 'Yellowtail', sans-serif;
+    margin-top: 20vh;
+    padding: 8vh 0px 4vh 0px;
+    border: 2px white solid;
+}
+
+#titleBox span{
+    font-size: 120px;
+}
+
+#titleBox img{
+    padding-top: 10px;
+    margin-top: 0px;
+    max-height:40px;
+}
+
+#news{
+    grid-column: 2/span 1;
+    padding-right: 20px;
+    border-right: 1px dashed black;
+}
+
+.newsItem img{
+    width: 70%;
+}
+
+.newsItem{
+    margin: 5px auto;
+}
+
+.newsItem h2,p{
+    margin:2px auto;
+}
+
+#content{
+    grid-column: 3/span 2;
+    margin-left: 20px;
+}
+
+#content p{
+    margin-bottom: 3%;
+}
+
+/*Nav Bar CSS*/
+#navbarDiv{
+    grid-column: 1/span 5;
+    background-color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    list-style-type: none;
+    width: 81%;
+    margin:auto;
+}
+
+.nonbutton {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.social{
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color:black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #0d83c2;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Art Page CSS*/
+.artHeader{
+    grid-column: 2/ span 3;
+    font-size:40px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px dashed black;
+}
+
+.artGrid img{
+    display: block;
+    width:100%;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+/*Development and Game Page CSS*/
+#sectionTitleBox{
+    width: 79%;
+    margin:auto;
+    text-align:center;
+    background-color: black;
+    color:white;
+    font-family: 'Yellowtail', sans-serif;
+    margin-top: 14vh;
+    padding: 8vh 0px;
+    font-size: 80px;
+}
+
+#sectionTitle{
+    grid-column: 1/ span 5;
+    height: 60vh;
+    background-image: url("backgroundEvening.svg");
+    background-color: #0d83c2;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#top{
+    margin-top: 60px;
+}
+
+.projectImg{
+    grid-column: 2/span 3;
+    margin-top: 0px;
+}
+
+.projectImg img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.projectTech{
+    grid-column: 2/span 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    border-right: 1px dashed black;
+}
+
+.projectDescription{
+    grid-column: 3/span 2;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.projectDescription p{
+    margin-bottom: 3%;
+}
+
+.devSection{
+    grid-column: 2/span 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.devSection p{
+    width: 30%;
+    margin: 0;
+}
+
+/*Contact Page CSS*/
+form {
+    width: 85%;
+    /* To see the outline of the form */
+    padding: 1em;
+  }
+
+#mainForm{
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* To give the same size to all text fields */
+    width: 100%;
+    box-sizing: border-box;
+  
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+
+    font-family: 'Dosis', sans-serif;
+  }
+
+  #contactForm input, textarea{
+      width: 80%;
+  }
+
+  form h2{
+      margin-top: 0px;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 8rem;
+
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  #mainForm button {
+    padding: 2% 4%;
+    text-align:center;
+    border-radius: 2em;
+    background-color: #0d83c2;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+  }
+
+  #contactForm button {
+    padding: 2% 4%;
+    text-align:center;
+    border-radius: 2em;
+    background-color: #0d83c2;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+  }
+
+  #mainForm button:hover{
+      background-color:#3fb5f4;
+  }
+
+  #contactForm button:hover{
+    background-color:#3fb5f4;
+}
+
+  #mainForm button{
+    width: 100%;
+  }
+
+  #mainForm textarea{
+      width: 100%;
+  }
+
+  .button{
+      text-align:right;
+      margin-right: 5%;
+  }
+
+  i{
+      color:#0d83c2;
+  }
+
+  i:hover{
+      color: #3fb5f4;
+  }
+
+  #social{
+      display:flex;
+      justify-content: space-between;
+  }
+  
+
+
+
+
+
+
+

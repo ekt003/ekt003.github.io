@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="webFunctionality.js"></script>
+</head>
+<body>
+    <div id="grid">
+        <div id="sectionTitle">
+            <div id="sectionTitleBox">
+                Contact
+            </div>
+        </div>
+        
+        <div id="navbarDiv">
+            <ul class="navbar">
+                <li><a href="index.html" class="nonbutton">Home</a></li>
+                <li class="dropdown">
+                    <a href="games.html"><button class="dropbtn">Games</button></a>
+                        <div class="dropdown-content">
+                            <a href="#">What Lies Beneath</a>
+                            <a href="#">Kiting</a>
+                            <a href="#">Stellar Standoff</a>
+                            <a href="#">Project IPRE</a>
+                            <a href="#">Pushing Daisies</a>
+                            <a href="#">Eldritch Archive</a>
+                        </div>
+                </li> 
+                <li class="dropdown">
+                    <button class="dropbtn">Design</button>
+                        <div class="dropdown-content">
+                            <a href="#">Design Research</a>
+                            <a href="#">Environment Design</a>
+                            <a href="#">Emotional Design</a>
+                            <a href="#">UI/UX</a>
+                        </div>
+                </li>
+                <li class="dropdown">
+                    <a href="art.html"><button class="dropbtn">Art</button></a>
+                        <div class="dropdown-content">
+                            <a href="#">Digital Illustration</a>
+                            <a href="#">Physical Sketches</a>
+                            <a href="#">Animation</a>
+                        </div>
+                </li>
+                <li class="dropdown">
+                    <a href="development.html"><button class="dropbtn">Development</button></a>
+                        <div class="dropdown-content">
+                            <a href="#">C#/.NET</a>
+                            <a href="#">Unity</a>
+                            <a href="#">Javascript / Web DOMs</a>
+                            <a href="#">Canvas</a>
+                            <a href="#">ARIS</a>
+                            <a href="#">C++</a>
+                        </div>
+                </li>
+                <li><a href="" class="nonbutton active">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="news">
+            <h2>Stalk Me On Social Media</h2>
+            <div id="social">
+                <i class="fab fa-github fa-3x"></i>
+                <i class="fab fa-twitter fa-3x"></i>
+                <i class="fab fa-linkedin fa-3x"></i>
+                <i class="fab fa-gitlab fa-3x"></i>
+            </div>
+        </div>
+        <div id="content">
+            <h2>
+                Let's Get In Touch!
+            </h2>
+            
+
+            <form action="/my-handling-form-page" method="post" id="contactForm">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>
+                  <label for="msg">Message:<br></label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Slide Into Those DMs</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
