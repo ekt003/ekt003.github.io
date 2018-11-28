@@ -40,6 +40,7 @@ body{
     font-size: 4rem;
     font-family: 'Dosis', sans-serif;
     margin: 10px 0px 10px 0px;
+    font-style: italic;
 }
 
 h2{
@@ -117,14 +118,6 @@ h2{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.social{
-    float: right;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding-left: 10px;
 }
 
 .dropdown {
@@ -389,7 +382,60 @@ form {
       justify-content: space-between;
   }
   
+/* Media Queries */
+@media (max-width: 479px){
+    #navBarDiv{
+        display: none;
+    }
 
+    .navbar{
+        display: none;
+    }
+    
+    #grid{
+        grid-template-columns: 5% 90% 5%;
+        font-size:36px;
+    }
+    
+    #title{
+        grid-column: 1/span 3;
+    }
+
+    #titleBox span{
+        font-size: 8rem;
+    }
+
+    #titleBox p{
+        font-size: 2rem;
+    }
+
+    #titleBox img{
+        max-height:30px;
+    }
+
+    #news{
+        grid-column: 2/span 1;
+        border: none;
+        order: 2;
+    }
+
+    #content{
+        grid-column: 2/span 1;
+    }
+
+    #mainForm button {
+        font-size: 36px;
+    }
+    
+    #footer{
+        grid-column: 1/span 3;
+        order: 2;
+    }
+
+    
+
+
+}
 
 
 
