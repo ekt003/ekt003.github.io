@@ -11,6 +11,7 @@ let titleScreen = document.querySelector('#title');
 let sectionTitle = document.querySelector('#sectionTitle');
 let navBar = document.querySelector('#navbarDiv');
 let formButt = document.querySelector('#formButton');
+let footer = document.querySelector('#footer');
 
 //sets the background image based on the local time of day
 //sunrise from 5AM to 9AM
@@ -30,6 +31,7 @@ if(hour>=5 && hour<9){
     }
     activeLink.style.backgroundColor = "#0099cc";
     navBar.style.backgroundColor = "#0077aa";
+    footer.style.backgroundColor = "#0077aa";
     
 }
 //day from 9AM to 5PM
@@ -49,6 +51,7 @@ if(hour>=9 && hour<17){
     }
     activeLink.style.backgroundColor = "#0099cc";
     navBar.style.backgroundColor = "#0077aa";
+    footer.style.backgroundColor = "#0077aa";
 }
 
 //sunset from 5PM to 8PM
@@ -68,15 +71,27 @@ if(hour>=17 && hour<20){
     }
     activeLink.style.backgroundColor = "#0099cc";
     navBar.style.backgroundColor = "#0077aa";
+    footer.style.backgroundColor = "#0077aa";
 }
 
 //night from 8PM to 5AM
 if((hour>=20 && hour<23) || (hour>=0 && hour<5)){
-    backgroundIMG.style.backgroundImage = "url('backgroundEvening.svg')";
-    sectionTitle.style.backgroundImage = "url('backgroundEvening.svg')";
-    activeLink.style.backgroundColor = "#0022aa";
-    titleScreen.style.textShadow = "none";
+    if(backgroundIMG){
+        backgroundIMG.style.backgroundImage = "url('backgroundEvening.svg')";
+        titleScreen.style.textShadow = "none";
+        titleScreen.style.backgroundColor = "#0022aa";
+    }
+    if(sectionTitle){
+        sectionTitle.style.backgroundImage = "url('backgroundEvening.svg')";
+        sectionTitle.style.textShadow = "none";
+        sectionTitle.style.backgroundColor = "#0022aa";
+    }
+    if(formButt){
+        formButt.style.backgroundColor = "#0044cc";
+    }
+    activeLink.style.backgroundColor = "#0044cc";
     navBar.style.backgroundColor = "#0022aa";
+    footer.style.backgroundColor = "#0022aa";
 }
 
 
@@ -97,4 +112,17 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+function toggleHamburger() {
+    let ham = document.querySelector("#ham");
+    
+    let x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      ham.style.color="#0055dd";
+    } else {
+      x.style.display = "block";
+      ham.style.color="white";
+    }
+  }
 

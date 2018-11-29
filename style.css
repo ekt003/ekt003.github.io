@@ -107,7 +107,7 @@ h2{
 .navbar {
     overflow: hidden;
     list-style-type: none;
-    width: 90%;
+    width: 77%;
     margin:auto;
 }
 
@@ -118,6 +118,10 @@ h2{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+#navLinks{
+    display:none;
 }
 
 .nonbutton:hover{
@@ -181,7 +185,7 @@ h2{
 /*Footer CSS*/
 #footer{
     grid-column: span 5;
-    background-color:#0f0f0f;
+    background-color:#0022aa;
     color: white;
     height: 10vh;
 }
@@ -393,6 +397,10 @@ form {
       display:flex;
       justify-content: space-between;
   }
+
+  #mobileNav i{
+      display:none;
+  }
   
 /* Media Queries */
 @media (max-width: 479px){
@@ -403,14 +411,60 @@ form {
     .navbar{
         display: none;
     }
+
+    #mobileNav{
+        background-color: #0022aa;
+        position:fixed;
+        width: 100%;
+    }
+
+    #mobileNav i{
+        display:block;
+        color:#0055dd;
+        z-index:1;
+        position: fixed;
+        max-width:200px;
+        margin: 1%;
+    }
+
+    #navLinks{
+        font-size: 36px;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding-left:10px;
+        padding-top:50px;
+    }
+
+    #navLinks li a{
+        background-color:#0022aa;
+        color:white;
+        text-decoration: none;
+        font-size: 36px;
+        font-family: 'Dosis', sans-serif;
+    }
     
     #grid{
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 7% 84% 7%;
         font-size:36px;
     }
     
     #title{
-        grid-column: 1/span 3;
+        grid-column: 1/span 4;
+        
+    }
+
+    #sectionTitle{
+        grid-column: 1/span 4;
+    }
+
+    #sectionTitleBox{
+        font-size: 6rem;
+    }
+
+    #titleBox{
+        padding-top: 0px;
+        margin-top: 15vh;
     }
 
     #titleBox span{
@@ -429,10 +483,12 @@ form {
         grid-column: 2/span 1;
         border: none;
         order: 2;
+        border-top: 1px dashed black;
     }
 
     #content{
         grid-column: 2/span 1;
+        margin-bottom: 30px;
     }
 
     #mainForm button {
@@ -440,8 +496,27 @@ form {
     }
     
     #footer{
-        grid-column: 1/span 3;
+        grid-column: 1/span 4;
         order: 2;
+    }
+
+    .projectImg{
+        grid-column: 1/span 4;
+    }
+
+    .projectDescription{
+        grid-column: 2/span 1;
+        margin:0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .projectTech{
+        grid-column: 2/span 1;
+        margin:0;
+        padding: 0;
+        border:none;
+        border-bottom: 1px dashed black;
     }
 
 

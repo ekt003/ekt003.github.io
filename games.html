@@ -7,56 +7,36 @@
     <title>Games</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 
     <div id="navbarDiv">
         <ul class="navbar">
             <li><a href="contact.html" class="nonbutton">Contact</a></li>
-            
-            <li class="dropdown">
-                <a href="development.html"><button class="dropbtn">Development</button></a>
-                    <div class="dropdown-content">
-                        <a href="#">C# Unity</a>
-                        <a href="#">Javascript / Web DOMs</a>
-                        <a href="#">Canvas</a>
-                        <a href="#">ARIS</a>
-                        <a href="#">C++</a>
-                    </div>
-            </li>
-            
-            <li class="dropdown">
-                <a href="art.html"><button class="dropbtn">Art</button></a>
-                    <div class="dropdown-content">
-                        <a href="#">Digital Illustration</a>
-                        <a href="#">Physical Sketches</a>
-                        <a href="#">Animation</a>
-                    </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="design.html"><button class="dropbtn">Design</button></a>
-                    <div class="dropdown-content">
-                        <a href="#">Design Research</a>
-                        <a href="#">Environment Design</a>
-                        <a href="#">Emotional Design</a>
-                        <a href="#">UI/UX</a>
-                    </div>
-            </li>
 
             <li class="dropdown active">
                 <a href="games.html"><button class="dropbtn">Games</button></a>
                     <div class="dropdown-content">
-                        <a href="#">What Lies Beneath</a>
-                        <a href="#">Kiting</a>
-                        <a href="#">Stellar Standoff</a>
-                        <a href="#">Project IPRE</a>
-                        <a href="#">Pushing Daisies</a>
-                        <a href="#">Eldritch Archive</a>
+                        <a href="#top">What Lies Beneath</a>
+                        <a href="#kiting">Kiting</a>
+                        <a href="#stellar">Stellar Standoff</a>
+                        <a href="#ipre">Project IPRE</a>
+                        <a href="#daisies">Pushing Daisies</a>
+                        <a href="#ea">Eldritch Archive</a>
                     </div>
             </li> 
 
             <li><a href="index.html" class="nonbutton">Home</a></li>
+        </ul>
+    </div>
+
+    <div id="mobileNav">
+        <i class="fas fa-bars fa-3x" id="ham" onclick="toggleHamburger()"></i>
+        <ul id="navLinks">
+            <li href="#news"><a href="index.html">Home</a></li>
+            <li href="#contact"><a href="games.html">Games</a></li>
+            <li href="#about"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
@@ -98,7 +78,7 @@
         </div>
 
         <!--Kiting-->
-        <div class="projectImg" id="top">
+        <div class="projectImg" id="kiting">
             <img src="projectThumbnails/Kiting.png" alt="project">
         </div>
         <div class="projectTech">
@@ -127,7 +107,7 @@
         </div>
 
         <!--Stellar Standoff-->
-        <div class="projectImg" id="top">
+        <div class="projectImg" id="stellar">
             <img src="projectThumbnails/StellarStandoff.png" alt="project">
         </div>
         <div class="projectTech">
@@ -149,7 +129,7 @@
         </div>
 
         <!--Project IPRE-->
-        <div class="projectImg" id="top">
+        <div class="projectImg" id="ipre">
             <img src="projectThumbnails/ProjectIPRE.png" alt="project">
         </div>
         <div class="projectTech">
@@ -176,7 +156,7 @@
         </div>
 
         <!--Pushing Daisies-->
-        <div class="projectImg" id="top">
+        <div class="projectImg" id="daisies">
             <img src="projectThumbnails/PushingDaisies.png" alt="project">
         </div>
         <div class="projectTech">
@@ -197,7 +177,7 @@
         </div>
 
         <!--Eldritch Archive-->
-        <div class="projectImg" id="top">
+        <div class="projectImg" id="ea">
             <img src="projectThumbnails/EldritchArchive.png" alt="project">
         </div>
         <div class="projectTech">
@@ -212,7 +192,9 @@
 
         </div>
 
-
+        <div id="footer">
+            
+        </div>
     </div>
 
     <script src="src/webFunctionality.js"></script>
