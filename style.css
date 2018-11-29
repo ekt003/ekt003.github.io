@@ -101,7 +101,7 @@ h2{
     top: 0;
     width: 100%;
     font-family: 'Dosis', sans-serif;
-    background-color: black;
+    background-color: #0022aa;
 }
 
 .navbar {
@@ -118,6 +118,11 @@ h2{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.nonbutton:hover{
+    color:white;
+    background-color:black;
 }
 
 .dropdown {
@@ -203,12 +208,11 @@ h2{
     width: 79%;
     margin:auto;
     text-align:center;
-    background-color: black;
     color:white;
     font-family: 'Yellowtail', sans-serif;
     margin-top: 14vh;
     padding: 8vh 0px;
-    font-size: 80px;
+    font-size: 10rem
 }
 
 #sectionTitle{
@@ -369,8 +373,16 @@ form {
       margin-right: 5%;
   }
 
-  i{
-      color:#0022aa;
+  .fa-linkedin{
+    color: #0077b5;
+  }
+
+  .fa-twitter{
+    color: #38A1F3;
+  }
+
+  .fa-gitlab{
+    color: #e65328;
   }
 
   i:hover{
@@ -432,7 +444,6 @@ form {
         order: 2;
     }
 
-    
 
 
 }
