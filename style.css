@@ -11,7 +11,7 @@ body{
 /*Grid Formatting*/
 #grid{
     display:grid;
-    grid-template-columns: 11% 26% 26% 26% 11%;
+    grid-template-columns: 11% 1fr 1fr 1fr 11%;
     font-family: 'Dosis', sans-serif;
     font-size:20px;
 }
@@ -68,6 +68,11 @@ h2{
     max-height:50px;
 }
 
+#welcome{
+    position: absolute;
+    top: 95vh;
+}
+
 #news{
     grid-column: 2/span 1;
     padding-right: 20px;
@@ -93,6 +98,15 @@ h2{
 
 #content p{
     margin-bottom: 3%;
+}
+
+#profile{
+    margin: 3%;
+    background-color: #0044cc;
+    border: 5px solid #0022aa;
+    border-radius: 300px;
+    width: 40%;
+    float:right;
 }
 
 /*Nav Bar CSS*/
@@ -125,8 +139,8 @@ h2{
 }
 
 .nonbutton:hover{
-    color:white;
-    background-color:black;
+    color:black;
+    background-color:white;
 }
 
 .dropdown {
@@ -385,8 +399,18 @@ form {
     color: #38A1F3;
   }
 
-  .fa-gitlab{
-    color: #e65328;
+  .fa-handshake{
+    color: #fecd2f;
+  }
+
+  #resume{
+    padding: 2% 4%;
+    width: 60%;
+    border-radius: 2em;
+    background-color: #0022aa;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
   }
 
   i:hover{
@@ -396,6 +420,7 @@ form {
   #social{
       display:flex;
       justify-content: space-between;
+      margin-bottom: 10%;
   }
 
   #mobileNav i{

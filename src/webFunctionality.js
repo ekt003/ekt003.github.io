@@ -12,6 +12,8 @@ let sectionTitle = document.querySelector('#sectionTitle');
 let navBar = document.querySelector('#navbarDiv');
 let formButt = document.querySelector('#formButton');
 let footer = document.querySelector('#footer');
+let profileIMG = document.querySelector('#profile');
+let resume = document.querySelector('#resume');
 
 //sets the background image based on the local time of day
 //sunrise from 5AM to 9AM
@@ -28,6 +30,13 @@ if(hour>=5 && hour<9){
     }
     if(formButt){
         formButt.style.backgroundColor = "#0099cc";
+    }
+    if(profileIMG){
+        profileIMG.style.backgroundColor = "#0099cc";
+        profileIMG.style.border="5px solid #0077aa";
+    }
+    if(resume){
+        resume.style.backgroundColor = "#0099cc";
     }
     activeLink.style.backgroundColor = "#0099cc";
     navBar.style.backgroundColor = "#0077aa";
@@ -49,6 +58,13 @@ if(hour>=9 && hour<17){
     if(formButt){
         formButt.style.backgroundColor = "#0099cc";
     }
+    if(profileIMG){
+        profileIMG.style.backgroundColor = "#0099cc";
+        profileIMG.style.border="5px solid #0077aa";
+    }
+    if(resume){
+        resume.style.backgroundColor = "#0099cc";
+    }
     activeLink.style.backgroundColor = "#0099cc";
     navBar.style.backgroundColor = "#0077aa";
     footer.style.backgroundColor = "#0077aa";
@@ -69,6 +85,13 @@ if(hour>=17 && hour<20){
     if(formButt){
         formButt.style.backgroundColor = "#0099cc";
     }
+    if(profileIMG){
+        profileIMG.style.backgroundColor = "#0099cc";
+        profileIMG.style.border="5px solid #0077aa";
+    }
+    if(resume){
+        resume.style.backgroundColor = "#0099cc";
+    }
     activeLink.style.backgroundColor = "#0099cc";
     navBar.style.backgroundColor = "#0077aa";
     footer.style.backgroundColor = "#0077aa";
@@ -88,6 +111,13 @@ if((hour>=20 && hour<23) || (hour>=0 && hour<5)){
     }
     if(formButt){
         formButt.style.backgroundColor = "#0044cc";
+    }
+    if(profileIMG){
+        profileIMG.style.backgroundColor = "#0022aa";
+        profileIMG.style.border="5px solid #0044cc";
+    }
+    if(resume){
+        resume.style.backgroundColor = "#0022aa";
     }
     activeLink.style.backgroundColor = "#0044cc";
     navBar.style.backgroundColor = "#0022aa";

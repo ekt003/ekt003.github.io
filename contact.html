@@ -14,21 +14,30 @@
 
     <div id="navbarDiv">
         <ul class="navbar">
-            <li><a href="contact.html" class="nonbutton active">Contact</a></li>
+            <li><a href="#grid" class="nonbutton active">Contact</a></li>
 
             <li class="dropdown">
                 <a href="games.html"><button class="dropbtn">Games</button></a>
                     <div class="dropdown-content">
-                        <a href="#">What Lies Beneath</a>
-                        <a href="#">Kiting</a>
-                        <a href="#">Stellar Standoff</a>
-                        <a href="#">Project IPRE</a>
-                        <a href="#">Pushing Daisies</a>
-                        <a href="#">Eldritch Archive</a>
+                        <a href="games.html#top">What Lies Beneath</a>
+                        <a href="games.html#kiting">Kiting</a>
+                        <a href="games.html#stellar">Stellar Standoff</a>
+                        <a href="games.html#ipre">Project IPRE</a>
+                        <a href="games.html#daisies">Pushing Daisies</a>
+                        <a href="games.html#ea">Eldritch Archive</a>
                     </div>
             </li> 
 
             <li><a href="index.html" class="nonbutton">Home</a></li>
+        </ul>
+    </div>
+
+    <div id="mobileNav">
+        <i class="fas fa-bars fa-3x" id="ham" onclick="toggleHamburger()"></i>
+        <ul id="navLinks">
+            <li href="#news"><a href="index.html">Home</a></li>
+            <li href="#contact"><a href="games.html">Games</a></li>
+            <li href="#about"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
@@ -42,29 +51,28 @@
         <div id="news">
             <h2>Stalk Me On Social Media</h2>
             <div id="social">
-                <i class="fab fa-linkedin fa-3x"></i>
-                <i class="fab fa-github fa-3x"></i>
-                <i class="fab fa-twitter fa-3x"></i>
-                <i class="fab fa-gitlab fa-3x"></i>
+                <a href="https://www.linkedin.com/in/emily-turner-662135127/"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="https://github.com/ekt003"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://twitter.com/i_am_leviathan"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://rit.joinhandshake.com/users/6934343"><i class="fas fa-handshake fa-3x"></i></a>
             </div>
-        </div>
-        <div id="content">
-            <h2>
-                Let's Get In Touch!
-            </h2>
-            
 
-            <form action="/my-handling-form-page" method="post" id="contactForm">
+            <button id="resume">Download Resume</button>
+        </div>
+        <div id="content">          
+
+            <form action="https://formspree.io/ekt6170@rit.edu" method="POST" id="contactForm">
+                <h2>Let's Get In Touch</h2>
                 <div>
                   <label for="name">Name:</label>
-                  <input type="text" id="name" name="user_name">
+                  <input type="text" id="name" name="name">
                 </div>
                 <div>
                   <label for="mail">Email:</label>
                   <input type="email" id="mail" name="user_mail">
                 </div>
                 <div>
-                  <label for="msg">Message:<br></label>
+                  <label for="msg">Message:</label>
                   <textarea id="msg" name="user_message"></textarea>
                 </div>
                 <div class="button">
