@@ -507,6 +507,11 @@ textarea {
         margin: 1%;
     }
 
+    .link:visited{
+        color: #555;
+        text-decoration: none;
+    }
+
     #navLinks{
         font-size: 36px;
         list-style-type: none;
