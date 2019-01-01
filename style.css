@@ -91,6 +91,20 @@ h2{
     margin:2px auto;
 }
 
+a{
+    text-decoration: none;
+    color: #0022aa;
+}
+
+a:hover{
+    font-weight:bold;
+}
+
+button:hover{
+    cursor: pointer;
+    font-weight:bold;
+}
+
 #content{
     grid-column: 3/span 2;
     margin-left: 20px;
@@ -167,6 +181,7 @@ h2{
 .dropdown-content {
     display: none;
     position: absolute;
+    font-size: 20px;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
@@ -254,7 +269,6 @@ h2{
 
 .projectImg img{
     width: 100%;
-    border: 1px solid black;
     border-radius: 12px;
 }
 
@@ -293,7 +307,7 @@ form {
     width: 85%;
     /* To see the outline of the form */
     padding: 1em;
-  }
+}
 
 #mainForm{
     border: 1px solid #CCC;
@@ -301,18 +315,18 @@ form {
     margin: 6% 0%;
 }
   
-  form div + div {
+form div + div {
     margin-top: 1em;
-  }
+}
   
-  label {
+label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
     width: 15%;
     text-align: right;
-  }
+}
   
-  input, textarea {
+input, textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
     font: 1em sans-serif;
@@ -325,22 +339,22 @@ form {
     border: 1px solid #999;
 
     font-family: 'Dosis', sans-serif;
-  }
+}
 
-  #contactForm input, textarea{
-      width: 80%;
-  }
+#contactForm input, textarea{
+    width: 80%;
+}
 
-  form h2{
-      margin-top: 0px;
-  }
+form h2{
+    margin-top: 0px;
+}
   
-  input:focus, textarea:focus {
+input:focus, textarea:focus {
     /* To give a little highlight on active elements */
     border-color: #000;
-  }
+}
   
-  textarea {
+textarea {
     /* To properly align multiline text fields with their labels */
     vertical-align: top;
   
@@ -348,9 +362,9 @@ form {
     height: 8rem;
 
     font-family: 'Dosis', sans-serif;
-  }
+}
   
-  #mainForm button {
+#mainForm button {
     padding: 2% 4%;
     text-align:center;
     border-radius: 2em;
@@ -358,9 +372,9 @@ form {
     color: white;
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
-  }
+}
 
-  #contactForm button {
+#contactForm button {
     padding: 2% 4%;
     text-align:center;
     border-radius: 2em;
@@ -368,23 +382,64 @@ form {
     color: white;
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
-  }
+}
 
-  #mainForm button:hover{
+#mainForm button:hover{
       background-color:#0022aa;
-  }
+}
 
-  #contactForm button:hover{
+#contactForm button:hover{
     background-color:#3fb5f4;
 }
 
-  #mainForm button{
+#mainForm button{
     width: 100%;
-  }
+}
 
-  #mainForm textarea{
+#mainForm textarea{
       width: 100%;
-  }
+}
+
+#web, #designResearch, #UIUX{
+    grid-column: 2/span 3;
+    border-bottom: 1px dashed black;
+}
+
+.zigzag{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3%;
+}
+
+.designImg{
+    background-color: #333;
+    border-radius:48px;
+    max-width:95%;
+    height:480px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#stellarStandoff{
+    background-image: url('designThumbnails/stills/stellarStandoff.PNG');
+}
+
+#stellarStandoff:hover{
+    background-image: url('designThumbnails/stellarStandoff.gif');
+}
+
+.zigzag div{
+    max-width:95%;
+}
+
+.left{
+    grid-template-columns: 1fr 720px;
+}
+
+.right{
+    grid-template-columns: 720px 1fr;
+}
 
   .button{
       text-align:right;
