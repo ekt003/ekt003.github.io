@@ -1,0 +1,34 @@
+#title, #sectionTitle{
+    background-image: url('../../backgroundEvening.svg');
+    text-shadow: none;
+    background-color: #0022aa;
+}
+
+#navbarDiv, #footer{
+    background-color: #0022aa;
+}
+
+#formButton, #resume, .active{
+    background-color: #0044cc;
+}
+
+#profile{
+    background-color: #0022aa;
+    border: 5px solid #0044cc;
+}
+
+.link{
+    color: #0022aa;
+}
+
+.link:hover{
+    color: #0044cc;
+}
+
+#formButton:hover{
+    color: #0044cc;
+}
+
+i:hover{
+    color: #0044cc;
+}

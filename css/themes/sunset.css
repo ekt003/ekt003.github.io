@@ -1,0 +1,30 @@
+#title, #sectionTitle{
+    background-image: url('../../sunsetBackground.svg');
+    text-shadow: #D20055 2.5px 2.5px;
+    background-color: #D20055;
+}
+
+#navbarDiv, #footer{
+    background-color: #D20055;
+}
+
+#formButton, #resume, .active{
+    background-color: #ff3c7d;
+}
+
+#formButton:hover, #resume:hover, .active:hover{
+    background-color: #D20055;
+}
+
+#profile{
+    background-color: #ff3c7d;
+    border: 5px solid #D20055;
+}
+
+.link{
+    color: #D20055;
+}
+
+i:hover{
+    color: #ff3c7d;
+}

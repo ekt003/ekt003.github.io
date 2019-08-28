@@ -1,0 +1,544 @@
+/*MAIN WEBSITE CSS*/
+
+/*Universal Selectors*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#mobileNav i{
+    display:none;
+}
+
+/*Grid Formatting*/
+#grid{
+    margin-top:5vh;
+    display:grid;
+    grid-template-columns: 11% 1fr 1fr 1fr 11%;
+    font-family: 'Dosis', sans-serif;
+    font-size:20px;
+}
+
+/*Section Formatting*/
+#sectionTitleBox{
+    width: 79%;
+    margin:auto;
+    text-align:center;
+    color:white;
+    font-family: 'Yellowtail', sans-serif;
+    margin-top: 14vh;
+    padding: 8vh 0px;
+    font-size: 10rem
+}
+
+#sectionTitle{
+    grid-column: 1/ span 5;
+    height: 55vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#news{
+    grid-column: 2/span 1;
+    padding-right: 20px;
+    border-right: 1px dashed black;
+}
+
+#content{
+    grid-column: 3/span 2;
+    margin-left: 20px;
+}
+
+#content p{
+    margin-bottom: 3%;
+}
+
+/*Nav Bar CSS*/
+#navbarDiv{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    list-style-type: none;
+    width: 77%;
+    margin:auto;
+}
+
+.nonbutton {
+    float: right;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navLinks{
+    display:none;
+}
+
+.nonbutton:hover{
+    color:black;
+    background-color:white;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color:black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight:bold;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Footer CSS*/
+#footer{
+    grid-column: span 5;
+    color: white;
+    height: 10vh;
+}
+
+/*Form CSS*/
+form {
+    width: 85%;
+    /* To see the outline of the form */
+    padding: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+  
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+}
+  
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* To give the same size to all text fields */
+    width: 100%;
+    box-sizing: border-box;
+  
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+
+    font-family: 'Dosis', sans-serif;
+}
+
+form h2{
+    margin-top: 0px;
+}
+  
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+  
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 8rem;
+
+    font-family: 'Dosis', sans-serif;
+}
+
+/*HOME CSS*/
+/*Home Page CSS*/
+#title{
+    grid-column: 1/ span 5;
+    height: 95vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#titleBox p{
+    font-size: 4rem;
+    font-family: 'Dosis', sans-serif;
+    margin: 10px 0px 10px 0px;
+    font-style: italic;
+}
+
+h2{
+    margin-bottom:1%;
+}
+
+#titleBox{
+    width: 79%;
+    margin:auto;
+    text-align:center;
+    color:white;
+    font-family: 'Yellowtail', sans-serif;
+    margin-top: 20vh;
+    padding: 8vh 0px 4vh 0px;  
+}
+
+#titleBox span{
+    font-size: 12rem;
+    color: white;
+}
+
+#titleBox img{
+    padding-top: 10px;
+    margin-top: 5vh;
+    max-height:50px;
+}
+
+#welcome{
+    position: absolute;
+    top: 95vh;
+}
+
+#news{
+    grid-column: 2/span 1;
+    padding-right: 20px;
+    border-right: 1px dashed black;
+}
+
+.newsItem img{
+    width: 70%;
+}
+
+.newsItem{
+    margin: 5px auto;
+}
+
+.newsItem h2,p{
+    margin:2px auto;
+}
+
+button:hover{
+    cursor: pointer;
+    font-weight:bold;
+}
+
+#content{
+    grid-column: 3/span 2;
+    margin-left: 20px;
+}
+
+#content p{
+    margin-bottom: 3%;
+}
+
+#profile{
+    margin: 3%;
+    border-radius: 300px;
+    width: 40%;
+    float:right;
+}
+
+/*Form Input*/
+#mainForm{
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin: 6% 0%;
+}
+
+#mainForm button {
+    padding: 2% 4%;
+    text-align:center;
+    border-radius: 2em;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+#mainForm button:hover{
+}
+
+#mainForm button{
+    width: 100%;
+}
+
+#mainForm textarea{
+      width: 100%;
+}
+
+/* GAMES CSS */
+#top{
+    margin-top: 60px;
+}
+
+.projectImg{
+    grid-column: 2/span 3;
+    margin-top: 0px;
+}
+
+.projectImg img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.projectTech{
+    grid-column: 2/span 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    border-right: 1px dashed black;
+}
+
+.projectDescription{
+    grid-column: 3/span 2;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.projectDescription p{
+    margin-bottom: 3%;
+}
+
+.devSection{
+    grid-column: 2/span 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.devSection p{
+    width: 30%;
+    margin: 0;
+}
+
+/* CONTACT CSS */
+#contactForm input, textarea{
+    width: 80%;
+}
+
+#contactForm button {
+    padding: 2% 4%;
+    text-align:center;
+    border-radius: 2em;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+.fa-twitter{
+    color: #38A1F3;
+}
+
+.fa-handshake{
+    color: #fecd2f;
+}
+
+#resume{
+    padding: 2% 4%;
+    width: 60%;
+    border-radius: 2em;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+#resumeWeb{
+    grid-column: 2 /span 3;
+}
+
+#resumeWeb h4{
+    margin: 15px 0px 5px 0px;
+}
+
+#social{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 479px){
+    #navBarDiv{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    #mobileNav{
+        background-color: #0022aa;
+        position:fixed;
+        width: 100%;
+    }
+
+    #mobileNav i{
+        display:block;
+        color:#0055dd;
+        z-index:1;
+        position: fixed;
+        max-width:200px;
+        margin: 1%;
+    }
+
+    .link:visited{
+        color: #555;
+        text-decoration: none;
+    }
+
+    #navLinks{
+        font-size: 36px;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding-left:10px;
+        padding-top:50px;
+    }
+
+    #navLinks li a{
+        color:white;
+        text-decoration: none;
+        font-size: 36px;
+        font-family: 'Dosis', sans-serif;
+    }
+    
+    #grid{
+        grid-template-columns: 7% 84% 7%;
+        font-size:28px;
+    }
+    
+    #title{
+        grid-column: 1/span 4;
+        
+    }
+
+    #sectionTitle{
+        grid-column: 1/span 4;
+    }
+
+    #sectionTitleBox{
+        font-size: 6rem;
+    }
+
+    #titleBox{
+        padding-top: 0px;
+        margin-top: 15vh;
+    }
+
+    #titleBox span{
+        font-size: 6rem;
+    }
+
+    #titleBox p{
+        font-size: 2rem;
+    }
+
+    #titleBox img{
+        max-height:30px;
+    }
+
+    #news{
+        grid-column: 2/span 1;
+        border: none;
+        order: 2;
+        border-top: 1px dashed black;
+    }
+
+    #content{
+        grid-column: 2/span 1;
+        margin-bottom: 30px;
+    }
+
+    #mainForm button {
+        font-size: 36px;
+    }
+    
+    #footer{
+        grid-column: 1/span 4;
+        order: 2;
+    }
+
+    .projectImg{
+        grid-column: 1/span 4;
+    }
+
+    .projectDescription{
+        grid-column: 2/span 1;
+        margin:0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .projectTech{
+        grid-column: 2/span 1;
+        margin:0;
+        padding: 0;
+        border:none;
+        border-bottom: 1px dashed black;
+    }
+
+}

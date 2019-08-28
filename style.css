@@ -441,10 +441,10 @@ textarea {
     grid-template-columns: 720px 1fr;
 }
 
-  .button{
+.button{
       text-align:right;
       margin-right: 5%;
-  }
+}
 
   .fa-linkedin{
     color: #0077b5;
@@ -468,6 +468,14 @@ textarea {
     font-size: 20px;
   }
 
+  #resumeWeb{
+      grid-column: 2 /span 3;
+  }
+
+  #resumeWeb h4{
+      margin: 15px 0px 5px 0px;
+  }
+
   i:hover{
       color: #3fb5f4;
   }
@@ -478,135 +486,11 @@ textarea {
       margin-bottom: 10%;
   }
 
-  #mobileNav i{
+#mobileNav i{
       display:none;
-  }
-  
-/* Media Queries */
-@media (max-width: 479px){
-    #navBarDiv{
-        display: none;
-    }
-
-    .navbar{
-        display: none;
-    }
-
-    #mobileNav{
-        background-color: #0022aa;
-        position:fixed;
-        width: 100%;
-    }
-
-    #mobileNav i{
-        display:block;
-        color:#0055dd;
-        z-index:1;
-        position: fixed;
-        max-width:200px;
-        margin: 1%;
-    }
-
-    .link:visited{
-        color: #555;
-        text-decoration: none;
-    }
-
-    #navLinks{
-        font-size: 36px;
-        list-style-type: none;
-        width: 100%;
-        margin: 0;
-        padding-left:10px;
-        padding-top:50px;
-    }
-
-    #navLinks li a{
-        background-color:#0022aa;
-        color:white;
-        text-decoration: none;
-        font-size: 36px;
-        font-family: 'Dosis', sans-serif;
-    }
-    
-    #grid{
-        grid-template-columns: 7% 84% 7%;
-        font-size:28px;
-    }
-    
-    #title{
-        grid-column: 1/span 4;
-        
-    }
-
-    #sectionTitle{
-        grid-column: 1/span 4;
-    }
-
-    #sectionTitleBox{
-        font-size: 6rem;
-    }
-
-    #titleBox{
-        padding-top: 0px;
-        margin-top: 15vh;
-    }
-
-    #titleBox span{
-        font-size: 6rem;
-    }
-
-    #titleBox p{
-        font-size: 2rem;
-    }
-
-    #titleBox img{
-        max-height:30px;
-    }
-
-    #news{
-        grid-column: 2/span 1;
-        border: none;
-        order: 2;
-        border-top: 1px dashed black;
-    }
-
-    #content{
-        grid-column: 2/span 1;
-        margin-bottom: 30px;
-    }
-
-    #mainForm button {
-        font-size: 36px;
-    }
-    
-    #footer{
-        grid-column: 1/span 4;
-        order: 2;
-    }
-
-    .projectImg{
-        grid-column: 1/span 4;
-    }
-
-    .projectDescription{
-        grid-column: 2/span 1;
-        margin:0;
-        padding: 0;
-        margin-bottom: 40px;
-    }
-
-    .projectTech{
-        grid-column: 2/span 1;
-        margin:0;
-        padding: 0;
-        border:none;
-        border-bottom: 1px dashed black;
-    }
-
-
-
 }
+  
+
 
 
 

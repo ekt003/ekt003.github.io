@@ -1,0 +1,30 @@
+#title, #sectionTitle{
+    background-image: url('../../background.svg');
+    text-shadow: #0077aa 2.5px 2.5px;
+    background-color: #0077aa;
+}
+
+#navbarDiv, #footer{
+    background-color: #0077aa;
+}
+
+#formButton, #resume, .active{
+    background-color: #0099cc;
+}
+
+#formButton:hover, #resume:hover, .active:hover{
+    background-color: #0077aa;
+}
+
+#profile{
+    background-color: #0099cc;
+    border: 5px solid #0077aa;
+}
+
+.link{
+    color: #0077aa;
+}
+
+i:hover{
+    color: #3fb5f4;
+}
