@@ -3,6 +3,11 @@
 
 window.onload = init;
 
+// JS Typewriter code from W3Schools: https://www.w3schools.com/howto/howto_js_typewriter.asp
+let i=0;
+let txt = 'Dev, Designer, Dork';
+let speed = 100;
+
 function init(){
     //gets the date and time of being accessed
     let now = new Date();
@@ -31,18 +36,8 @@ function init(){
     if((hour>=20 && hour<=23) || (hour>=0 && hour<4)){
       styleSheet.setAttribute("href", "css/themes/night.css");
     }
-
-}
-
-// JS Typewriter code from W3Schools: https://www.w3schools.com/howto/howto_js_typewriter.asp
-let i=0;
-let txt = 'Dev, Designer, Dork';
-let speed = 100;
-
-if(backgroundIMG){
     typeWriter();
 }
-
 
 function typeWriter() {
   if (i < txt.length) {
