@@ -1,0 +1,30 @@
+#title, #sectionTitle{
+    background-image: url('../../sunrise.svg');
+    text-shadow: #a291ff 2.5px 2.5px;
+    background-color: #a291ff;
+}
+
+#navbarDiv, #footer{
+    background-color: #a291ff;
+}
+
+#formButton, #resume, .active{
+    background-color: #bda1ff;
+}
+
+#formButton:hover, #resume:hover, .active:hover{
+    background-color: #a291ff;
+}
+
+#profile{
+    background-color: #bda1ff;
+    border: 5px solid #a291ff;
+}
+
+.link{
+    color: #a291ff;
+}
+
+i:hover{
+    color: #bda1ff;
+}
