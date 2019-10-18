@@ -16,7 +16,6 @@ body{
 
 /*Grid Formatting*/
 #grid{
-    margin-top:5vh;
     display:grid;
     grid-template-columns: 11% 1fr 1fr 1fr 11%;
     font-family: 'Dosis', sans-serif;
@@ -215,7 +214,7 @@ textarea {
 /*Home Page CSS*/
 #title{
     grid-column: 1/ span 5;
-    height: 95vh;
+    height: 100vh;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
