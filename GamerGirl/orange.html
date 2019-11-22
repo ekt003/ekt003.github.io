@@ -107,6 +107,10 @@ body {
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
 }
 
 .passage {
@@ -172,11 +176,7 @@ body {
   font-size: 1.1em;
 }
 
-/* settings */
-
-/*html[data-tags~="lab"] body {
-  background-image: url();
-}*/
+/* text styles */
 
 html[data-tags~="text"] body {
   background-color: black;
@@ -209,339 +209,384 @@ html[data-tags~="text"] .orange {
   color: white;
   background-color: #ffa463;
   padding: 10px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Orange Escalation 1 Start" tags="" position="1750,51" size="100,100">You look around the lab and don&#39;t see @@.orange;[REDACTED]@@.
+}
 
-[[Sit in the front of the lab|Take a seat]]
+/* background styles */
 
-[[Sit in the middle of the lab|Take a seat]]
+html[data-tags~="lab"] body {
+  background-image: url(media/labs.png);
+}
 
-[[Sit in the back of the lab|Take a seat]]</tw-passagedata><tw-passagedata pid="2" name="Take a seat" tags="" position="1756,199" size="100,100">Just as you take a seat, you hear a swivel chair roll up.
+html[data-tags~="lab-red"] body {
+  background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("media/labs.png") no-repeat fixed;
+  background-size: 40%, cover;
+  background-position: 10% bottom, center;
+}
 
-@@.orange;&quot;And she finally shows her face&quot;@@
+html[data-tags~="lab-orange"] body {
+  background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("media/labs.png") no-repeat fixed;
+  background-size: 40%, cover;
+  background-position: 10% bottom, center;
+}
 
-[[&quot;Sorry, I&#39;ve been really busy&quot;]]
+html[data-tags~="lab-yellow"] body {
+  background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("media/labs.png") no-repeat fixed;
+  background-size: 40%, cover;
+  background-position: 10% bottom, center;
+}
 
-[[&quot;Listen, this isn&#39;t the only project I have to worry about&quot;]]
+html[data-tags~="lab-green"] body {
+  background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("media/labs.png") no-repeat fixed;
+  background-size: 40%, cover;
+  background-position: 10% bottom, center;
+}
 
-[[&quot;Let&#39;s just get this over with&quot;]]</tw-passagedata><tw-passagedata pid="3" name="&quot;Sorry, I&#39;ve been really busy&quot;" tags="" position="1581,213" size="100,100">@@.orange;&quot;And I&#39;ve had //so// much free time&quot;@@
+html[data-tags~="lab-blue"] body {
+  background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("media/labs.png") no-repeat fixed;
+  background-size: 40%, cover;
+  background-position: 10% bottom, center;
+}
 
-@@.orange;&quot;Oh wait, I have!&quot;@@
+html[data-tags~="outside"] body {
+  background-image: url(media/college.png);
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Orange Escalation 1 Start" tags="lab" position="1750,51" size="100,100">You look around the lab, but you don&#39;t see @@.orange;[REDACTED]@@.
 
-REDACTED turns his laptop toward you to show a screen filled with code
+[[(Sit in the front of the lab.)|Take a seat]]
+
+[[(Sit in the middle of the lab.)|Take a seat]]
+
+[[(Sit in the back of the lab.)|Take a seat]]</tw-passagedata><tw-passagedata pid="2" name="Take a seat" tags="lab-orange" position="1759,197" size="100,100">Just as you take a seat, you hear a swivel chair roll up.
+
+@@.orange;&quot;And she finally shows her face!&quot;@@
+
+[[&quot;Sorry, I&#39;ve been really busy.&quot;]]
+
+[[&quot;Listen, this isn&#39;t the only project I have to worry about.&quot;]]
+
+[[&quot;Let&#39;s just get this over with.&quot;]]</tw-passagedata><tw-passagedata pid="3" name="&quot;Sorry, I&#39;ve been really busy.&quot;" tags="lab-orange" position="1577,216" size="100,100">@@.orange;&quot;And I&#39;ve had //so// much free time.&quot;@@ He pauses, smirking. @@.orange;&quot;Oh wait, I have!&quot;@@
+
+@@.orange;[REDACTED]@@ turns his laptop toward you to show a screen filled with code.
 
 [[&quot;What is it?&quot;]]
 
-[[&quot;Oh, so you finished the project&quot;]]
+[[&quot;Oh, so you finished the project?&quot;]]
 
-[[&quot;Good for you&quot;]]</tw-passagedata><tw-passagedata pid="4" name="&quot;Listen, this isn&#39;t the only project I have to worry about&quot;" tags="" position="1756,349" size="100,100">@@.orange;&quot;You&#39;re cheating on me?&quot;@@
+[[&quot;Good for you.&quot;]]</tw-passagedata><tw-passagedata pid="4" name="&quot;Listen, this isn&#39;t the only project I have to worry about.&quot;" tags="lab-orange" position="1756,349" size="100,100">@@.orange;&quot;You&#39;re cheating on me?&quot;@@
 
-@@.orange;REDACTED@@ holds both hands to his heart in fake shock
+@@.orange;[REDACTED]@@ holds both hands to his heart in fake shock
 
 [[&quot;Ha ha. Very funny.&quot;]]
 
-[[&quot;Yeah, with a five-page paper&quot;]]</tw-passagedata><tw-passagedata pid="5" name="&quot;Let&#39;s just get this over with&quot;" tags="" position="1907,347" size="100,100">@@.orange;&quot;Oooo feisty. I like it!&quot;@@
+[[&quot;Yeah, with a five-page paper.&quot;]]</tw-passagedata><tw-passagedata pid="5" name="&quot;Let&#39;s just get this over with.&quot;" tags="lab-orange" position="1907,347" size="100,100">@@.orange;&quot;Ooooh feisty. I like it!&quot;@@
 
-@@.orange;REDACTED@@ cackles to himself
+@@.orange;[REDACTED]@@ cackles to himself.
 
-[[&quot;I don&#39;t think you know what &#39;feisty&#39; means&quot;]]
+[[&quot;I don&#39;t think you know what &#39;feisty&#39; means.&quot;]]
 
-[[&quot;I mean it. I don&#39;t want to be here long&quot;]]</tw-passagedata><tw-passagedata pid="6" name="&quot;I don&#39;t think you know what &#39;feisty&#39; means&quot;" tags="" position="2066,573" size="100,100">@@.orange;&quot;Well whatever it was, I was kinda into it&quot;@@
+[[&quot;I mean it. I don&#39;t want to be here long.&quot;]]</tw-passagedata><tw-passagedata pid="6" name="&quot;I don&#39;t think you know what &#39;feisty&#39; means.&quot;" tags="lab-orange" position="2066,573" size="100,100">@@.orange;&quot;Well, whatever it was, I was kinda into it.&quot;@@
 
 [[&quot;Into it?&quot;]]
 
-[[&quot;Can we move on?&quot;]]</tw-passagedata><tw-passagedata pid="7" name="&quot;I mean it. I don&#39;t want to be here long&quot;" tags="" position="2186,582" size="100,100">@@.orange;&quot;Ah come on. What&#39;s the point of a group project if you don&#39;t savor every moment of it? Don&#39;t you like hanging out with me?&quot;@@
+[[&quot;Can we move on?&quot;]]</tw-passagedata><tw-passagedata pid="7" name="&quot;I mean it. I don&#39;t want to be here long.&quot;" tags="lab-orange" position="2184,577" size="100,100">@@.orange;&quot;Aw, come on. What&#39;s the point of a group project if you don&#39;t savor every moment of it? Don&#39;t you like hanging out with me?&quot;@@
 
-[[&quot;Not particularly&quot;]]
+[[&quot;Not particularly.&quot;]]
 
-[[&quot;I have other things to get to&quot;]]</tw-passagedata><tw-passagedata pid="8" name="&quot;Ha ha. Very funny.&quot;" tags="" position="1708,544" size="100,100">@@.orange;REDACTED@@ shifts into a strange pout and pretends to be heartbroken
+[[&quot;I have other things to get to.&quot;]]</tw-passagedata><tw-passagedata pid="8" name="&quot;Ha ha. Very funny.&quot;" tags="lab-orange" position="1708,544" size="100,100">@@.orange;REDACTED@@ shifts into a strange pout and pretends to be heartbroken
 
 @@.orange;&quot;You don&#39;t like my jokes&quot;@@
 
-[[&quot;You can joke once we have some work done&quot;]]
-[[&quot;I don&#39;t, so cut it out&quot;]]</tw-passagedata><tw-passagedata pid="9" name="&quot;Yeah, with a five-page paper&quot;" tags="" position="1886,496" size="100,100">@@.orange;REDACTED@@ puts his open hand next to his mouth as if to conceal his words
+[[&quot;You can joke once we have some work done.&quot;]]
+
+[[&quot;I don&#39;t, so cut it out.&quot;]]</tw-passagedata><tw-passagedata pid="9" name="&quot;Yeah, with a five-page paper.&quot;" tags="lab-orange" position="1886,496" size="100,100">@@.orange;[REDACTED]@@ puts his open hand next to his mouth as if to conceal his words.
 
 &quot;How is he in the sheets?&quot;
 
-[[(Glare)]]
-[[&quot;Oh wouldn&#39;t you like to know&quot;]]</tw-passagedata><tw-passagedata pid="10" name="&quot;What is it?&quot;" tags="" position="1344,229" size="100,100">@@.orange;&quot;I won&#39;t waste your time explaining something you probably don&#39;t understand.&quot;@@
+[[(Glare at him.)]]
 
-[[&quot;You&#39;ve wasted my time so far&quot;]]
+[[&quot;Oh, wouldn&#39;t you like to know.&quot;]]</tw-passagedata><tw-passagedata pid="10" name="&quot;What is it?&quot;" tags="lab-orange" position="1342,229" size="100,100">@@.orange;&quot;I won&#39;t waste your time explaining something you probably don&#39;t understand.&quot;@@
 
-[[&quot;Try me&quot;]]
+[[&quot;You&#39;ve wasted my time so far.&quot;]]
 
-[[&quot;Then let&#39;s actually start working&quot;|(Start Working)]]</tw-passagedata><tw-passagedata pid="11" name="&quot;Oh, so you finished the project&quot;" tags="" position="1412,496" size="100,100">@@.orange;&quot;You wish. I haven&#39;t even looked at the rubric. It sounded pretty easy from the way@@ @@.purple;REDACTED@@ @@.orange;described it though. I&#39;m sure I could just do it tonight on my own if I wanted.&quot;@@
+[[&quot;Try me.&quot;]]
 
-[[&quot;Then do it&quot;]]
-[[&quot;That&#39;s a relief&quot;]]</tw-passagedata><tw-passagedata pid="12" name="&quot;Good for you&quot;" tags="" position="1593,426" size="100,100">@@.orange;&quot;Thank you, thank you. You know I try so hard just to impress you.&quot;@@
+[[&quot;Then let&#39;s actually start working&quot;|(Start working.)]]</tw-passagedata><tw-passagedata pid="11" name="&quot;Oh, so you finished the project?&quot;" tags="lab-orange" position="1412,496" size="100,100">@@.orange;&quot;You wish. I haven&#39;t even looked at the rubric. It sounded pretty easy from the way@@ @@.purple;[REDACTED]@@ @@.orange;described it though. I&#39;m sure I could just do it tonight on my own if I wanted.&quot;@@
 
-[[&quot;I&#39;m not impressed&quot;]]
+[[&quot;Then do it.&quot;]]
 
-[[&quot;Please don&#39;t&quot;]]</tw-passagedata><tw-passagedata pid="13" name="&quot;You can joke once we have some work done&quot;" tags="" position="1650,699" size="100,100">@@.orange;&quot;Okay fun police.&quot;@@
+[[&quot;That&#39;s a relief.&quot;]]</tw-passagedata><tw-passagedata pid="12" name="&quot;Good for you.&quot;" tags="lab-orange" position="1593,426" size="100,100">@@.orange;&quot;Thank you, thank you. You know I try so hard just to impress you.&quot;@@
 
-[[(Start Working)]]</tw-passagedata><tw-passagedata pid="14" name="&quot;I don&#39;t, so cut it out&quot;" tags="" position="1907,807" size="100,100">@@.orange;&quot;Fine, fine. I&#39;ll give you a little break, but I&#39;m not leaving this lab until I get a laugh out of you.&quot;@@
+[[&quot;I&#39;m not impressed.&quot;]]
 
-[[(Start Working)]]</tw-passagedata><tw-passagedata pid="15" name="(Glare)" tags="" position="1962,933" size="100,100">@@.orange;&quot;Fine, fine. I&#39;ll quit it.&quot;@@
+[[&quot;Please don&#39;t.&quot;]]</tw-passagedata><tw-passagedata pid="13" name="&quot;You can joke once we have some work done.&quot;" tags="lab-orange" position="1648,700" size="100,100">@@.orange;&quot;Okay, fun police.&quot;@@
 
-He pauses and then smirks and lowers his voice
+[[(Start working.)]]</tw-passagedata><tw-passagedata pid="14" name="&quot;I don&#39;t, so cut it out.&quot;" tags="lab-orange" position="1908,808" size="100,100">@@.orange;&quot;Fine, fine. I&#39;ll give you a little break, but I&#39;m not leaving this lab until I get a laugh out of you.&quot;@@
+
+[[(Start working.)]]</tw-passagedata><tw-passagedata pid="15" name="(Glare at him.)" tags="" position="1962,933" size="100,100">@@.orange;&quot;Fine, fine. I&#39;ll quit it.&quot;@@
+
+He pauses and then smirks and lowers his voice.
 
 @@.orange;&quot;For now...&quot;@@
 
-[[(Start Working)]]</tw-passagedata><tw-passagedata pid="16" name="&quot;Oh wouldn&#39;t you like to know&quot;" tags="" position="1786,717" size="100,100">@@.orange;REDACTED@@ laughs hard and looks around as if to advertise that he just heard the funniest thing in his life. He points at you and addresses everyone in his immediate vicinity.
+[[(Start working.)]]</tw-passagedata><tw-passagedata pid="16" name="&quot;Oh, wouldn&#39;t you like to know.&quot;" tags="lab-orange" position="1781,718" size="100,100">@@.orange;[REDACTED]@@ laughs hard and looks around as if to advertise that he just heard the funniest thing in his life. He points at you and addresses everyone in his immediate vicinity.
 
-@@.orange;&quot;I think I like this kid&quot;@@
+@@.orange;&quot;I think I like this kid.&quot;@@
 
-[[(Start Working)]] </tw-passagedata><tw-passagedata pid="17" name="&quot;Then do it&quot;" tags="" position="1257,664" size="100,100">@@.orange;&quot;Where&#39;s the fun in that! Don&#39;t you enjoy this quality bonding time?&quot;@@
+[[(Start working.)]] </tw-passagedata><tw-passagedata pid="17" name="&quot;Then do it.&quot;" tags="lab-orange" position="1257,664" size="100,100">@@.orange;&quot;Where&#39;s the fun in that? Don&#39;t you enjoy this quality bonding time?&quot;@@
 
-[[Say nothing and open the assignment|(Start Working)]]</tw-passagedata><tw-passagedata pid="18" name="&quot;That&#39;s a relief&quot;" tags="" position="1272,986" size="100,100">@@.orange;&quot;Yeah, but don&#39;t worry. I&#39;ll let you help.&quot;@@
+[[Say nothing and open the assignment|(Start working.)]]</tw-passagedata><tw-passagedata pid="18" name="&quot;That&#39;s a relief.&quot;" tags="lab-orange" position="1270,986" size="100,100">@@.orange;&quot;Yeah, but don&#39;t worry. I&#39;ll let you help.&quot;@@
 
-[[&quot;Thanks?&quot;|(Start Working)]]</tw-passagedata><tw-passagedata pid="19" name="&quot;You&#39;ve wasted my time so far&quot;" tags="" position="1087,760" size="100,100">@@.orange;&quot;It&#39;s the least I can do after you pushed this meeting back so far.&quot;@@
+[[&quot;Thanks?&quot;|(Start working.)]]</tw-passagedata><tw-passagedata pid="19" name="&quot;You&#39;ve wasted my time so far.&quot;" tags="lab-orange" position="1087,760" size="100,100">@@.orange;&quot;It&#39;s the least I can do after you pushed this meeting back so far.&quot;@@
 
-[[(Start Working)]]</tw-passagedata><tw-passagedata pid="20" name="&quot;Try me&quot;" tags="" position="1158,899" size="100,100">@@.orange;REDACTED@@ goes on for a while explaining compilers in what eventually boils down to him trying to mess with how a piece of software works since he wasn&#39;t satisfied with it. 
+[[(Start working.)]]</tw-passagedata><tw-passagedata pid="20" name="&quot;Try me.&quot;" tags="lab-orange" position="1158,899" size="100,100">@@.orange;[REDACTED]@@ goes on for a while explaining compilers in what eventually boils down to him trying to mess with how a piece of software works since he wasn&#39;t satisfied with it. 
 
-@@.orange;&quot;And it almost works&quot;@@
+@@.orange;&quot;And it almost works.&quot;@@
 
-[[(Open the assignment at your computer)|(Start Working)]]</tw-passagedata><tw-passagedata pid="21" name="(Start Working)" tags="" position="1759,1055" size="100,100">You and @@.orange;[REDACTED]@@ look at the full description of the assignment.
+[[(Open the assignment at your computer.)|(Start working.)]]</tw-passagedata><tw-passagedata pid="21" name="(Start working.)" tags="lab-orange" position="1759,1055" size="100,100">You and @@.orange;[REDACTED]@@ look at the full description of the assignment.
 
-[[&gt;&gt;|You put up with his jokes]]</tw-passagedata><tw-passagedata pid="22" name="&quot;Into it?&quot;" tags="" position="2045,775" size="100,100">@@.orange;&quot;You know.&quot;@@
+[[&gt;&gt;|You put up with his jokes.]]</tw-passagedata><tw-passagedata pid="22" name="&quot;Into it?&quot;" tags="lab-orange" position="2045,775" size="100,100">@@.orange;&quot;You know.&quot;@@
 
-He winks
+He winks.
 
-[[(Glare)]]</tw-passagedata><tw-passagedata pid="23" name="&quot;Can we move on?&quot;" tags="" position="2122,970" size="100,100">@@.orange;&quot;You can. I&#39;m enjoying it over here though.&quot;@@
+[[(Glare at him.)]]</tw-passagedata><tw-passagedata pid="23" name="&quot;Can we move on?&quot;" tags="lab-orange" position="2122,970" size="100,100">@@.orange;&quot;You can. I&#39;m enjoying it over here though.&quot;@@
 
-He leans back in his chair
+He leans back in his chair.
 
-[[(Say nothing and open the assignment)|(Start Working)]]</tw-passagedata><tw-passagedata pid="24" name="&quot;I&#39;m not impressed&quot;" tags="" position="1458,644" size="100,100">@@.orange;&quot;Then I guess I&#39;ll just have to try harder&quot;@@
+[[(Say nothing and open the assignment.)|(Start working.)]]</tw-passagedata><tw-passagedata pid="24" name="&quot;I&#39;m not impressed.&quot;" tags="lab-orange" position="1458,644" size="100,100">@@.orange;&quot;Then I guess I&#39;ll just have to try harder.&quot;@@
 
-[[&quot;Please don&#39;t&quot;]]
-[[(Say nothing and open the assignment)|(Start Working)]]</tw-passagedata><tw-passagedata pid="25" name="&quot;Please don&#39;t&quot;" tags="" position="1546,812" size="100,100">@@.orange;&quot;See, you say that, but you don&#39;t //mean// it.&quot;@@
+[[&quot;Please don&#39;t.&quot;]]
 
-[[&quot;I do mean it&quot;]]
-[[Say nothing and open the assignment|(Start Working)]]</tw-passagedata><tw-passagedata pid="26" name="&quot;I do mean it&quot;" tags="" position="1449,1012" size="100,100">@@.orange;&quot;Um, okay. Jeez.&quot;@@
+[[(Say nothing and open the assignment.)|(Start working.)]]</tw-passagedata><tw-passagedata pid="25" name="&quot;Please don&#39;t.&quot;" tags="lab-orange" position="1546,812" size="100,100">@@.orange;&quot;See, you say that, but you don&#39;t //mean// it.&quot;@@
 
-[[(Start Working)]] </tw-passagedata><tw-passagedata pid="27" name="&quot;Not particularly&quot;" tags="" position="2177,819" size="100,100">@@.orange;&quot;Well I guess I&#39;ll just have to change your mind then.&quot;@@
+[[&quot;I do mean it.&quot;]]
 
-[[(Start Working)]] </tw-passagedata><tw-passagedata pid="28" name="&quot;I have other things to get to&quot;" tags="" position="2303,909" size="100,100">@@.orange;&quot;Don&#39;t worry. I&#39;ll let you free eventually.&quot;@@
+[[Say nothing and open the assignment|(Start working.)]]</tw-passagedata><tw-passagedata pid="26" name="&quot;I do mean it.&quot;" tags="lab-orange" position="1449,1012" size="100,100">@@.orange;&quot;Um, okay. Jeez.&quot;@@
 
-[[(Start Working)]] </tw-passagedata><tw-passagedata pid="29" name="You put up with his jokes" tags="" position="1872,1180" size="100,100">As you open up and scroll through the requirements, you notice that @@.orange;[REDACTED]@@ is distracted by his own laptop.
+[[(Start working.)]] </tw-passagedata><tw-passagedata pid="27" name="&quot;Not particularly.&quot;" tags="" position="2177,819" size="100,100">@@.orange;&quot;Well, I guess I&#39;ll just have to change your mind then.&quot;@@
+
+[[(Start working.)]] </tw-passagedata><tw-passagedata pid="28" name="&quot;I have other things to get to.&quot;" tags="lab-orange" position="2301,909" size="100,100">@@.orange;&quot;Don&#39;t worry. I&#39;ll let you free eventually.&quot;@@
+
+[[(Start working.)]] </tw-passagedata><tw-passagedata pid="29" name="You put up with his jokes." tags="lab-orange" position="1872,1180" size="100,100">As you open up and scroll through the requirements, you notice that @@.orange;[REDACTED]@@ is distracted by his own laptop.
 
 [[&quot;Are you looking over the assignment?&quot;]]
-[[(Start listing the expectations)]]</tw-passagedata><tw-passagedata pid="30" name="&quot;Are you looking over the assignment?&quot;" tags="" position="1651,1263" size="100,100">@@.orange;&quot;Ummmmm. Sure.&quot;@@
+
+[[(Start listing the expectations.)]]</tw-passagedata><tw-passagedata pid="30" name="&quot;Are you looking over the assignment?&quot;" tags="lab-orange" position="1651,1263" size="100,100">@@.orange;&quot;Ummmmm. Sure.&quot;@@
 
 He moves his laptop away from you while clearly revealing that he&#39;s playing some sort of strategy game with anime characters in a high fantasy setting.
 
-[[&quot;Can we stay on topic?&quot;|(Start listing the expectations)]]
+[[&quot;Can we stay on topic?&quot;|(Start listing the expectations.)]]
 
-[[(Ignore and go over requirements)|(Start listing the expectations)]]</tw-passagedata><tw-passagedata pid="31" name="(Start listing the expectations)" tags="" position="1830,1368" size="100,100">@@.orange;REDACTED@@ dramatically closes his laptop and lets out a big, sarcastic sigh.
+[[(Ignore it and go over requirements.)|(Start listing the expectations.)]]</tw-passagedata><tw-passagedata pid="31" name="(Start listing the expectations.)" tags="lab-orange" position="1830,1368" size="100,100">@@.orange;[REDACTED]@@ dramatically closes his laptop and lets out a big, sarcastic sigh.
 
 You try to explain what needs to be done by next week while he nods along and occasionally interupts with a joke.
 
-[[(It&#39;s getting late and you need to leave)]]</tw-passagedata><tw-passagedata pid="32" name="(It&#39;s getting late and you need to leave)" tags="" position="1940,1525" size="100,100">Before heading out, you reach the agreement that you&#39;ll each do a certain portion of the assignment by the next week. If there are any problems, you&#39;ll message each other.
+[[(It&#39;s getting late and you need to leave.)]]</tw-passagedata><tw-passagedata pid="32" name="(It&#39;s getting late and you need to leave.)" tags="lab-orange" position="1940,1525" size="100,100">Before heading out, you reach the agreement that you&#39;ll each do a certain portion of the assignment by the next week. If there are any problems, you&#39;ll message each other.
 
 @@.orange;[REDACTED]@@ mouths &quot;call me&quot; as you leave and holds his hand up to his ear like a phone. You then see him roll his chair over to another group&#39;s conversation, which he quickly takes over.
 
-[[&gt;&gt;|Orange Text 2 Transition]]</tw-passagedata><tw-passagedata pid="33" name="Orange Text 1 Start" tags="text" position="201,100" size="100,100">&lt;&lt;set $assertiveness to 0&gt;&gt;&lt;&lt;set $friendliness to 0&gt;&gt;&lt;&lt;set $attentiveness to 0&gt;&gt;It&#39;s the evening after the first day of class. You&#39;re getting ready for bed and your phone buzzes with a text message of a single emoji.
+[[&gt;&gt;|Orange Text 2 Transition]]</tw-passagedata><tw-passagedata pid="33" name="Orange Text 1 Start" tags="text" position="139,91" size="100,100">&lt;&lt;set $assertiveness to 0&gt;&gt;&lt;&lt;set $friendliness to 0&gt;&gt;&lt;&lt;set $attentiveness to 0&gt;&gt;It&#39;s the evening after the first day of class. You&#39;re getting ready for bed and your phone buzzes with a text message of a single emoji.
 
-👀
+[[&gt;&gt;|eyes]]</tw-passagedata><tw-passagedata pid="34" name="hello?" tags="text" position="201,250" size="100,100">@@.orange;hey, it&#39;s REDACTED. just checking out your DMs lol@@
 
-[[&quot;hello?&quot;]]</tw-passagedata><tw-passagedata pid="34" name="&quot;hello?&quot;" tags="text" position="201,250" size="100,100">@@.orange;hey, it&#39;s REDACTED. just checking out your DMs lol@@
+[[that&#39;s not weird at all]]
 
-[[&quot;that&#39;s not weird at all&quot;]]
+[[have you looked over the project yet?]]</tw-passagedata><tw-passagedata pid="35" name="that&#39;s not weird at all" tags="text" position="126,400" size="100,100">@@.orange;maybe I should try harder next time then@@
 
-[[&quot;have you looked over the project yet?&quot;]]</tw-passagedata><tw-passagedata pid="35" name="&quot;that&#39;s not weird at all&quot;" tags="text" position="126,400" size="100,100">@@.orange;&quot;maybe I should try harder next time then&quot;@@
+[[please don&#39;t]]
 
-[[&quot;please don&#39;t&quot;]]
+[[have you looked over the project yet?]]</tw-passagedata><tw-passagedata pid="36" name="have you looked over the project yet?" tags="text" position="399,500" size="100,100">@@.orange;oh yeah, I talked to@@ @@.purple;[REDACTED]@@ @@.orange;about it. it sounds easy@@
 
-[[&quot;have you looked over the project yet?&quot;]]</tw-passagedata><tw-passagedata pid="36" name="&quot;have you looked over the project yet?&quot;" tags="text" position="399,500" size="100,100">@@.orange;&quot;oh yeah, I talked to@@ @@.purple;[REDACTED]@@ @@.orange;about it. It sounds easy&quot;@@
+[[we have to start it soon. there&#39;s a milestone coming up]]
 
-[[&quot;we have to start it soon. there&#39;s a milestone coming up&quot;]]
+[[did he give you any advice?]]</tw-passagedata><tw-passagedata pid="37" name="please don&#39;t" tags="text" position="126,550" size="100,100">@@.orange;👁️👃👁️@@
 
-[[&quot;did he give you any advice?&quot;]]</tw-passagedata><tw-passagedata pid="37" name="&quot;please don&#39;t&quot;" tags="text" position="126,550" size="100,100">👁️👃👁️
+[[seriously, cut it out]]
 
-[[&quot;seriously, cut it out&quot;]]
+[[was there something you needed?]]
 
-[[&quot;was there something you needed?&quot;]]
+[[have you looked over the project yet?]]</tw-passagedata><tw-passagedata pid="38" name="seriously, cut it out" tags="text" position="51,700" size="100,100">@@.orange;triggered much? lol@@
 
-[[&quot;have you looked over the project yet?&quot;]]</tw-passagedata><tw-passagedata pid="38" name="&quot;seriously, cut it out&quot;" tags="text" position="51,700" size="100,100">@@.orange;&quot;Triggered much? lol&quot;@@
+[[have you looked over the project yet?]]</tw-passagedata><tw-passagedata pid="39" name="was there something you needed?" tags="text" position="199,700" size="100,100">@@.orange;oh yeah, I wanted to show you this@@
 
-[[&quot;have you looked over the project yet?&quot;]]</tw-passagedata><tw-passagedata pid="39" name="&quot;was there something you needed?&quot;" tags="text" position="201,700" size="100,100">@@.orange;&quot;oh yeah, I wanted to show you this&quot;@@
+he sends an image that reads &#39;Arguing with a women is like reading the Software License Agreement. In the end, you ignore everything and click &quot;I agree&quot;&#39;
 
-he sends an image that reads &#39;Arguing with a women is like reading the Software License Agreement. In the end, you ignore everything and click &quot;I agree&#39;
+@@.orange;it reminded me of you@@
 
-@@.orange;&quot;it reminded me of you&quot;@@
+[[why?]]
 
-[[&quot;why?&quot;]]
+[[that&#39;s messed up|seriously, cut it out]]
 
-[[&quot;that&#39;s messed up&quot;|&quot;seriously, cut it out&quot;]]
+[[can we talk about the project instead?|have you looked over the project yet?]]</tw-passagedata><tw-passagedata pid="40" name="why?" tags="text" position="201,850" size="100,100">@@.orange;well, you&#39;re a girl. and you understand some tech stuff I guess@@
 
-[[&quot;can we talk about the project instead?&quot;|&quot;have you looked over the project yet?&quot;]]</tw-passagedata><tw-passagedata pid="40" name="&quot;why?&quot;" tags="text" position="201,850" size="100,100">@@.orange;&quot;well, you&#39;re a girl. And you understand some tech stuff I guess&quot;@@
+[[can we talk about the project instead?|have you looked over the project yet?]]</tw-passagedata><tw-passagedata pid="41" name="we have to start it soon. there&#39;s a milestone coming up" tags="text" position="598,702" size="100,100">@@.orange;it shouldn&#39;t take that long@@
 
-[[&quot;can we talk about the project instead?&quot;|&quot;have you looked over the project yet?&quot;]]</tw-passagedata><tw-passagedata pid="41" name="&quot;we have to start it soon. there&#39;s a milestone coming up&quot;" tags="text" position="598,702" size="100,100">@@.orange;&quot;it shouldn&#39;t take that long&quot;@@
+[[But it&#39;s worth a lot of our grade]]
 
-[[&quot;but it&#39;s worth a lot of our grade&quot;]]
+[[We have to do it at some point]]</tw-passagedata><tw-passagedata pid="42" name="did he give you any advice?" tags="text" position="601,502" size="100,100">@@.orange;yeah, he said not to start it too late@@
 
-[[&quot;we have to do it at some point&quot;]]</tw-passagedata><tw-passagedata pid="42" name="&quot;did he give you any advice?&quot;" tags="text" position="601,502" size="100,100">@@.orange;&quot;yeah, he said not to start it too late&quot;@@
+@@.orange;but I don&#39;t think he realizes how quickly I work@@
 
-@@.orange;&quot;but I don&#39;t think he realizes how quickly I work&quot;@@
+[[then can we meet sometime this week to start?]]</tw-passagedata><tw-passagedata pid="43" name="But it&#39;s worth a lot of our grade" tags="text" position="519,852" size="100,100">@@.orange;I&#39;ve heard@@ @@.purple;REDACTED@@ @@.orange;tends to curve everyone&#39;s grades up anyway@@
 
-[[&quot;then can we meet sometime this week to start?&quot;]]</tw-passagedata><tw-passagedata pid="43" name="&quot;but it&#39;s worth a lot of our grade&quot;" tags="text" position="523,852" size="100,100">@@.orange;&quot;I&#39;ve heard@@ @@.purple;REDACTED@@ @@.orange;tends to curve everyone&#39;s grades up anyway&quot;@@
+[[I&#39;d rather not count on a curve for my grade]]</tw-passagedata><tw-passagedata pid="44" name="We have to do it at some point" tags="text" position="673,852" size="100,100">@@.orange;ugh fine@@
 
-[[&quot;I&#39;d rather not count on a curve for my grade&quot;]]</tw-passagedata><tw-passagedata pid="44" name="&quot;we have to do it at some point&quot;" tags="text" position="673,852" size="100,100">@@.orange;&quot;uh, fine&quot;@@
+@@.orange;when can we get this over with then?@@
 
-@@.orange;&quot;when can we get this over with then?&quot;@@
+[[I was thinking we could meet in the labs this week|I was thinking more like the labs]]</tw-passagedata><tw-passagedata pid="45" name="I&#39;d rather not count on a curve for my grade" tags="text" position="523,1002" size="100,100">@@.orange;I can teach you C++@@
 
-[[&quot;I was thinking we could meet in the labs this week&quot;|&quot;I was thinking more like the labs&quot;]]</tw-passagedata><tw-passagedata pid="45" name="&quot;I&#39;d rather not count on a curve for my grade&quot;" tags="text" position="523,1002" size="100,100">@@.orange;&quot;I can teach you C++&quot;@@
+[[I don&#39;t need your help]]
+[[can you just do your share of the project?]]</tw-passagedata><tw-passagedata pid="46" name="I was thinking more like the labs" tags="text" position="803,1097" size="100,100">@@.orange;Sure, whatever. I was gonna hang out there tomorrow anyway@@
 
-[[&quot;I don&#39;t need your help&quot;]]
-[[&quot;can you just do your share of the project?&quot;]]</tw-passagedata><tw-passagedata pid="46" name="&quot;I was thinking more like the labs&quot;" tags="text" position="803,1097" size="100,100">@@.orange;&quot;sure, whatever. I was gonna hang out there tomorrow anyway&quot;@@
+[[See you then]]
 
-[[&quot;see you then&quot;]]
+[[(Don&#39;t respond.)]]</tw-passagedata><tw-passagedata pid="47" name="I don&#39;t need your help" tags="text" position="448,1152" size="100,100">@@.orange;&quot;so you do want to work on the project alone. got it&quot;@@
 
-[[(don&#39;t respond)]]</tw-passagedata><tw-passagedata pid="47" name="&quot;I don&#39;t need your help&quot;" tags="text" position="448,1152" size="100,100">@@.orange;&quot;so you do want to work on the project alone. got it&quot;@@
+[[can we just meet in the labs sometime this week?|I was thinking more like the labs]]</tw-passagedata><tw-passagedata pid="48" name="can you just do your share of the project?" tags="text" position="596,1152" size="100,100">@@.orange;I could do your share too if you were a little nicer@@
 
-[[&quot;can we just meet in the labs sometime this week?&quot;|&quot;I was thinking more like the labs&quot;]]</tw-passagedata><tw-passagedata pid="48" name="&quot;can you just do your share of the project?&quot;" tags="text" position="598,1152" size="100,100">@@.orange;&quot;I could do your share too if you were a little nicer&quot;@@
+[[I&#39;ll do my own work, thanks]]
 
-[[&quot;I&#39;ll do my own work, thanks&quot;]]
+[[are you free to go over the requirements in the lab anytime soon?|I was thinking more like the labs]]</tw-passagedata><tw-passagedata pid="49" name="then can we meet sometime this week to start?" tags="text" position="792,498" size="100,100">@@.orange;how forward of you@@
 
-[[&quot;Are you free to go over the requirements in the lab anytime soon?&quot;|&quot;I was thinking more like the labs&quot;]]</tw-passagedata><tw-passagedata pid="49" name="&quot;then can we meet sometime this week to start?&quot;" tags="text" position="794,498" size="100,100">@@.orange;&quot;how forward of you&quot;@@
+@@.orange;should we meet at my place or yours?@@
 
-@@.orange;&quot;should we meet at my place or yours?&quot;@@
+[[I was thinking more like the labs]]
 
-[[&quot;I was thinking more like the labs&quot;]]
+[[Neither]]</tw-passagedata><tw-passagedata pid="50" name="Neither" tags="text" position="779,648" size="100,100">@@.orange;Then how am I supposed to give you a private lesson? 😉@@
 
-[[&quot;neither&quot;]]</tw-passagedata><tw-passagedata pid="50" name="&quot;neither&quot;" tags="text" position="794,648" size="100,100">@@.orange;&quot;then how am I supposed to give you a private lesson? 😉&quot;@@
+[[I don&#39;t need your help]]</tw-passagedata><tw-passagedata pid="51" name="I&#39;ll do my own work, thanks" tags="text" position="598,1302" size="100,100">@@.orange;okay bossy pants@@
 
-[[&quot;I don&#39;t need your help&quot;]]</tw-passagedata><tw-passagedata pid="51" name="&quot;I&#39;ll do my own work, thanks&quot;" tags="text" position="598,1302" size="100,100">@@.orange;&quot;okay bossy pants&quot;
+@@.orange;if you&#39;re really so obsessed with starting this project, I&#39;ll be in the labs all day tomorrow@@
 
-&quot;if you&#39;re really so obsessed with starting this project, I&#39;ll be in the labs all day tomorrow&quot;@@
+[[That works]]</tw-passagedata><tw-passagedata pid="52" name="That works" tags="text" position="598,1452" size="100,100">@@.orange;👍@@
 
-[[&quot;that works&quot;]]</tw-passagedata><tw-passagedata pid="52" name="&quot;that works&quot;" tags="text" position="598,1452" size="100,100">👍
+[[&gt;&gt;|Orange Escalation 1 Start]]</tw-passagedata><tw-passagedata pid="53" name="See you then" tags="text" position="798,1343" size="100,100">@@.orange;😘@@
 
-[[&gt;&gt;|Orange Escalation 1 Start]]</tw-passagedata><tw-passagedata pid="53" name="&quot;see you then&quot;" tags="text" position="728,1247" size="100,100">😘
-
-[[&gt;&gt;|Orange Escalation 1 Start]]</tw-passagedata><tw-passagedata pid="54" name="(don&#39;t respond)" tags="text" position="878,1247" size="100,100">@@.orange;[REDACTED]@@ stops messaging you
+[[&gt;&gt;|Orange Escalation 1 Start]]</tw-passagedata><tw-passagedata pid="54" name="(Don&#39;t respond.)" tags="text" position="953,1297" size="100,100">@@.orange;[REDACTED]@@ stops messaging you.
 
 [[&gt;&gt;|Orange Escalation 1 Start]]
-</tw-passagedata><tw-passagedata pid="55" name="Orange Text 2 Start" tags="text" position="2858,10" size="100,100">@@.orange;&quot;uh, you still sure you want to do half of the project on your own?&quot;@@
+</tw-passagedata><tw-passagedata pid="55" name="Orange Text 2 Start" tags="text" position="2858,10" size="100,100">@@.orange;uh, you still sure you want to do half of the project on your own?@@
 
-[[&quot;yeah, why?&quot;]]
+[[Yeah, why?]]
 
-[[&quot;I&#39;m almost done with my half&quot;]]
+[[I&#39;m almost done with my half]]
 
-[[&quot;have you done any of the project yet?&quot;]]</tw-passagedata><tw-passagedata pid="56" name="&quot;yeah, why?&quot;" tags="text" position="2707,156" size="100,100">@@.orange;&quot;Well it&#39;s just that your code&#39;s not very uh...&quot;@@
+[[have you done any of the project yet?]]</tw-passagedata><tw-passagedata pid="56" name="Yeah, why?" tags="text" position="2707,156" size="100,100">@@.orange;well it&#39;s just that your code&#39;s not very uh...@@
 
-@@.orange;&quot;efficient&quot;@@
+@@.orange;Efficient@@
 
-[[&quot;could you clarify?&quot;]]
+[[could you clarify?]]
 
-[[&quot;it works fine&quot;]]
+[[it works fine]]
 
-[[&quot;we&#39;re not being graded on efficiency&quot;]]</tw-passagedata><tw-passagedata pid="57" name="&quot;I&#39;m almost done with my half&quot;" tags="text" position="2990,57" size="100,100">@@.orange;&quot;Well we still have a little bit of time left&quot;@@
+[[we&#39;re not being graded on efficiency]]</tw-passagedata><tw-passagedata pid="57" name="I&#39;m almost done with my half" tags="text" position="2988,135" size="100,100">@@.orange;Well we still have a little bit of time left@@
 
-[[&quot;do you want to rewrite my code?&quot;]]
+[[do you want to rewrite my code?]]
 
-</tw-passagedata><tw-passagedata pid="58" name="&quot;have you done any of the project yet?&quot;" tags="text" position="3144,154" size="100,100">@@.orange;&quot;I&#39;m pretty much done&quot;@@
+</tw-passagedata><tw-passagedata pid="58" name="have you done any of the project yet?" tags="text" position="3144,154" size="100,100">@@.orange;I&#39;m pretty much done@@
 
-[[&quot;why haven&#39;t you pushed anything?&quot;]]
+[[why haven&#39;t you pushed anything?]]
 
-[[&quot;how much do you have left?&quot;]]</tw-passagedata><tw-passagedata pid="59" name="&quot;could you clarify?&quot;" tags="text" position="2457,329" size="100,100">@@.orange;&quot;I don&#39;t know how to explain it in a way you&#39;d understand&quot;@@
+[[how much do you have left?]]</tw-passagedata><tw-passagedata pid="59" name="could you clarify?" tags="text" position="2457,329" size="100,100">@@.orange;I don&#39;t know how to explain it in a way you&#39;d understand@@
 
-@@.orange;&quot;it&#39;s just kinda messy&quot;@@
+@@.orange;it&#39;s just kinda messy@@
 
-[[&quot;what do you think I wouldn&#39;t understand?&quot;]]
+[[what do you think I wouldn&#39;t understand?]]
 
-[[&quot;messy?&quot;|&quot;what are you talking about?&quot;]]</tw-passagedata><tw-passagedata pid="60" name="&quot;it works fine&quot;" tags="text" position="2790,729" size="100,100">@@.orange;&quot;I&#39;m just saying it could work a little better&quot;@@
+[[messy?|what are you talking about?]]</tw-passagedata><tw-passagedata pid="60" name="it works fine" tags="text" position="2790,729" size="100,100">@@.orange;I&#39;m just saying it could work a little better@@
 
-@@.orange;&quot;We can go over it tomorrow&quot;@@
+@@.orange;we can go over it tomorrow@@
 
-[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="61" name="&quot;we&#39;re not being graded on efficiency&quot;" tags="text" position="2887,453" size="100,100">@@.orange;&quot;Yeah, but like&quot;@@
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="61" name="we&#39;re not being graded on efficiency" tags="text" position="2887,453" size="100,100">@@.orange;yeah, but like@@
 
-@@.orange;&quot;Why wouldn&#39;t we at least try?&quot;@@
+@@.orange;why wouldn&#39;t we at least try?@@
 
-[[&quot;because this project is enough work as is&quot;]]
+[[because this project is enough work as is]]
 
-[[&quot;because my code already works&quot;|&quot;it works fine&quot;]]</tw-passagedata><tw-passagedata pid="62" name="&quot;what do you think I wouldn&#39;t understand?&quot;" tags="text" position="2640,468" size="100,100">@@.orange;&quot;Don&#39;t worry, you&#39;re doing great! 👍&quot;@@
+[[because my code already works|it works fine]]</tw-passagedata><tw-passagedata pid="62" name="what do you think I wouldn&#39;t understand?" tags="text" position="2640,468" size="100,100">@@.orange;don&#39;t worry, you&#39;re doing great! 👍@@
 
-@@.orange;&quot;You could just do better lol&quot;@@
+@@.orange;you could just do better lol@@
 
-@@.orange;&quot;But I&#39;ve definitely seen some progress!&quot;@@
+@@.orange;but I&#39;ve definitely seen some progress!@@
 
-[[&quot;what are you talking about?&quot;]]
+[[what are you talking about?]]
 
-[[&quot;thanks I guess?&quot;]]
+[[thanks I guess?]]
 
-[[&quot;speaking of, where&#39;s your progress?&quot;|&quot;why haven&#39;t you pushed anything?&quot;]]</tw-passagedata><tw-passagedata pid="63" name="&quot;why haven&#39;t you pushed anything?&quot;" tags="text" position="3022,336" size="100,100">@@.orange;&quot;This stupid IDE that we&#39;re forced to use refuses to run my code&quot;@@
+[[speaking of, where&#39;s your progress?|why haven&#39;t you pushed anything?]]</tw-passagedata><tw-passagedata pid="63" name="why haven&#39;t you pushed anything?" tags="text" position="3022,336" size="100,100">@@.orange;this stupid IDE that we&#39;re forced to use refuses to run my code@@
 
-[[&quot;are you sure it&#39;s not just your code?&quot;]]
+[[are you sure it&#39;s not just your code?]]
 
-[[&quot;could you push the parts that work?&quot;]]</tw-passagedata><tw-passagedata pid="64" name="&quot;how much do you have left?&quot;" tags="text" position="3277,324" size="100,100">@@.orange;&quot;I mean it&#39;s all there&quot;@@
+[[could you push the parts that work?]]</tw-passagedata><tw-passagedata pid="64" name="how much do you have left?" tags="text" position="3277,324" size="100,100">@@.orange;I mean it&#39;s all there@@
 
-@@.orange;&quot;It just doesn&#39;t really run, y&#39;know&quot;@@
+@@.orange;it just doesn&#39;t really run, y&#39;know@@
 
-@@.orange;&quot;It&#39;s this dumb IDE we&#39;re using&quot;@@
+@@.orange;it&#39;s this dumb IDE we&#39;re using@@
 
-[[&quot;you need to hurry, it&#39;s due this Friday&quot;]]
+[[you need to hurry, it&#39;s due this Friday]]
 
-[[&quot;I thought you were an expert&quot;]]
+[[I thought you were an expert]]
 
-[[&quot;are you sure it&#39;s not just your code?&quot;]]</tw-passagedata><tw-passagedata pid="65" name="&quot;do you want to rewrite my code?&quot;" tags="text" position="2893,192" size="100,100">@@.orange;&quot;I could&quot;@@
+[[are you sure it&#39;s not just your code?]]</tw-passagedata><tw-passagedata pid="65" name="do you want to rewrite my code?" tags="text" position="2857,208" size="100,100">@@.orange;I could@@
 
-@@.orange;&quot;Or I could help you fix it&quot;@@
+@@.orange;or I could help you fix it@@
 
-[[&quot;it works fine&quot;]]
+[[it works fine]]
 
-[[&quot;where&#39;s any of your code?&quot;|&quot;why haven&#39;t you pushed anything?&quot;]]</tw-passagedata><tw-passagedata pid="66" name="&quot;what are you talking about?&quot;" tags="text" position="2457,763" size="100,100">@@.orange;&quot;Don&#39;t worry about it&quot;@@
+[[&quot;where&#39;s any of your code?&quot;|why haven&#39;t you pushed anything?]]</tw-passagedata><tw-passagedata pid="66" name="what are you talking about?" tags="text" position="2457,763" size="100,100">@@.orange;don&#39;t worry about it@@
 
-@@.orange;&quot;We&#39;ll talk tomorrow&quot;@@
+@@.orange;we&#39;ll talk tomorrow@@
 
-[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="67" name="&quot;thanks I guess?&quot;" tags="text" position="2648,702" size="100,100">@@.orange;&quot;Hey, anytime&quot;@@
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="67" name="thanks I guess?" tags="text" position="2648,702" size="100,100">@@.orange;&quot;Hey, anytime&quot;@@
 
 @@.orange;&quot;You know I&#39;m here for You&quot;@@
 
-He sends a GIF of a youtuber giving a thumbs up
+He sends a GIF of a youtuber giving a thumbs up.
 
-[[(don&#39;t respond)|end text 2]]
+[[(Don&#39;t respond.)|end text 2]]
 
-[[&quot;I was being sarcastic&quot;]]</tw-passagedata><tw-passagedata pid="68" name="&quot;are you sure it&#39;s not just your code?&quot;" tags="text" position="3058,522" size="100,100">@@.orange;&quot;My code would work fine in a real environment&quot;@@
+[[I was being sarcastic]]</tw-passagedata><tw-passagedata pid="68" name="are you sure it&#39;s not just your code?" tags="text" position="3058,522" size="100,100">@@.orange;my code would work fine in a real environment@@
 
-[[&quot;well it needs to work in this environment by Friday&quot;|&quot;you need to hurry, it&#39;s due this Friday&quot;]]</tw-passagedata><tw-passagedata pid="69" name="&quot;could you push the parts that work?&quot;" tags="text" position="3300,649" size="100,100">@@.orange;&quot;I&#39;ll do it tomorrow&quot;@@
+[[well it needs to work in this environment by Friday|you need to hurry, it&#39;s due this Friday]]</tw-passagedata><tw-passagedata pid="69" name="could you push the parts that work?" tags="text" position="3298,650" size="100,100">@@.orange;I&#39;ll do it tomorrow@@
 
-@@.orange;&quot;I&#39;m gonna be in the lab all day anyway&quot;@@
+@@.orange;I&#39;m gonna be in the lab all day anyway@@
 
-@@.orange;&quot;See you there?&quot;@@
+@@.orange;see you there?@@
 
-[[(don&#39;t respond)|end text 2 alt]]
+[[(Don&#39;t respond.)|end text 2 alt]]
 
-[[&quot;sure&quot;]]</tw-passagedata><tw-passagedata pid="70" name="&quot;because this project is enough work as is&quot;" tags="text" position="2930,696" size="100,100">@@.orange;&quot;That&#39;s quitter talk&quot;@@
+[[sure]]</tw-passagedata><tw-passagedata pid="70" name="because this project is enough work as is" tags="text" position="2930,696" size="100,100">@@.orange;that&#39;s quitter talk@@
 
-@@.orange;&quot;If you&#39;re not pulling all nighters all week, you&#39;re not working hard enough&quot;@@
+@@.orange;if you&#39;re not pulling all nighters all week, you&#39;re not working hard enough@@
 
-[[&quot;when will you have your code up?&quot;|&quot;you need to hurry, it&#39;s due this Friday&quot;]]
+[[when will you have your code up?|you need to hurry, it&#39;s due this Friday]]
 
-</tw-passagedata><tw-passagedata pid="71" name="&quot;you need to hurry, it&#39;s due this Friday&quot;" tags="text" position="3110,824" size="100,100">@@.orange;&quot;I&#39;ll take care of it tomorrow, no need to panic lol&quot;@@
+</tw-passagedata><tw-passagedata pid="71" name="you need to hurry, it&#39;s due this Friday" tags="text" position="3106,827" size="100,100">@@.orange;I&#39;ll take care of it tomorrow, no need to panic lol@@
 
-@@.orange;&quot;You know I&#39;m fast when it counts 😜&quot;@@
+@@.orange;you know I&#39;m fast when it counts 😜@@
 
-@@.orange;&quot;Anyway, catch me in the labs tomorrow&quot;@@
+@@.orange;anyway, catch me in the labs tomorrow@@
 
-[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="72" name="&quot;I thought you were an expert&quot;" tags="text" position="3453,525" size="100,100">@@.orange;&quot;And I never thought you were so rude!&quot;@@
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="72" name="I thought you were an expert" tags="text" position="3438,526" size="100,100">@@.orange;and I never thought you were so rude!@@
 
-@@.orange;&quot;I&#39;ll figure it out tomorrow, just find me in the lab&quot;@@
+@@.orange;I&#39;ll figure it out tomorrow, just find me in the lab@@
 
-He stops messaging you for the night</tw-passagedata><tw-passagedata pid="73" name="&quot;I was being sarcastic&quot;" tags="text" position="2572,861" size="100,100">@@.orange;&quot;Well we can talk about that attitude of yours tomorrow&quot;@@
+He stops messaging you for the night.
 
-@@.orange;&quot;Cuz I have some games to get back to tonight&quot;@@
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="73" name="I was being sarcastic" tags="text" position="2572,861" size="100,100">@@.orange;well we can talk about that attitude of yours tomorrow@@
 
-[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="74" name="end text 2" tags="text" position="2760,846" size="100,100">@@.orange;&quot;Anyway, I&#39;ll be in the lab at the usual time tomorrow&quot;@@
+@@.orange;cuz I have some games to get back to tonight@@
 
-@@.orange;&quot;We have Things™️ to discuss&quot;@@
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="74" name="end text 2" tags="text" position="2760,846" size="100,100">@@.orange;anyway, I&#39;ll be in the lab at the usual time tomorrow@@
 
-[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="75" name="end text 2 alt" tags="text" position="3481,867" size="100,100">@@.orange;&quot;I&#39;ll take that as a yes&quot;@@
+@@.orange;we have Things™️ to discuss@@
 
-[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="76" name="&quot;sure&quot;" tags="text" position="3287,840" size="100,100">@@.orange;&quot;Then it&#39;s a date! See you soon! 💋&quot;@@
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="75" name="end text 2 alt" tags="text" position="3481,867" size="100,100">@@.orange;I&#39;ll take that as a yes@@
 
-[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="77" name="Escalation 2 Transition" tags="" position="2927,1153" size="100,100">You enter the lab the next day and immediately hear @@.orange;[REDACTED]@@ yelling from the back of the lab.
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="76" name="sure" tags="text" position="3283,841" size="100,100">@@.orange;then it&#39;s a date! See you soon! 💋@@
 
-[[(approach)|Escalation 2 Start]]</tw-passagedata><tw-passagedata pid="78" name="Orange Text 2 Transition" tags="" position="2516,79" size="100,100">It&#39;s a Sunday night, and the partner project is due this Friday. A few minutes after pushing some code to the repository, you receive a message from @@.orange;[REDACTED]@@. You notice that he has yet to push any code to the repo.
+[[&gt;&gt;|Lecture Transition]]</tw-passagedata><tw-passagedata pid="77" name="Lecture Transition" tags="lab" position="2927,1153" size="100,100">You enter the classroom the next day, and @@.purple;[REDACTED]@@ is accompanied by another faculty member.
+
+[[&gt;&gt;|Lecture Start]]</tw-passagedata><tw-passagedata pid="78" name="Orange Text 2 Transition" tags="text" position="2516,79" size="100,100">It&#39;s a Sunday night, and the partner project is due this Friday. A few minutes after pushing some code to the repository, you receive a message from @@.orange;[REDACTED]@@. You notice that he has yet to push any code to the repo.
 
 [[&gt;&gt;|Orange Text 2 Start]]</tw-passagedata><tw-passagedata pid="79" name="Escalation 2 Start" tags="" position="3980,190" size="100,100">@@.orange;&quot;This stupid fucking piece of shit!&quot;@@
 
@@ -559,7 +604,7 @@ He stops messaging you for the night</tw-passagedata><tw-passagedata pid="73" na
 
 [[&quot;Can you calm down?&quot;]]
 
-[[&quot;It worked fine for me&quot;]]</tw-passagedata><tw-passagedata pid="82" name="&quot;Are you okay?&quot;" tags="" position="4115,471" size="100,100">He begins to speak to you without turning his head from the monitor.
+[[&quot;It worked fine for me.&quot;]]</tw-passagedata><tw-passagedata pid="82" name="&quot;Are you okay?&quot;" tags="" position="4115,471" size="100,100">He begins to speak to you without turning his head from the monitor.
 
 @@.orange;&quot;Oh, //I&#39;m// okay.&quot;@@
 
@@ -569,7 +614,7 @@ He stops messaging you for the night</tw-passagedata><tw-passagedata pid="73" na
 
 @@.orange;&quot;Sorry, I didn&#39;t mean to come off as //rude//, but the retards who made this IDE apparently couldn&#39;t be bothered to make it //functional//.@@
 
-[[&quot;It worked fine for me&quot;]]
+[[&quot;It worked fine for me.&quot;]]
 
 [[&quot;You need to calm down&quot;|&quot;Can you calm down?&quot;]]</tw-passagedata><tw-passagedata pid="84" name="&quot;Can you calm down?&quot;" tags="" position="4107,658" size="100,100">@@.orange;&quot;I&#39;ll calm down as soon as this piece of shit decides it wants to compile.@@
 
@@ -577,19 +622,19 @@ He stops messaging you for the night</tw-passagedata><tw-passagedata pid="73" na
 
 [[(walk out)|leave]]
 
-[[(start working at the computer next to him)|wait it out]]</tw-passagedata><tw-passagedata pid="85" name="&quot;It worked fine for me&quot;" tags="" position="4302,700" size="100,100">@@.orange;&quot;Well isn&#39;t that fucking fantastic!@@
+[[(start working at the computer next to him)|wait it out]]</tw-passagedata><tw-passagedata pid="85" name="&quot;It worked fine for me.&quot;" tags="" position="4302,700" size="100,100">@@.orange;&quot;Well, isn&#39;t that fucking fantastic!@@
 
 He starts typing again, hitting each key with unnecessary force.
 
-[[(walk out)|leave]]
+[[(Walk out.)|leave]]
 
-[[(start working at the computer next to him)|wait it out]]</tw-passagedata><tw-passagedata pid="86" name="&quot;What did you just say?&quot;" tags="" position="3892,685" size="100,100">@@.orange;&quot;Sorry, technically challenged.&quot;@@
+[[(Start working at the computer next to him.)|wait it out]]</tw-passagedata><tw-passagedata pid="86" name="&quot;What did you just say?&quot;" tags="" position="3892,685" size="100,100">@@.orange;&quot;Sorry, technically challenged.&quot;@@
 
 He turns back to his code as if to dismiss the conversation.
 
-[[(walk out)|leave]]
+[[(Walk out.)|leave]]
 
-[[(start working at the computer next to him)|wait it out]]</tw-passagedata><tw-passagedata pid="87" name="wait it out" tags="" position="4254,855" size="100,100">You work on your own code as @@.orange;[REDACTED]@@ mutters obscenities under his breath. 
+[[(Start working at the computer next to him.)|wait it out]]</tw-passagedata><tw-passagedata pid="87" name="wait it out" tags="" position="4254,855" size="100,100">You work on your own code as @@.orange;[REDACTED]@@ mutters obscenities under his breath. 
 
 [[&gt;&gt;|wait transition]]</tw-passagedata><tw-passagedata pid="88" name="leave" tags="" position="3960,845" size="100,100">You step out of the lab to get some food.
 
@@ -599,7 +644,7 @@ He turns back to his code as if to dismiss the conversation.
 
 [[&quot;Did you finish your part of the project?&quot;]]</tw-passagedata><tw-passagedata pid="90" name="leave transition" tags="" position="4005,1008" size="100,100">By the time you return to the lab, @@.orange;[REDACTED]@@&#39;s fit appears to have subsided.
 
-[[(approach)|resumed]]</tw-passagedata><tw-passagedata pid="91" name="wait transition" tags="" position="4195,1016" size="100,100">After a while, @@.orange;[REDACTED]@@ is quiet, and his typing returns to a normal pace.
+[[(Approach.)|resumed]]</tw-passagedata><tw-passagedata pid="91" name="wait transition" tags="" position="4195,1016" size="100,100">After a while, @@.orange;[REDACTED]@@ is quiet, and his typing returns to a normal pace.
 
 [[&gt;&gt;|resumed]]</tw-passagedata><tw-passagedata pid="92" name="&quot;Did you finish your part of the project?&quot;" tags="" position="3905,1263" size="100,100">@@.orange;&quot;You could say that.&quot;@@
 
@@ -607,55 +652,55 @@ He turns back to his code as if to dismiss the conversation.
 
 [[&quot;Have you pushed it yet?&quot;]]</tw-passagedata><tw-passagedata pid="93" name="Flip" tags="" position="3891,1611" size="100,100">@@.orange;&quot;Yeah yeah yeah. Anyway, let&#39;s take a look at //your// code, shall we?&quot;@@
 
-[[&gt;&gt;|Your Code]]</tw-passagedata><tw-passagedata pid="94" name="&quot;Have you pushed it yet?&quot;" tags="" position="4086,1324" size="100,100">@@.orange;&quot;Pushed and mostly working&quot;@@
+[[&gt;&gt;|Your Code]]</tw-passagedata><tw-passagedata pid="94" name="&quot;Have you pushed it yet?&quot;" tags="" position="4086,1324" size="100,100">@@.orange;&quot;Pushed and mostly working.&quot;@@
 
 [[&quot;It needs to be working completely by Friday&quot;|Flip]]
 
-[[&quot;What doesn&#39;t work?&quot;|Don&#39;t Worry About It]]</tw-passagedata><tw-passagedata pid="95" name="Don&#39;t Worry About It" tags="" position="4301,1353" size="100,100">@@.orange;&quot;Don&#39;t worry about it&quot;@@
+[[&quot;What doesn&#39;t work?&quot;|Don&#39;t Worry About It]]</tw-passagedata><tw-passagedata pid="95" name="Don&#39;t Worry About It" tags="" position="4301,1353" size="100,100">@@.orange;&quot;Don&#39;t worry about it.&quot;@@
 
-[[&quot;I&#39;m kinda worried about it&quot;]]
+[[&quot;I&#39;m kinda worried about it.&quot;]]
 
-[[&quot;But we need to make sure our code works together&quot;]]</tw-passagedata><tw-passagedata pid="96" name="&quot;I&#39;m kinda worried about it&quot;" tags="" position="4104,1499" size="100,100">@@.orange;&quot;Listen, I&#39;ve been doing this a lot longer than you have. Just trust me.&quot;@@
+[[&quot;But we need to make sure our code works together.&quot;]]</tw-passagedata><tw-passagedata pid="96" name="&quot;I&#39;m kinda worried about it.&quot;" tags="" position="4104,1499" size="100,100">@@.orange;&quot;Listen, I&#39;ve been doing this a lot longer than you have. Just trust me.&quot;@@
 
 [[&quot;No?&quot;]]
 
-[[&quot;Sure...&quot;]]</tw-passagedata><tw-passagedata pid="97" name="&quot;But we need to make sure our code works together&quot;" tags="" position="4371,1586" size="100,100">@@.orange;&quot;Then let&#39;s look at your code, since it&#39;s so much better&quot;@@
+[[&quot;Sure...&quot;]]</tw-passagedata><tw-passagedata pid="97" name="&quot;But we need to make sure our code works together.&quot;" tags="" position="4371,1586" size="100,100">@@.orange;&quot;Then let&#39;s look at your code, since it&#39;s so much better.&quot;@@
 
 [[&gt;&gt;|Your Code]]</tw-passagedata><tw-passagedata pid="98" name="Your Code" tags="" position="4842,430" size="100,100">You pull up your working section of the project, and @@.orange;[REDACTED]@@ grabs your mouse out of your hand. He highlights a section of your code.
 
 @@.orange;&quot;Okay. Can you explain this to me?&quot;@@
 
-[[(explain it)]]
+[[(Explain it.)]]
 
-[[&quot;I don&#39;t need to. It&#39;s commented and it works.&quot;|&quot;That&#39;s so unnecessary.&quot;]]</tw-passagedata><tw-passagedata pid="99" name="&quot;No?&quot;" tags="" position="4038,1691" size="100,100">@@.orange;&quot;Um, owch? Let&#39;s see what you&#39;ve been up to then, since you&#39;re the expert now apparently.&quot;@@
+[[&quot;I don&#39;t need to. It&#39;s commented and it works.&quot;|&quot;That&#39;s so unnecessary.&quot;]]</tw-passagedata><tw-passagedata pid="99" name="&quot;No?&quot;" tags="" position="4038,1691" size="100,100">@@.orange;&quot;Um, ouch? Let&#39;s see what you&#39;ve been up to then, since you&#39;re the expert now apparently.&quot;@@
 
 [[&gt;&gt;|Your Code]]</tw-passagedata><tw-passagedata pid="100" name="&quot;Sure...&quot;" tags="" position="4238,1653" size="100,100">@@.orange;&quot;Thank you. Know let&#39;s see that mess that you&#39;ve been working on.&quot;@@
 
-[[&gt;&gt;|Your Code]]</tw-passagedata><tw-passagedata pid="101" name="(explain it)" tags="" position="4960,580" size="100,100">@@.orange;&quot;Now I&#39;m about to change your life.&quot;@@
+[[&gt;&gt;|Your Code]]</tw-passagedata><tw-passagedata pid="101" name="(Explain it.)" tags="" position="4960,580" size="100,100">@@.orange;&quot;Now, I&#39;m about to change your life.&quot;@@
 
 He erases your code and rewrites the same functionality in a different way.
 
 [[&quot;That&#39;s so unnecessary.&quot;]]
 
-[[&quot;What does that change&quot;]]</tw-passagedata><tw-passagedata pid="102" name="&quot;That&#39;s so unnecessary.&quot;" tags="" position="4800,773" size="100,100">@@.orange;&quot;But what you wrote would never pass in an actual game.&quot;@@
+[[&quot;What does that change.&quot;]]</tw-passagedata><tw-passagedata pid="102" name="&quot;That&#39;s so unnecessary.&quot;" tags="" position="4800,773" size="100,100">@@.orange;&quot;But what you wrote would never pass in an actual game.&quot;@@
 
 [[&quot;How do you know that?&quot;]]</tw-passagedata><tw-passagedata pid="103" name="&quot;How do you know that?&quot;" tags="" position="4700,951" size="100,100">@@.orange;&quot;I&#39;ve been doing this for years.&quot;@@
 
 [[&quot;Then why couldn&#39;t you get your code working?&quot;]]
 
-[[&quot;Sure.&quot;]]</tw-passagedata><tw-passagedata pid="104" name="&quot;What does that change&quot;" tags="" position="5089,806" size="100,100">@@.orange;&quot;Sorry, I keep forgetting your new to this. This reduces overhead and is a lot safer in the longrun.&quot;@@
+[[&quot;Sure.&quot;]]</tw-passagedata><tw-passagedata pid="104" name="&quot;What does that change.&quot;" tags="" position="5089,806" size="100,100">@@.orange;&quot;Sorry, I keep forgetting your new to this. This reduces overhead and is a lot safer in the longrun.&quot;@@
 
 [[&quot;I&#39;m not new to this.&quot;]]
 
 [[&quot;It&#39;s a lot harder to read.&quot;]]
 
-[[&quot;Thanks.&quot;]]</tw-passagedata><tw-passagedata pid="105" name="&quot;I&#39;m not new to this.&quot;" tags="" position="5364,1200" size="100,100">@@.orange;&quot;And you&#39;re not that bad at it. You just need more practice.&quot;@@
+[[&quot;Thanks.&quot;]]</tw-passagedata><tw-passagedata pid="105" name="&quot;I&#39;m not new to this.&quot;" tags="" position="5249,1171.6666666666667" size="100,100">@@.orange;&quot;And you&#39;re not that bad at it. You just need more practice.&quot;@@
 
 [[&gt;&gt;|Lesson]]</tw-passagedata><tw-passagedata pid="106" name="&quot;It&#39;s a lot harder to read.&quot;" tags="" position="5125,1056" size="100,100">@@.orange;&quot;And assembly is impossible to read, but it&#39;s the most efficient memory-wise.&quot;@@
 
 [[&gt;&gt;|Lesson]]</tw-passagedata><tw-passagedata pid="107" name="&quot;Thanks.&quot;" tags="" position="4964,993" size="100,100">@@.orange;&quot;You started out pretty rough, but I think you&#39;re getting better at this.&quot;@@
 
-[[&gt;&gt;|Lesson]]</tw-passagedata><tw-passagedata pid="108" name="&quot;Then why couldn&#39;t you get your code working?&quot;" tags="" position="4675.666666666667,1161.6666666666667" size="100,100">@@.orange;&quot;It&#39;s the IDE. I usually use a better one, but@@ @@.purple;[REDACTED]@@ @@.orange;won&#39;t let me use it for this class.&quot;@@
+[[&gt;&gt;|Lesson]]</tw-passagedata><tw-passagedata pid="108" name="&quot;Then why couldn&#39;t you get your code working?&quot;" tags="" position="4675,1161" size="100,100">@@.orange;&quot;It&#39;s the IDE. I usually use a better one, but@@ @@.purple;[REDACTED]@@ @@.orange;won&#39;t let me use it for this class.&quot;@@
 
 [[&gt;&gt;|Lesson]]</tw-passagedata><tw-passagedata pid="109" name="&quot;Sure.&quot;" tags="" position="4850,1091" size="100,100">@@.orange;&quot;Is that some sass I&#39;m detecting?&quot;@@
 
@@ -663,21 +708,150 @@ He erases your code and rewrites the same functionality in a different way.
 
 @@.orange;&quot;Listen, you&#39;re a lot better than a lot of the other partners I&#39;ve had to work with at this school. I really enjoy helping you out, and I think you could make a great programmer one day.&quot;@@
 
-[[&gt;&gt;|patronizing continued]]</tw-passagedata><tw-passagedata pid="111" name="patronizing continued" tags="" position="4685,1470" size="100,100">@@.orange;&quot;Just look at my code and call me on Dissonance if you need any help.&quot;@@
+[[&gt;&gt;|patronizing continued]]</tw-passagedata><tw-passagedata pid="111" name="patronizing continued" tags="" position="5061.666666666667,1470" size="100,100">@@.orange;&quot;Just look at my code and call me on Dissonance if you need any help.&quot;@@
 
 He starts to collect his things as if to leave.
 
-[[&gt;&gt;|exit]]</tw-passagedata><tw-passagedata pid="112" name="exit" tags="" position="4884,1473" size="100,100">@@.orange;[REDACTED]@@ gives you a strong pat on the shoulder and starts to walk away.
+[[&gt;&gt;|exit]]</tw-passagedata><tw-passagedata pid="112" name="exit" tags="" position="5335.666666666667,1463" size="100,100">@@.orange;[REDACTED]@@ gives you a strong pat on the shoulder and starts to walk away.
 
-@@.orange;&quot;Anyway, I&#39;ve been here to long. See you in class!&quot;@@
+@@.orange;&quot;Anyway, I&#39;ve been here too long. See you in class!&quot;@@
 
 He exits the lab.
 
-[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="113" name="Survey" tags="" position="4884,1623" size="100,100">Congrats! You have made it to the end of the playable demo.
+[[&gt;&gt;|Presentation Transition]]</tw-passagedata><tw-passagedata pid="113" name="Survey" tags="" position="5859,1401.3333384195964" size="100,100">Congrats! You have made it to the end of the playable demo.
 
 Take a moment to breathe, then head on over to our survey and tell us what you thought of it.
 
-&lt;a href=&quot;https://forms.gle/jr98tXjW1gbJwcGH9&quot;&gt;CLICK HERE FOR FEEDBACK FORM&lt;/a&gt;</tw-passagedata></tw-storydata>
+&lt;a href=&quot;https://forms.gle/jr98tXjW1gbJwcGH9&quot;&gt;CLICK HERE FOR FEEDBACK FORM&lt;/a&gt;</tw-passagedata><tw-passagedata pid="114" name="eyes" tags="text" position="488,195" size="100,100">@@.orange;👀@@
+
+[[hello?]]</tw-passagedata><tw-passagedata pid="115" name="Post Lecture" tags="" position="3241.6666666666665,1618.3333333333335" size="100,100">As you are leaving the classroom, @@.orange;[REDACTED]@@ approaches you.
+
+@@.orange; &quot;So was that some bulls- or what?&quot;@@
+
+[[&quot;The lecture?&quot;]]
+
+[[&quot;What?&quot;]]</tw-passagedata><tw-passagedata pid="116" name="&quot;The lecture?&quot;" tags="" position="3088.6666666666665,1723.3333333333335" size="100,100">@@.orange; &quot;Yeah the //lecture//.&quot;
+
+&quot;I can&#39;t believe@@ @@.purple;[REDACTED]@@ @@.orange;would invite someone who has no idea what she&#39;s talking about.&quot;@@
+
+[[&quot;She&#39;s literally an expert.&quot;]]</tw-passagedata><tw-passagedata pid="117" name="&quot;What?&quot;" tags="" position="3318.6666666666665,1827.3333333333335" size="100,100">@@.orange;&quot;Miss Whats-Her-Face going on about pathfinding and just pulling it all out of her a-.&quot;@@
+
+[[&quot;What do you mean? She&#39;s an expert.&quot;|&quot;She&#39;s literally an expert.&quot;]]
+
+[[&quot;You do realize our professor asked her to teach this?&quot;]]
+
+[[&quot;Did she say anything incorrect?&quot;]]</tw-passagedata><tw-passagedata pid="118" name="&quot;She&#39;s literally an expert.&quot;" tags="" position="3011.6666666666665,1935.3333333333335" size="100,100">@@.orange;&quot;She only researches pathfinding. That doesn&#39;t make her an expert. I research porn all the time, and I&#39;m not an expert on the female body.&quot;@@
+
+He pauses for a second.
+
+@@.orange;&quot;But I&#39;m working on it&quot;@@
+
+He elbows you in the side.
+
+[[&quot;That&#39;s disgusting.&quot;]]
+
+[[&quot;Don&#39;t touch me.&quot;]]
+
+[[&quot;lol.&quot;]]</tw-passagedata><tw-passagedata pid="119" name="&quot;That&#39;s disgusting.&quot;" tags="" position="2869.6666666666665,2117.3333333333335" size="100,100">@@.orange;&quot;Hey, I take offense to that. I identify as disgusting. Anyway, I&#39;m gonna go report you for harassment right now, see you.&quot;@@
+
+He walks away.
+
+[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="120" name="&quot;Don&#39;t touch me.&quot;" tags="" position="2981.6666666666665,2183.3333333333335" size="100,100">@@.orange;&quot;Sorry. I told you I was working on it. I&#39;ll be more gentle next time&quot;@@
+
+He walks away.
+
+[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="121" name="&quot;lol.&quot;" tags="" position="3134.6666666666665,2100.3333333333335" size="100,100">@@.orange;&quot;Yeah some people just think they know everything. Not me though. I know that I know everything.&quot;@@
+
+He starts to walk in a different direction.
+
+@@.orange;&quot;Anyway, until our paths meet again!&quot;@@
+
+[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="122" name="&quot;You do realize our professor asked her to teach this?&quot;" tags="" position="3523.6666666666665,1992.3333333333335" size="100,100">@@.orange;&quot;She probably begged him for it, and he had to say yes or some SJW would accuse him of being sexist again.&quot;@@
+
+[[&quot;I mean, he was found guilty last time.&quot;]]
+
+[[&quot;She&#39;s literally written papers on pathfinding though.&quot;]]</tw-passagedata><tw-passagedata pid="123" name="&quot;Did she say anything incorrect?&quot;" tags="" position="3318.6666666666665,1998.3333333333335" size="100,100">@@.orange;&quot;The kind of pathfinding she talks about isn&#39;t even applicable to games, and the algorithms she went over have all been made obsolete since whenever she did her research. I&#39;ve literally written more optimal algorithms on my own.&quot;@@
+
+[[&quot;Okay then.&quot;]]</tw-passagedata><tw-passagedata pid="124" name="&quot;I mean, he was found guilty last time.&quot;" tags="" position="3448.6666666666665,2142.3333333333335" size="100,100">@@.orange;&quot;I think the school would&#39;ve been in trouble if they didn&#39;t say they found him guilty. It&#39;s a miracle they could keep him though; he&#39;s one of the only good professors here.&quot;@@
+
+[[(respond)|Anyway,]]</tw-passagedata><tw-passagedata pid="125" name="&quot;She&#39;s literally written papers on pathfinding though.&quot;" tags="" position="3598.6666666666665,2142.3333333333335" size="100,100">@@.orange;&quot;Yeah, and I&#39;ve written papers on Shakespeare plays I don&#39;t understand. If someone is really good at something, they would be doing it, not teaching it.&quot;@@
+
+[[(respond)|Anyway,]]</tw-passagedata><tw-passagedata pid="126" name="&quot;Okay then.&quot;" tags="" position="3296.6666666666665,2163.3333333333335" size="100,100">@@.orange;&quot;Yeah, I just can&#39;t stand these women who think they&#39;re so smart because they finally made it in a male-dominated field. Like, we get it. You can be smart too. But just being here doesn&#39;t make you an expert by default.&quot;@@
+
+[[(respond)|Anyway,]]</tw-passagedata><tw-passagedata pid="127" name="Anyway," tags="" position="3499.6666666666665,2315.333333333333" size="100,100">He cuts you off.
+
+@@.orange;&quot;Anyway, I&#39;ve gotta run. It&#39;s great finding someone who agrees with me.&quot;@@
+
+He walks away.
+
+[[&gt;&gt;|Escalation 2 Transition]]</tw-passagedata><tw-passagedata pid="128" name="Presentation Transition" tags="" position="5703.666585286458,456.3333384195964" size="100,100">Today is Friday. You tested your code last night, and it worked fine. @@.orange;[REDACTED]@@ promised you over text that his code would be in by the start of class. You take a seat in the classroom and notice that he hasn&#39;t arrived yet.
+
+[[&gt;&gt;|Class Begins]]</tw-passagedata><tw-passagedata pid="129" name="Class Begins" tags="" position="5851.999918619792,463.00000508626306" size="100,100">@@.purple;&quot;Good morning everyone.&quot;@@
+
+@@.purple;[REDACTED]@@ gestures toward you.
+
+@@.purple;&quot;Someone&#39;s looking awfully lonely this morning without her project partner.&quot;@@
+
+[[&gt;&gt;|Introduction]]</tw-passagedata><tw-passagedata pid="130" name="Introduction" tags="" position="6023.666585286458,466.33333841959643" size="100,100">@@.purple;[REDACTED]@@ begins to call groups up to present one at a time in a random order. You download the latest build of your project to a flash drive just as your name gets called.
+
+[[&gt;&gt;|Your Turn]]</tw-passagedata><tw-passagedata pid="131" name="Your Turn" tags="" position="6203.666585286458,473.00000508626306" size="100,100">@@.purple;&quot;Well it looks like@@ @@.orange;[REDACTED]@@ @@.purple;still isn&#39;t here yet.&quot;@@
+
+@@.purple;&quot;We can wait for him if you don&#39;t want to present all alone.&quot;@@
+
+[[(agree to wait)]]
+
+[[(present alone)]]</tw-passagedata><tw-passagedata pid="132" name="(agree to wait)" tags="" position="6035.333251953125,743.0000050862631" size="100,100">@@.purple;&quot;Now we&#39;ll have to see if he&#39;s really running late or just skipping class altogether.&quot;@@
+
+[[&gt;&gt;|Orange Arrives]]</tw-passagedata><tw-passagedata pid="133" name="(present alone)" tags="" position="6278.666585286458,623.0000050862631" size="100,100">@@.purple;&quot;Suit yourself. I&#39;ll be easy on your grade since I know it&#39;s a lot of pressure to do these kinds of things on your own.&quot;@@
+
+You walk to the front of the room and open your project on the computer connected to the presenter.
+
+[[(begin presenting)]]</tw-passagedata><tw-passagedata pid="134" name="(begin presenting)" tags="" position="6406.999918619791,781.3333384195964" size="100,100">As you explain your work, you notice that the build is acting strange. Parts that ran smooth last night are suddenly jittery, and @@.orange;[REDACTED]@@&#39;s section does not work exactly the way he said it would.
+
+@@.purple;&quot;Well that&#39;s embarassing&quot;@@
+
+[[(move on)|(conclude the presentation)]]
+
+[[(blame your partner)]]</tw-passagedata><tw-passagedata pid="135" name="(blame your partner)" tags="" position="6523.666585286458,1014.6666717529298" size="100,100">You explain that your code was working fine before and that @@.orange;[REDACTED]@@ must have just pushed something that changed it.
+
+@@.purple;&quot;Pointing fingers isn&#39;t very professional. No one in the games industry is going to appreciate a snitch.&quot;@@
+
+[[(conclude the presentation)]]</tw-passagedata><tw-passagedata pid="136" name="(conclude the presentation)" tags="" position="6301.999918619791,1013.0000050862632" size="100,100">As you make your finishing remarks, @@.orange;[REDACTED]@@ runs into the room out of breath.
+
+@@.orange;&quot;Sorry I&#39;m late!&quot;@@
+
+He rushes to your side and whispers that he //just// finished working on the project.
+
+[[&gt;&gt;|Orange Takes Over]]</tw-passagedata><tw-passagedata pid="137" name="Orange Takes Over" tags="" position="6163.666585286458,1191.3333384195964" size="100,100">@@.orange;[REDACTED]@@ takes over the presentation and doesn&#39;t let you say another word to the class without his interruption.
+
+He explains that things got &quot;a little messy,&quot; and that he had to slightly edit some of your code at the last minute in order to make his work correctly.
+
+[[&gt;&gt;|Post Mortem]]</tw-passagedata><tw-passagedata pid="138" name="Orange Arrives" tags="" position="5896.999918619792,898.0000050862631" size="100,100">@@.orange;[REDACTED]@@ arrives out of breath toward the end of class.
+
+@@.orange;&quot;Did I make it?&quot;@@
+
+@@.purple;&quot;Just in time! You&#39;d better hurry and present, she&#39;s been crying this whole time you&#39;ve been missing.&quot;@@
+
+[[&gt;&gt;|Present Together]]</tw-passagedata><tw-passagedata pid="139" name="Present Together" tags="" position="5825.333251953125,1051.3333384195964" size="100,100">As you try to explain your project, @@.orange;[REDACTED]@@ repeatedly talks over you. You begin to notice that the build is running slowly and erratically.
+
+@@.orange;&quot;Yeah, so, I might&#39;ve had to move some things aroundlast minute to get my section running. It all still works, but it&#39;s a little messy since I finished it this morning. That&#39;s totally on me.&quot;@@
+
+[[&gt;&gt;|Post Mortem]]</tw-passagedata><tw-passagedata pid="140" name="Post Mortem" tags="" position="5900.333251953126,1247.3333231608074" size="100,100">@@.orange;[REDACTED]@@ pokes your shoulder in the hallway as you leave class.
+
+@@.orange;&quot;Hey, sorry about being late. I don&#39;t think we did too bad though!&quot;@@
+
+[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="141" name="Escalation 2 Transition" tags="" position="3389.000040690104,2527.0000203450522" size="100,100">You walk into the labs after yourlast class of the day and immediately hear @@.orange;[REDACTED]@@ yelling from the back of the room.
+
+[[(Approach him.)|Escalation 2 Start]]</tw-passagedata><tw-passagedata pid="142" name="Lecture Start" tags="" position="2743.6666666666665,1263.3333333333333" size="100,100">@@.purple;“Today, we’ll be covering a fairly advanced topic, so I figured I’d bring in a guest lecturer to talk about it,” he says. “Give it up for the beautiful Professor X&quot;@@
+
+[[&gt;&gt;|Professor X]]</tw-passagedata><tw-passagedata pid="143" name="Professor X" tags="" position="2913.6666666666665,1306.6666666666667" size="100,100">Nobody claps, and Professor X doesn’t seem particularly impressed by @@.purple;[REDACTED]@@’s antics. He laughs awkwardly and takes a seat. Her expression is serious, but not unwelcoming, and as she addresses the class, her demeanor brightens.
+
+[[&gt;&gt;|Begin Lecture]]
+</tw-passagedata><tw-passagedata pid="144" name="Begin Lecture" tags="" position="3103.6666666666665,1320" size="100,100">“Hello, everyone. I’m Professor X, as he said,” she says. “Advanced Pathfinding happens to be one of the fields I research, so I’d like to talk about the different types of algorithms you can implement and the best cases to use them.”
+
+[[&gt;&gt;|Lecture]]</tw-passagedata><tw-passagedata pid="145" name="Lecture" tags="" position="3265.333333333333,1321.6666666666667" size="100,100">She begins her lecture, and manages to explain fairly complicated topics in relatively simple terms.
+
+[[&gt;&gt;|Post Lecture]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="\\s"===e?"\\S":e.replace(/^\[/,"[^"),r="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",n=r.replace("\\-",""),a=function(){return"("+r+"+)\\(([^\\)\\|\\n]+)\\):|("+r+"+):([^;\\|\\n]+);|((?:\\."+r+"+)+);|((?:#"+r+"+)+);"}();return Object.freeze({space:e,spaceNoTerminator:"[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:t,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:r,anyLetterStrict:n,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:a,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){!function(e){if(e&&e.prototype&&null==e.prototype.firstElementChild){var t=Node.ELEMENT_NODE;Object.defineProperty(e.prototype,"firstElementChild",{get:function(){for(var e=this.childNodes,r=0;r<e.length;++r){var n=e[r];if(n.nodeType===t)return n}return null}})}}(window.Node||window.Element)}(),function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=e&&function(){try{var e=document.createElement("audio").play();return e.catch(function(){}),e instanceof Promise}catch(e){}return!1}(),r=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),n=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),a=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),i=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),o=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),s=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,audioPromise:t,fileAPI:r,geolocation:n,mutationObserver:a,performance:i,touch:o,transitionEndEvent:s})}(),Visibility=function(){function e(){return Boolean(r&&document[r.hiddenProperty])}function t(){return r&&document[r.stateProperty]||"visible"}var r=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return null}();return Object.freeze(Object.defineProperties({},{isHidden:{value:e},state:{value:t},hiddenProperty:{value:r.hiddenProperty},stateProperty:{value:r.stateProperty},changeEvent:{value:r.changeEvent}}))}(),_ref3=function(){function e(t){if("object"!==(void 0===t?"undefined":_typeof(t))||null===t)return t;if(t instanceof String)return String(t);if(t instanceof Number)return Number(t);if(t instanceof Boolean)return Boolean(t);if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return t instanceof Array?r=new Array(t.length):t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){return r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){return r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){switch(n.nodeName.toUpperCase()){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===(void 0===e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){var n=jQuery(document.createElement("div")),a=jQuery(document.createElement("button")),i=jQuery(document.createElement("pre")),o=L10n.get("errorTitle")+": "+(t||"unknown error");return a.addClass("error-toggle").ariaClick({label:L10n.get("errorToggle")},function(){a.hasClass("enabled")?(a.removeClass("enabled"),i.attr({"aria-hidden":!0,hidden:"hidden"})):(a.addClass("enabled"),i.removeAttr("aria-hidden hidden"))}).appendTo(n),jQuery(document.createElement("span")).addClass("error").text(o).appendTo(n),jQuery(document.createElement("code")).text(r).appendTo(i),i.addClass("error-source").attr({"aria-hidden":!0,hidden:"hidden"}).appendTo(n),n.addClass("error-view").appendTo(e),console.warn(o+"\n\t"+r.replace(/\n/g,"\n\t")),!1}function i(e,t){var r=i;switch(void 0===e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e))return e.map(function(e){return r(e,t)}).join(", ");if(e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return r(e,t)}).join(", ");if(e instanceof Map){return"{ "+[].concat(_toConsumableArray(e)).map(function(e){var n=_slicedToArray(e,2),a=n[0],i=n[1];return r(a,t)+" → "+r(i,t)}).join(", ")+" }"}return e instanceof Date?e.toLocaleString():"function"==typeof e.toString?e.toString():Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))

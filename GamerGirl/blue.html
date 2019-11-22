@@ -201,69 +201,110 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 @@.blue;&quot;Hello,&quot;@@ he says, @@.blue;&quot;I was worried you wouldn&#39;t show up, haha.&quot;@@
 
 [[&quot;Why?&quot;|The Discussion][$attentiveness += 0.2]]
-[[&quot;Well, I did.&quot;|The Discussion][$assertiveness += 0.2]]</tw-passagedata><tw-passagedata pid="2" name="Blue Route" tags="text" position="50,475" size="100,100">&lt;&lt;set $assertiveness to 0&gt;&gt;&lt;&lt;set $friendliness to 0&gt;&gt;&lt;&lt;set $attentiveness to 0&gt;&gt;It&#39;s been less than an hour since your first class of the day and you&#39;ve already received a text from @@.blue;[REDACTED]@@
-@@.blue;&quot;hi&quot;@@
-[[&quot;hey&quot;][$attentiveness += 0.2]]
-[[(Ignore him.)][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="3" name="&quot;hey&quot;" tags="text" position="200,550" size="100,100">@@.blue;&quot;we should meet up tomorrow for our project&quot;
-&quot;are the labs ok?&quot;@@
-[[&quot;sounds good&quot;|Start Convo][$attentiveness += 0.2]]</tw-passagedata><tw-passagedata pid="4" name="(Ignore him.)" tags="text" position="200,400" size="100,100">@@.blue;&quot;hello&quot;@@
-[[&quot;hey&quot;][$attentiveness += 0.2]]
-[[(Continue ignoring him.)][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="5" name="(Continue ignoring him.)" tags="text" position="350,400" size="100,100">@@.blue;&quot;can you please answer&quot;@@
-[[&quot;hey&quot;][$attentiveness += 0.2]]
-[[(Continue ignoring him.)|Ignore 2][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="6" name="Start Convo" tags="text" position="200,700" size="100,100">@@.blue;&quot;great&quot;
-&quot;so what are you up to rn? :)&quot;@@
-[[&quot;doing homework&quot;]]
-[[(Don&#39;t respond.)|Ignore 7][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="7" name="Ignore 2" tags="text" position="350,550" size="100,100">@@.blue;&quot;please&quot;@@
-[[&quot;hey&quot;][$attentiveness += 0.2]]
-[[(Continue ignoring him.)|Ignore 3][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="8" name="Ignore 3" tags="text" position="500,550" size="100,100">@@.blue;;&quot;if ive done something im sorry&quot;@@
-[[&quot;dude chill i was busy&quot;|Confrontation][$friendliness -= 0.2]]
-[[&quot;sorry i was busy&quot;|Confrontation]]
-[[(Continue ignoring him.)|Ignore 4][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="9" name="Confrontation" tags="text" position="651.6666666666666,475" size="100,100">@@.blue;&quot;oh haha&quot;
-&quot;well i thought we could meet up tomorrow for our project&quot;@@
-[[&quot;sure&quot;|Response][$attentiveness += 0.2]]
-[[(Don&#39;t respond.)|Ignore 5][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="10" name="Ignore 4" tags="text" position="650,625" size="100,100">@@.blue;&quot;im such a piece of shit at times and im sorry
+
+[[&quot;Well, I did.&quot;|The Discussion][$assertiveness += 0.2]]</tw-passagedata><tw-passagedata pid="2" name="Blue Route" tags="text" position="50,475" size="100,100">&lt;&lt;set $assertiveness to 0&gt;&gt;&lt;&lt;set $friendliness to 0&gt;&gt;&lt;&lt;set $attentiveness to 0&gt;&gt;It&#39;s been less than an hour since your first class of the day and you&#39;ve already received a text from @@.blue;[REDACTED].@@
+
+@@.blue;hi@@
+
+[[hey][$attentiveness += 0.2]]
+
+[[(Ignore him.)][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="3" name="hey" tags="text" position="200,550" size="100,100">@@.blue;we should meet up tomorrow for our project
+
+are the labs ok?@@
+
+[[sounds good|Start Convo][$attentiveness += 0.2]]</tw-passagedata><tw-passagedata pid="4" name="(Ignore him.)" tags="text" position="200,400" size="100,100">@@.blue;hello@@
+
+[[hey][$attentiveness += 0.2]]
+
+[[(Continue ignoring him.)][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="5" name="(Continue ignoring him.)" tags="text" position="350,400" size="100,100">@@.blue;can you please answer@@
+
+[[hey][$attentiveness += 0.2]]
+
+[[(Continue ignoring him.)|Ignore 2][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="6" name="Start Convo" tags="text" position="200,700" size="100,100">@@.blue;great
+
+so what are you up to rn? :)@@
+
+[[doing homework]]
+
+[[(Don&#39;t respond.)|Ignore 7][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="7" name="Ignore 2" tags="text" position="350,550" size="100,100">@@.blue;please@@
+
+[[hey][$attentiveness += 0.2]]
+
+[[(Continue ignoring him.)|Ignore 3][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="8" name="Ignore 3" tags="text" position="500,550" size="100,100">@@.blue;if ive done something im sorry@@
+
+[[dude chill i was busy|Confrontation][$friendliness -= 0.2]]
+
+[[sorry i was busy|Confrontation]]
+
+[[(Continue ignoring him.)|Ignore 4][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="9" name="Confrontation" tags="text" position="651,475" size="100,100">@@.blue;oh haha
+
+well i thought we could meet up tomorrow for our project@@
+
+[[sure|Response][$attentiveness += 0.2]]
+
+[[(Don&#39;t respond.)|Ignore 5][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="10" name="Ignore 4" tags="text" position="650,625" size="100,100">@@.blue;im such a piece of shit at times and im sorry
+
 but i thought we could be friends because you seem really cool
-im sorry for wasting your time&quot;@@
-[[&gt;&gt;|MidEscalation Variant]]</tw-passagedata><tw-passagedata pid="11" name="Response" tags="text" position="800,625" size="100,100">@@.blue;&quot;are you free tomorrow afternoon? we can meet at the labs&quot;@@
-[[&quot;sounds good&quot;|End 1][$attentiveness += 0.2]]</tw-passagedata><tw-passagedata pid="12" name="Ignore 5" tags="text" position="800,475" size="100,100">@@.blue;&quot;i know im probably not your first choice for a partner but please give me chance im a nice guy i swear&quot;@@
-[[&quot;i can come&quot;|Response][$attentiveness += 0.2]]
-[[&quot;its not a date lol?&quot;|Response][$friendliness -= 0.2]]
-[[(Don&#39;t respond.)|Ignore 6][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="13" name="Ignore 6" tags="text" position="950,625" size="100,100">@@.blue;&quot;why don&#39;t girls ever just say what they mean :(&quot;@@
-[[&gt;&gt;|MidEscalation Variant]]</tw-passagedata><tw-passagedata pid="14" name="End 1" tags="text" position="500,925" size="100,100">@@.blue;&quot;&lt;&lt;if $friendliness &gt;= 0.5&gt;&gt;
-	&lt;3 
-&lt;&lt;/if&gt;&gt;ill see you tomorrow :)&quot;@@
-[[&quot;good night!&quot;|MidEscalation Transition][$friendliness += 0.2]]
-[[(Don&#39;t respond.)|MidEscalation Transition]]</tw-passagedata><tw-passagedata pid="15" name="&quot;doing homework&quot;" tags="text" position="200,850" size="100,100">@@.blue;&quot;thats cool&quot;
-&quot;i cant wait to hang out tomorrow&quot;@@
-[[&quot;why?&quot;|Response 2][$attentiveness += 0.2]]
-[[&quot;were not meeting up to hang out&quot;|Response 2][$assertiveness += 0.2]]
-[[(Don&#39;t respond.)|Ignore 7][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="16" name="Ignore 7" tags="text" position="350,775" size="100,100">@@.blue;&quot;hello?&quot;@@
-[[(Don&#39;t respond.)|Ignore 8]]</tw-passagedata><tw-passagedata pid="17" name="Response 2" tags="text" position="350,925" size="100,100">@@.blue;&quot;im just excited to be friends :)&quot;@@
-[[&quot;me too!&quot;|End 1][$friendliness += 0.5]]
-[[&quot;ok&quot;|End 1]]
+
+im sorry for wasting your time@@
+
+[[&gt;&gt;|MidEscalation Variant]]</tw-passagedata><tw-passagedata pid="11" name="Response" tags="text" position="800,625" size="100,100">@@.blue;are you free tomorrow afternoon? we can meet at the labs@@
+
+[[sounds good|End 1][$attentiveness += 0.2]]</tw-passagedata><tw-passagedata pid="12" name="Ignore 5" tags="text" position="800,475" size="100,100">@@.blue;i know im probably not your first choice for a partner but please give me chance im a nice guy i swear@@
+
+[[i can come|Response][$attentiveness += 0.2]]
+
+[[its not a date lol?|Response][$friendliness -= 0.2]]
+
+[[(Don&#39;t respond.)|Ignore 6][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="13" name="Ignore 6" tags="text" position="950,625" size="100,100">@@.blue;why don&#39;t girls ever just say what they mean :(@@
+
+[[&gt;&gt;|MidEscalation Variant]]</tw-passagedata><tw-passagedata pid="14" name="End 1" tags="text" position="500,925" size="100,100">@@.blue;&lt;&lt;if $friendliness &gt;= 0.5&gt;&gt;
+	&lt;3 &lt;&lt;/if&gt;&gt;ill see you tomorrow :)@@
+	
+[[see you then!|MidEscalation Transition][$friendliness += 0.2]]
+
+[[(Don&#39;t respond.)|MidEscalation Transition]]</tw-passagedata><tw-passagedata pid="15" name="doing homework" tags="text" position="200,850" size="100,100">@@.blue;thats cool
+
+i cant wait to hang out tomorrow@@
+
+[[why?|Response 2][$attentiveness += 0.2]]
+
+[[were not meeting up to hang out|Response 2][$assertiveness += 0.2]]
+
+[[(Don&#39;t respond.)|Ignore 7][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="16" name="Ignore 7" tags="text" position="350,775" size="100,100">@@.blue;hello?@@
+
+[[(Don&#39;t respond.)|Ignore 8]]</tw-passagedata><tw-passagedata pid="17" name="Response 2" tags="text" position="350,925" size="100,100">@@.blue;im just excited to be friends :)@@
+
+[[me too!|End 1][$friendliness += 0.5]]
+
+[[ok|End 1]]
+
 [[(Don&#39;t respond.)|Ignore 7][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="18" name="Ignore 8" tags="text" position="500,775" size="100,100">(@@.blue;[REDACTED]@@ is offline.)
-[[&gt;&gt;|MidEscalation Transition]]</tw-passagedata><tw-passagedata pid="19" name="The Discussion" tags="" position="1100,1050" size="100,100">&lt;&lt;if $attentiveness &gt;= 0.5&gt;&gt;
-	He furrows his brow and gazes into his lap like a nervous child. @@.blue;&quot;Well...&quot;@@
-&lt;&lt;elseif $attentiveness &gt;= 0.2&gt;&gt;
-	@@.blue;&quot;It&#39;s nothing,&quot;@@ he laughs uneasily. @@.blue;&quot;We should get started.&quot;@@
-&lt;&lt;else&gt;&gt;
-	His smile is crooked. @@.blue;&quot;We should get started.&quot;@@
+
+[[&gt;&gt;|MidEscalation Transition]]</tw-passagedata><tw-passagedata pid="19" name="The Discussion" tags="" position="1100,1050" size="100,100">&lt;&lt;if $attentiveness &gt;= 0.5&gt;&gt;He furrows his brow and gazes into his lap like a nervous child. @@.blue;&quot;Well...&quot;@@
+&lt;&lt;elseif $attentiveness &gt;= 0.2&gt;&gt; @@.blue;&quot;It&#39;s nothing,&quot;@@ he laughs uneasily. @@.blue;&quot;We should get started.&quot;@@
+&lt;&lt;else&gt;&gt; His smile is crooked. @@.blue;&quot;We should get started.&quot;@@
 &lt;&lt;/if&gt;&gt;
 You attempt to discuss the details of the project. He nods along with whatever you say, but he doesn&#39;t seem to have anything to add.
 
 [[&quot;Is something wrong?&quot;|Sad Time][$attentiveness += 0.2]]
+
 [[(Continue talking.)|Ignore Strat][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="20" name="Sad Time" tags="" position="1250,1050" size="100,100">&lt;&lt;set $friendliness += 0.2&gt;&gt;@@.blue;&quot;I guess I&#39;m just feeling kind of depressed, today,&quot;@@ he says.
 
 [[&quot;Why&#39;s that?&quot;|Attentive Strat][$attentiveness += 0.2]]
+
 [[&quot;That&#39;s too bad.&quot;|Apathetic Strat][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="21" name="Ignore Strat" tags="" position="1250,900" size="100,100">He doesn&#39;t make a comment for a while, and it feels like his eyes are boring into your soul.
 
 [[(Continue working.)|Ignore Strat p2][$attentiveness -= 0.4]]
+
 [[&quot;Are you paying attention?&quot;|Assertive Strat][$assertiveness += 0.4]]</tw-passagedata><tw-passagedata pid="22" name="Attentive Strat" tags="" position="1250,1200" size="100,100">@@.blue;&quot;I tried to talk with this girl today...&quot;@@ he says. @@.blue;&quot;Do I seem creepy to you?&quot;@@
 
 [[&quot;Yes.&quot;][$assertiveness += 0.5]]
+
 [[&quot;No.&quot;][$friendliness += 0.2]]</tw-passagedata><tw-passagedata pid="23" name="Apathetic Strat" tags="" position="1400,1050" size="100,100">@@.blue;&quot;Yeah,&quot;@@ he says, brows furrowed. @@.blue;&quot;I feel a little better now that you&#39;re here, though.&quot;@@
 
 [[&quot;...Okay...&quot;][$friendliness -= 0.2]]
+
 [[&quot;That&#39;s good.&quot;][$friendliness += 0.2]]</tw-passagedata><tw-passagedata pid="24" name="&quot;Yes.&quot;" tags="" position="1100,1200" size="100,100">His mouth drops open.
 
 @@.blue;&quot;W-why?&quot;@@ he asks after a long pause.
@@ -275,6 +316,7 @@ You continue with your work, but this time, he seems much more engaged. He offer
 @@.blue;&quot;Ah, it&#39;s already so late!&quot;@@ he says. @@.blue;&quot;I have to head to class. See you tomorrow?&quot;@@
 
 [[&quot;Sure.&quot;|Meet-up][$attentiveness += 0.2]]
+
 [[&quot;I might be busy.&quot;|Meet-up][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="26" name="&quot;Well...&quot;" tags="" position="1100,1350" size="100,100">&lt;&lt;set $friendliness += 0.2&gt;&gt;You explain that he&#39;s kind of awkward, and people aren&#39;t sure how to react to him.
 
 @@.blue;&quot;Oh,&quot;@@ he says. His gaze falls to his hands, which he is wringing nervously. He takes a moment to think.
@@ -282,23 +324,26 @@ You continue with your work, but this time, he seems much more engaged. He offer
 @@.blue;&quot;Why are people so judgemental?&quot;@@ he asks. @@.blue;&quot;I&#39;m nice, don&#39;t you think? But people are judging me completely unfairly.&quot;@@
 
 [[&quot;That&#39;s just how it is.&quot;|Agreement]]
-[[&quot;You&#39;re right.&quot;|Agreement][$friendliness += 0.2]]</tw-passagedata><tw-passagedata pid="27" name="Agreement" tags="" position="1100,1500" size="100,100">&lt;&lt;if $friendliness &gt;= 0.4&gt;&gt;
-	@@.blue;&quot;Yeah,&quot;@@ he says, smiling. @@.blue;&quot;Oh, I have class in 10 minutes, I have to go. See you tomorrow?&quot;@@
-&lt;&lt;else&gt;&gt;
-	@@.blue;&quot;Yeah,&quot;@@ he says, frowning. @@.blue;&quot;Oh, I have class in 10 minutes, I have to go. See you tomorrow?&quot;@@
+
+[[&quot;You&#39;re right.&quot;|Agreement][$friendliness += 0.2]]</tw-passagedata><tw-passagedata pid="27" name="Agreement" tags="" position="1100,1500" size="100,100">&lt;&lt;if $friendliness &gt;= 0.4&gt;&gt;@@.blue;&quot;Yeah,&quot;@@ he says, smiling. @@.blue;&quot;Oh, I have class in 10 minutes, I have to go. See you tomorrow?&quot;@@
+&lt;&lt;else&gt;&gt;@@.blue;&quot;Yeah,&quot;@@ he says, frowning. @@.blue;&quot;Oh, I have class in 10 minutes, I have to go. See you tomorrow?&quot;@@
 &lt;&lt;/if&gt;&gt;
 [[&quot;Okay.&quot;|Meet-Up 2][$friendliness += 0.2]]
+
 [[&quot;I&#39;ll have to check.&quot;|Meet-Up 2]]</tw-passagedata><tw-passagedata pid="28" name="Meet-Up 2" tags="" position="1250,1500" size="100,100">@@.blue;&quot;Okay, I&#39;ll message you later, then,&quot;@@ he says. &lt;&lt;if $friendliness &gt;= 0.4&gt;&gt;His face is beaming.&lt;&lt;/if&gt;&gt; He grabs his backpack and rushes from the room as though he&#39;s running from something.
 
-You look to your computer to log off, and save the zero lines of code you wrote. &lt;&lt;set $grade to 0&gt;&gt;
+You look to your computer to log off, and save the zero lines of code you wrote. 
 
 [[&gt;&gt;|Text Convo 2]]</tw-passagedata><tw-passagedata pid="29" name="Meet-up" tags="" position="1550,900" size="100,100">@@.blue;&quot;Okay,&quot;@@ he nods. @@.blue;&quot;I&#39;ll message you later, then.&quot;@@ He grabs his backpack and leaves you to clean up.
 
-You save and commit your work. You made a good amount of progress today.&lt;&lt;set $grade to 50&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="&quot;...Okay...&quot;" tags="" position="1700,1050" size="100,100">He&#39;s wringing his hands in his lap, and he seems to gasp for breath for a moment. He reaches for his phone and starts typing something.
+You save and commit your work. You made a good amount of progress today.
+
+[[&gt;&gt;|Text Convo 2]]</tw-passagedata><tw-passagedata pid="30" name="&quot;...Okay...&quot;" tags="" position="1700,1050" size="100,100">He&#39;s wringing his hands in his lap, and he seems to gasp for breath for a moment. He reaches for his phone and starts typing something.
 
 A moment later, you get a message. It says, @@.blue;&quot;im sorry&quot;@@
 
 [[(Message him &quot;its ok&quot;)][$friendliness += 0.2]]
+
 [[&quot;For what?&quot;|Bad End?][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="31" name="&quot;That&#39;s good.&quot;" tags="" position="1400,1500" size="100,100">@@.blue;&quot;Yeah,&quot;@@ he says, offering an embarrassed smile.
 
 You continue with your work, but this time, he seems much more engaged. He offers more suggestions and helps out with the code.
@@ -306,12 +351,14 @@ You continue with your work, but this time, he seems much more engaged. He offer
 @@.blue;&quot;Ah, it&#39;s already so late!&quot;@@ he says. @@.blue;&quot;I have to head to class. See you tomorrow?&quot;@@
 
 [[&quot;Yeah.&quot;|Meet-Up 2][$friendliness += 0.2]]
+
 [[&quot;I may be busy...&quot;|Meet-Up 2]]</tw-passagedata><tw-passagedata pid="32" name="(Message him &quot;its ok&quot;)" tags="" position="1850,1125" size="100,100">&lt;&lt;set $attentiveness += 0.2&gt;&gt;@@.blue;&quot;are you sure?&quot;@@ he messages, after a pause.
 
 [[(Message &quot;yes&quot;)][$attentiveness += 0.2]]
+
 [[(Message &quot;no&quot;)|Bad End?][$friendliness -= 0.5]]</tw-passagedata><tw-passagedata pid="33" name="Bad End?" tags="" position="1850,975" size="100,100">He shakes his head roughly and stands, grabbing his backpack. He practically runs from the room, people curiously eyeing your direction for some kind of clue for what had just happened. 
 
-You turn to the computer to save your work and log off. No work would be done here today.&lt;&lt;set $grade to 0&gt;&gt;
+You turn to the computer to save your work and log off. No work would be done here today.
 
 [[&gt;&gt;|Text Convo 2]]</tw-passagedata><tw-passagedata pid="34" name="(Message &quot;yes&quot;)" tags="" position="2000,1125" size="100,100">He seems to calm down, somewhat. He shoots you an uncertain look.
 
@@ -319,171 +366,188 @@ You resume your work. He continues to be distant, and neither of you get much do
 
 @@.blue;&quot;I have to go to class,&quot;@@ he says suddenly. He grabs his backpack and rushes from the room as though he&#39;s running from something.
 
-He left you to clean up, so you save and commit your work before logging out and heading home. You didn&#39;t get much done today. &lt;&lt;set $grade to 0&gt;&gt;
+He left you to clean up, so you save and commit your work before logging out and heading home. You didn&#39;t get much done today.
 
 [[&gt;&gt;|Text Convo 2]]</tw-passagedata><tw-passagedata pid="35" name="Ignore Strat p2" tags="" position="1250,750" size="100,100">You&#39;re getting a lot of work done for your half of the project, but @@.blue;[REDACTED]@@ doesn&#39;t seem to be accomplishing much. At some point, he sighs and grabs his backpack.
 
 @@.blue;&quot;I have class soon, I have to go,&quot;@@ he says. He leaves you to clean up.
 
-You save and commit your work. @@.blue;[REDACTED]@@ didn&#39;t manage much today, but you managed quite a bit.&lt;&lt;set grade to 50&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Assertive Strat" tags="" position="1400,750" size="100,100">&lt;&lt;if $assertiveness &gt;= 0.5&gt;&gt;
-	Suddenly, his eyes are watering. @@.blue;&quot;I&#39;m sorry.&quot;@@
+You save and commit your work. @@.blue;[REDACTED]@@ didn&#39;t manage much today, but you managed quite a bit.
+
+[[&gt;&gt;|Text Convo 2]]</tw-passagedata><tw-passagedata pid="36" name="Assertive Strat" tags="" position="1400,750" size="100,100">&lt;&lt;if $assertiveness &gt;= 0.5&gt;&gt;Suddenly, his eyes are watering. @@.blue;&quot;I&#39;m sorry.&quot;@@
 	
 	[[&quot;Uh.&quot;|Assertive Strat p2]]
-&lt;&lt;else&gt;&gt;
-	@@.blue;&quot;Ah, yes,&quot;@@ he says, clearly having not been paying attention.
+&lt;&lt;else&gt;&gt;@@.blue;&quot;Ah, yes,&quot;@@ he says, clearly having not been paying attention.
 	
 	[[&quot;Are you stuck on something?&quot;|Assertive-Friendly][$attentiveness += 0.2]]
+	
 	[[(Go back to work.)|Ignore Strat p2][$attentiveness -= 0.2]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Assertive Strat p2" tags="" position="1400,600" size="100,100">@@.blue;&quot;I&#39;m always dragging everyone down,&quot;@@ he says. @@.blue;&quot;I&#39;m already ruining this project. You probably hate me and-&quot;@@
 
 [[(Listen quietly.)][$attentiveness -= 0.2]]
+
 [[&quot;I don&#39;t hate you.&quot;|Comfort strat][$friendliness += 0.5]]
-[[&quot;Are you okay?&quot;|Comfort strat][$attentiveness += 0.2]]</tw-passagedata><tw-passagedata pid="38" name="Assertive-Friendly" tags="" position="1400,900" size="100,100">&lt;&lt;set $friendliness += 0.2&gt;&gt;&lt;&lt;if $friendliness &gt;= 0.2&gt;&gt;
-	@@.blue;&quot;Actually, I&#39;ve been having this problem lately...&quot;@@
+
+[[&quot;Are you okay?&quot;|Comfort strat][$attentiveness += 0.2]]</tw-passagedata><tw-passagedata pid="38" name="Assertive-Friendly" tags="" position="1400,900" size="100,100">&lt;&lt;set $friendliness += 0.2&gt;&gt;&lt;&lt;if $friendliness &gt;= 0.2&gt;&gt;@@.blue;&quot;Actually, I&#39;ve been having this problem lately...&quot;@@
 	
 	[[&quot;Oh?&quot;|Sad Time]]
+	
 	[[&quot;Is it about the project?&quot;|Destroyed him][$attentiveness -= 0.5]]
-&lt;&lt;else&gt;&gt;
-	@@.blue;&quot;No, it&#39;s nothing,&quot;@@ he says. He goes back to work. 
+&lt;&lt;else&gt;&gt;@@.blue;&quot;No, it&#39;s nothing,&quot;@@ he says. He goes back to work. 
 
 You work in silence together for a short while, and then he grabs his backpack.
 
 @@.blue;&quot;I have to go, I have class soon,&quot;@@ he says. @@.blue;&quot;Wanna meet up tomorrow?&quot;@@
 
 [[&quot;Sure.&quot;|Meet-up][$attentiveness += 0.2]]
+
 [[&quot;I might be busy.&quot;|Meet-up][$attentiveness -= 0.2]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="(Listen quietly.)" tags="" position="1400,450" size="100,100">He trails off and stares at you for a long time, expression unreadable. Somehow, he seems less sad and more contemplative.
 
 @@.blue;&quot;I just- I&#39;m gonna go home,&quot;@@ he says. @@.blue;&quot;I&#39;m sorry.&quot;@@ He stands and leaves the labs, a few curious onlookers eyeing you in confusion.
 
-You save and commit your work before logging out and heading home. You didn&#39;t get much done today.&lt;&lt;set $grade to 25&gt;&gt;
+You save and commit your work before logging out and heading home. You didn&#39;t get much done today.
 
-[[&gt;&gt;|Text Convo 2.5]]</tw-passagedata><tw-passagedata pid="40" name="Comfort strat" tags="" position="1550,450" size="100,100">&lt;&lt;if $friendliness &gt;= 0.5&gt;&gt;
-	His eyes widen, and his expression is so delicate it could shatter with one wrong word.
+[[&gt;&gt;|Text Convo 2.5]]</tw-passagedata><tw-passagedata pid="40" name="Comfort strat" tags="" position="1550,450" size="100,100">&lt;&lt;if $friendliness &gt;= 0.5&gt;&gt;His eyes widen, and his expression is so delicate it could shatter with one wrong word.
 	
 	@@.blue;&quot;I...&quot;@@ he breathes. @@.blue;&quot;Sometimes I think about... maybe...&quot;@@ He&#39;s leaning closer with every word, but he stops just short of &quot;too close.&quot;
 	
 	[[&quot;I&#39;m done with my work, so I&#39;m going to head home now.&quot;]]
-&lt;&lt;else&gt;&gt;
-	@@.blue;&quot;I guess,&quot;@@ he says. @@.blue;&quot;I&#39;m just gonna go home. I&#39;m sorry.&quot;@@ He stands and leaves the labs, a few curious onlookers eyeing you in confusion.
+&lt;&lt;else&gt;&gt;@@.blue;&quot;I guess,&quot;@@ he says. @@.blue;&quot;I&#39;m just gonna go home. I&#39;m sorry.&quot;@@ He stands and leaves the labs, a few curious onlookers eyeing you in confusion.
 
-You save and commit your work before logging out and heading home. You didn&#39;t get much done today.&lt;&lt;set $grade to 25&gt;&gt;
-&lt;&lt;/if&gt;&gt;
+You save and commit your work before logging out and heading home. You didn&#39;t get much done today.
 
-[[&gt;&gt;|Text Convo 2]]</tw-passagedata><tw-passagedata pid="41" name="&quot;I&#39;m done with my work, so I&#39;m going to head home now.&quot;" tags="" position="1550,296.6666666666667" size="100,100">@@.blue;&quot;Oh,&quot;@@ he says. @@.blue;&quot;I&#39;ll, um, text you later, then?&quot;@@ You nod and save your work. You didn&#39;t get a whole lot done, but... it&#39;s progress.&lt;&lt;set $grade to 25&gt;&gt;
+[[&gt;&gt;|Text Convo 2]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="&quot;I&#39;m done with my work, so I&#39;m going to head home now.&quot;" tags="" position="1550,300" size="100,100">@@.blue;&quot;Oh,&quot;@@ he says. @@.blue;&quot;I&#39;ll, um, text you later, then?&quot;@@ You nod and save your work. You didn&#39;t get a whole lot done, but... it&#39;s progress.
 
 You leave the labs, @@.blue;[REDACTED]@@&#39;s gaze following you out the door.
 
 [[&gt;&gt;|Text Convo 2]]</tw-passagedata><tw-passagedata pid="42" name="Destroyed him" tags="" position="1550,750" size="100,100">@@.blue;&quot;N-no, I guess not...&quot;@@ He shakes his head. @@.blue;&quot;Anyway, I have class soon,&quot;@@ he says. @@.blue;&quot;Wanna meet up tomorrow?&quot;@@
 
 [[&quot;Sure.&quot;|Meet-up][$attentiveness += 0.2]]
+
 [[&quot;I might be busy.&quot;|Meet-up][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="43" name="MidEscalation Transition" tags="" position="650,925" size="100,100">Tomorrow afternoon...
 
-[[(Next.)|The Escalation]]</tw-passagedata><tw-passagedata pid="44" name="MidEscalation Variant" tags="" position="800,775" size="100,100">Tomorrow afternoon...
+[[&gt;&gt;|The Escalation]]</tw-passagedata><tw-passagedata pid="44" name="MidEscalation Variant" tags="" position="800,775" size="100,100">Tomorrow afternoon...
 
-[[(Next.)|BluePreEscalation]]</tw-passagedata><tw-passagedata pid="45" name="BluePreEscalation" tags="" position="950,775" size="100,100">You&#39;re working in the labs. Suddenly, someone taps you on the shoulder.
+[[&gt;&gt;|BluePreEscalation]]</tw-passagedata><tw-passagedata pid="45" name="BluePreEscalation" tags="" position="950,775" size="100,100">You&#39;re working in the labs. Suddenly, someone taps you on the shoulder.
 
 @@.blue;&quot;Hey.&quot;@@ It&#39;s @@.blue;[REDACTED]@@. He seems tired.
 
 [[&quot;Hello.&quot;|BluePreEscalation2]]
+
 [[&quot;What&#39;s up?&quot;|BluePreEscalation2]]</tw-passagedata><tw-passagedata pid="46" name="BluePreEscalation2" tags="" position="800,1050" size="100,100">@@.blue;&quot;Since you&#39;re here, I thought we could start on the project,&quot;@@ he says. @@.blue;&quot;I was gonna ask you about that last night, haha...&quot;@@ Something in his voice strains on those words.
 
 [[&quot;Sure.&quot;|BluePreEscalation3]]
+
 [[&quot;I&#39;m a bit busy...&quot;|BluePreEscalation3]]</tw-passagedata><tw-passagedata pid="47" name="BluePreEscalation3" tags="" position="950,1050" size="100,100">@@.blue;&quot;We won&#39;t do anything too complicated today,&quot;@@ he says as he takes the seat next to you.
 
-He smiles. @@.blue;&quot;I&#39;m glad I saw you today.&quot;@@
+He smiles. @@.blue;&quot;I&#39;m glad I found you here.&quot;@@
 
 [[&quot;Why?&quot;|The Discussion]]
+
 [[&quot;Okay.&quot;|The Discussion]]</tw-passagedata><tw-passagedata pid="48" name="Text Convo 2.5" tags="" position="2250,1075" size="100,100">Your phone buzzes.
 
-[[(Check text.)|Cat Text]]</tw-passagedata><tw-passagedata pid="49" name="Cat Text" tags="" position="2400,1075" size="100,100">@@.blue;&quot;its ricky :)&quot;@@
+[[(Check text.)|Cat Text]]</tw-passagedata><tw-passagedata pid="49" name="Cat Text" tags="text" position="2400,1075" size="100,100">@@.blue;its ricky :)@@
 
 It&#39;s a picture of a cat. @@.blue;[REDACTED]&#39;s@@ hand is in the frame, petting them.
 
-[[&quot;cute!&quot;|Cat Text 2][$friendliness += 0.2]]
-[[(Don&#39;t reply.)|Ignore Text][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="50" name="Cat Text 2" tags="" position="2550,1150" size="100,100">@@.blue;&quot;i thought he would make you happy :)&quot;
+[[cute!|Cat Text 2][$friendliness += 0.2]]
+
+[[(Don&#39;t reply.)|Ignore Text][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="50" name="Cat Text 2" tags="text" position="2550,1150" size="100,100">@@.blue;&quot;i thought he would make you happy :)&quot;
 
 &quot;he always cheers me up when im having a bad day&quot;
 
 &quot;like rn :(&quot;@@
 
 [[&quot;what happened?&quot;|Sad Text][$attentiveness += 0.2]]
+
 [[&quot;oh no&quot;|Sad Text]]
-[[(Don&#39;t reply.)|Sad Text][$attentiveness -= 0.2]]
-</tw-passagedata><tw-passagedata pid="51" name="Sad Text" tags="" position="2700,1075" size="100,100">@@.blue;&quot;i finally worked up the courage to message a girl&quot;
 
-&quot;but she just blocked me&quot;@@
+[[(Don&#39;t reply.)|Sad Text][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="51" name="Sad Text" tags="text" position="2700,1075" size="100,100">@@.blue;i finally worked up the courage to message a girl
 
-[[&quot;what did you text her?&quot;|Sad Text 2.5]]
-[[&quot;oh no :(&quot;|Sad Text 3][$friendliness += 0.2]]
-[[(Don&#39;t reply.)|Sad Text 3][$attentiveness -= 0.2]]
-</tw-passagedata><tw-passagedata pid="52" name="Sad Text 2.5" tags="" position="2850,1150" size="100,100">@@.blue;&quot;that doesnt matter&quot;@@
+but she just blocked me@@
 
-[[(Next.)|Sad Text 3]]</tw-passagedata><tw-passagedata pid="53" name="Sad Text 3" tags="" position="2850,1000" size="100,100">@@.blue;&quot;people think im awkward and weird but superficial stuff like that shouldnt matter&quot;
+[[what did you text her?|Sad Text 2.5]]
 
-&quot;i could be a great boyfriend but nobody wants to give me a chance because i dont play sports or some other dumb thing&quot;@@
+[[oh no :(|Sad Text 3][$friendliness += 0.2]]
 
-[[&quot;boyfriend?&quot;|Boyfriend?]]
-[[&quot;theres someone out there who will appreciate you&quot;|Romance?][$friendliness += 0.2]]
-[[(Ignore him.)|Ignore Text 2]]</tw-passagedata><tw-passagedata pid="54" name="Boyfriend?" tags="" position="2850,850" size="100,100">@@.blue&quot;if i had a girlfriend i wouldnt feel like such garbage all the time&quot;@@
+[[(Don&#39;t reply.)|Sad Text 3][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="52" name="Sad Text 2.5" tags="text" position="2850,1150" size="100,100">@@.blue;that doesnt matter@@
 
-[[(Next.)|Request Text]]</tw-passagedata><tw-passagedata pid="55" name="Romance?" tags="" position="3000,925" size="100,100">@@.blue&quot;yeah... youre right :)&quot;@@
+[[&gt;&gt;|Sad Text 3]]</tw-passagedata><tw-passagedata pid="53" name="Sad Text 3" tags="text" position="2850,1000" size="100,100">@@.blue;people think im awkward and weird but superficial stuff like that shouldnt matter
 
-[[(Next.)|Request Text]]</tw-passagedata><tw-passagedata pid="56" name="Ignore Text 2" tags="" position="2700,925" size="100,100">@@.blue;&quot;at least you like me... im not sure what id do without you&quot;@@
+i could be a great boyfriend but nobody wants to give me a chance because i dont play sports or some other dumb thing@@
 
-[[&quot;yeah&quot;|Request Text]]
-[[(Ignore him.)|Ignore Text 3]]</tw-passagedata><tw-passagedata pid="57" name="Request Text" tags="" position="2850,700" size="100,100">@@.blue;&quot;anyway, i wanted to ask you something&quot;
+[[boyfriend?|Boyfriend?]]
 
-&quot;could you... send me a selfie?&quot;
+[[theres someone out there who will appreciate you|Romance?][$friendliness += 0.2]]
 
-&quot;i think seeing you smile would cheer me up :)&quot;@@
+[[(Ignore him.)|Ignore Text 2]]</tw-passagedata><tw-passagedata pid="54" name="Boyfriend?" tags="text" position="2850,850" size="100,100">@@.blue;if i had a girlfriend i wouldnt feel like such garbage all the time@@
+
+[[&gt;&gt;|Request Text]]</tw-passagedata><tw-passagedata pid="55" name="Romance?" tags="text" position="3000,925" size="100,100">@@.blue;yeah... youre right :)@@
+
+[[&gt;&gt;|Request Text]]</tw-passagedata><tw-passagedata pid="56" name="Ignore Text 2" tags="text" position="2700,925" size="100,100">@@.blue;at least you like me... im not sure what id do without you@@
+
+[[yeah|Request Text]]
+
+[[(Ignore him.)|Ignore Text 3]]</tw-passagedata><tw-passagedata pid="57" name="Request Text" tags="text" position="2850,700" size="100,100">@@.blue;anyway, i wanted to ask you something
+
+could you... send me a selfie?
+
+i think seeing you smile would cheer me up :)@@
 
 [[(Send picture.)|Sent][$friendliness += 0.2]]
-[[(Don&#39;t send picture.)|Not Sent][$friendliness -= 0.2]]</tw-passagedata><tw-passagedata pid="58" name="Ignore Text 3" tags="" position="2700,775" size="100,100">@@.blue;&quot;hello?&quot;@@
+
+[[(Don&#39;t send picture.)|Not Sent][$friendliness -= 0.2]]</tw-passagedata><tw-passagedata pid="58" name="Ignore Text 3" tags="text" position="2700,775" size="100,100">@@.blue;hello?@@
 
 [[(Ignore him.)|Ignore Text 4][$attentiveness -= 0.2]]
-[[&quot;yeah&quot;|Request Text]]</tw-passagedata><tw-passagedata pid="59" name="Ignore Text 4" tags="" position="2550,775" size="100,100">@@.blue;&quot;please come back&quot;@@
 
-@@.blue;&quot;please&quot;@@</tw-passagedata><tw-passagedata pid="60" name="Sent" tags="" position="2925,550" size="100,100">@@.blue;&quot;youre so pretty &lt;3&quot;@@
+[[yeah|Request Text]]</tw-passagedata><tw-passagedata pid="59" name="Ignore Text 4" tags="text" position="2550,775" size="100,100">@@.blue;please come back@@
 
-[[&quot;thanks&quot;|Text 2 Ending][$friendliness += 0.2]]
-[[(Don&#39;t respond.)|Text 2 Ending]]</tw-passagedata><tw-passagedata pid="61" name="Not Sent" tags="" position="2775,550" size="100,100">@@.blue;&quot;why not :(&quot;@@
+@@.blue;please@@</tw-passagedata><tw-passagedata pid="60" name="Sent" tags="text" position="2925,550" size="100,100">@@.blue;youre so pretty &lt;3@@
 
-[[&quot;i dont like taking selfies&quot;|Excuse 1][$assertiveness += 0.2]]
-[[&quot;im not wearing makeup right now&quot;|Excuse 2]]
-[[&quot;i dont want to&quot;|Excuse 3][$assertiveness += 0.5]]</tw-passagedata><tw-passagedata pid="62" name="Excuse 1" tags="" position="2625,375" size="100,100">&lt;&lt;if $assertiveness &gt;= 0.5&gt;&gt;
-	@@.blue;&quot;aw, thats too bad :(&quot;@@
-&lt;&lt;else&gt;&gt;
-	@@.blue;&quot;its ok, its only me&quot;
+[[thanks|Text 2 Ending][$friendliness += 0.2]]
+
+[[(Don&#39;t respond.)|Text 2 Ending]]</tw-passagedata><tw-passagedata pid="61" name="Not Sent" tags="text" position="2775,550" size="100,100">@@.blue;why not :(@@
+
+[[i dont like taking selfies|Excuse 1][$assertiveness += 0.2]]
+
+[[im not wearing makeup right now|Excuse 2]]
+
+[[i dont want to|Excuse 3][$assertiveness += 0.5]]</tw-passagedata><tw-passagedata pid="62" name="Excuse 1" tags="text" position="2625,375" size="100,100">&lt;&lt;if $assertiveness &gt;= 0.5&gt;&gt; @@.blue;aw, thats too bad :(@@
+&lt;&lt;else&gt;&gt;@@.blue;its ok, its only me
 	
-	&quot;I wont share it or anything if thats why youre worried&quot;@@
+	I wont share it or anything if thats why youre worried@@
 	
 	[[(Send picture.)|Sent][$friendliness += 0.2]]
-	[[&quot;i dont want to&quot;|Excuse 3][$assertiveness += 0.5]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Excuse 2" tags="" position="2925,375" size="100,100">@@.blue;&quot;i dont care about that stuff haha&quot;@@
+	
+	[[i dont want to|Excuse 3][$assertiveness += 0.5]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Excuse 2" tags="text" position="2925,375" size="100,100">@@.blue;i dont care about that stuff haha@@
 
 [[(Send picture.)|Sent][$friendliness += 0.2]]
-[[&quot;i dont like taking selfies&quot;|Excuse 1][$assertiveness += 0.2]]
-[[&quot;i dont want to&quot;|Excuse 3][$assertiveness += 0.5]]</tw-passagedata><tw-passagedata pid="64" name="Excuse 3" tags="" position="2625,550" size="100,100">@@.blue;&quot;oh&quot;
 
-&quot;i see&quot;@@
+[[i dont like taking selfies|Excuse 1][$assertiveness += 0.2]]
+
+[[i dont want to|Excuse 3][$assertiveness += 0.5]]</tw-passagedata><tw-passagedata pid="64" name="Excuse 3" tags="text" position="2625,550" size="100,100">@@.blue;oh
+
+i see@@
 
 He does not send you any more texts after that.
 
-[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="65" name="Text 2 Ending" tags="" position="3075,550" size="100,100">@@.blue;&quot;i feel a lot better now&quot;@@
+[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="65" name="Text 2 Ending" tags="text" position="3075,550" size="100,100">@@.blue;i feel a lot better now@@
 
-@@.blue;&quot;i cant wait to work on the project again tomorrow :)&quot;@@
+@@.blue;i cant wait to work on the project again tomorrow :)@@
 
-[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="66" name="Ignore Text" tags="" position="2550,1000" size="100,100">&quot;@@.blue;&quot;i thought you would like to see my cat ricky&quot;
+[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="66" name="Ignore Text" tags="text" position="2550,1000" size="100,100">@@.blue;i thought you would like to see my cat ricky
 
-&quot;he always cheers me up when im having a bad day&quot;
+he always cheers me up when im having a bad day
 
-&quot;like rn :(&quot;@@
+like rn :(@@
 
-[[&quot;what happened?&quot;|Sad Text][$attentiveness += 0.2]]
-[[&quot;oh no&quot;|Sad Text]]
-[[(Don&#39;t reply.)|Sad Text][$attentiveness -= 0.2]]
-</tw-passagedata><tw-passagedata pid="67" name="Final Escalation" tags="" position="3400,1100" size="100,100">It&#39;s 1:34 am.
+[[what happened?|Sad Text][$attentiveness += 0.2]]
+
+[[oh no|Sad Text]]
+
+[[(Don&#39;t reply.)|Sad Text][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="67" name="Final Escalation" tags="" position="3400,1100" size="100,100">It&#39;s 1:34 am.
 
 @@.blue;&quot;are you there?&quot; [REDACTED]@@ texts, the white light of your phone screen tracing shapes into your ceiling. @@.blue;&quot;i really need you&quot;@@
 
@@ -604,9 +668,9 @@ When you wake up in the morning, you turn on your phone, and...
 
 &quot;i hope youre happy&quot;@@
 
-[[(Call public safety.)]]</tw-passagedata><tw-passagedata pid="81" name="Text Convo 2" tags="" position="2356.666666666667,808.3333333333334" size="100,100">It&#39;s a couple of days after meeting with @@.blue;[REDACTED]@@ in the labs.
+[[(Call public safety.)]]</tw-passagedata><tw-passagedata pid="81" name="Text Convo 2" tags="" position="2250,925" size="100,100">It&#39;s a couple of days after meeting with @@.blue;[REDACTED]@@ in the labs.
 
-[[&gt;&gt;|Text Convo 2.5]]</tw-passagedata><tw-passagedata pid="82" name="Survey" tags="" position="3401.666666666667,598.3333333333334" size="100,100">Congrats! You have made it to the end of the playable demo.
+[[&gt;&gt;|Text Convo 2.5]]</tw-passagedata><tw-passagedata pid="82" name="Survey" tags="" position="3400,600" size="100,100">Congrats! You have made it to the end of the playable demo.
 
 Take a moment to collect your thoughts, then head on over to our survey and tell us what you thought of it.
 
