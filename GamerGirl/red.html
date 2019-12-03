@@ -318,9 +318,8 @@ He waves you over to the monitor.
 
 [[&quot;Looks like *the warriors* are at it again.&quot;-&gt;PassiveAggressive]]
 
-[[&quot;Listen, I&#39;m just here to work on the project.&quot;-&gt;Project]]
-
-(set: $asked to true)</tw-passagedata><tw-passagedata pid="6" name="Project" tags="lab-red" position="2300,502" size="100,100">&lt;&lt;if $asked is true&gt;&gt;@@.red;[&quot;Oh right. Sorry lads, I&#39;ve got work to do.&quot;@@&lt;&lt;/if&gt;&gt;
+[[&quot;Listen, I&#39;m just here to work on the project.&quot;-&gt;Project]]&lt;&lt;set: $asked to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="6" name="Project" tags="lab-red" position="2300,502" size="100,100">&lt;&lt;if $asked is true&gt;&gt;@@.red;[&quot;Oh right. Sorry lads, I&#39;ve got work to do.&quot;@@&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $gotcha is true&gt;&gt;@@.red;[REDACTED]@@ smirks as you hesitate by the door. You can&#39;t afford to fail this project.&lt;&lt;/if&gt;&gt;
 The group continues on chatting as you and @@.red;[REDACTED]@@ move to the back of the labs. You can still hear them discussing the model in question.
 
@@ -518,39 +517,39 @@ I&#39;ll see you at 3@@
 
 [[&gt;&gt;|Escalation2.5]]</tw-passagedata><tw-passagedata pid="42" name="Escalation2.5" tags="class-red" position="2501,1649" size="100,100">@@.red;[REDACTED]@@ has reserved a chair next to him, clearly intended for you. He looks unhappy.
 
-[[&quot;Hey, how&#39;s it going?&quot;|Code]]
+[[&quot;Hey, how&#39;s it going?&quot;|Code][$friendliness+=0.3]]
 
-[[&quot;Is everything alright?&quot;|Code]]
+[[&quot;Is everything alright?&quot;|Code][$friendliness+=0.1]]
 
-[[Say nothing and take a seat.|Code]]
+[[Say nothing and take a seat.|Code][$friendliness-=0.1]]
 
 </tw-passagedata><tw-passagedata pid="43" name="Code" tags="class-red" position="2501,1799" size="100,100">@@.red;&quot;Your code doesn&#39;t work,&quot;@@ He snaps. @@.red;&quot;It&#39;s causing memory leaks.&quot;@@
 
-[[&quot;Can you show me where it breaks?&quot;|Figure]]
+[[&quot;Can you show me where it breaks?&quot;|Figure][$attentiveness+=0.1]]
 
-[[&quot;Okay.&quot;|Figure]]
+[[&quot;Okay.&quot;|Figure][$assertiveness-=0.1]]
 
-[[&quot;But I double checked it...&quot;|Figure]]</tw-passagedata><tw-passagedata pid="44" name="Figure" tags="class-red" position="2501,1945.6666666666667" size="100,100">@@.red;&quot;Figure it out.&quot;@@ He replies.
+[[&quot;But I double checked it...&quot;|Figure][$attentiveness-=0.1]]</tw-passagedata><tw-passagedata pid="44" name="Figure" tags="class-red" position="2501,1945" size="100,100">@@.red;&quot;Figure it out.&quot;@@ He replies.
 
 You spend a few minutes going through the code trying to figure out what was causing the memory leak.
 
 [[&gt;&gt;|Error]]</tw-passagedata><tw-passagedata pid="45" name="Error" tags="class-red" position="2501,2099" size="100,100">But... it&#39;s not in your part of the code. @@.red;[REDACTED]@@ is forgetting to delete an array he declares in the constructor.
 
-[[&quot;You forgot a variable in your destructor.&quot;|Destructor]]
+[[&quot;You forgot a variable in your destructor.&quot;|Destructor][$assertiveness+=0.2]]
 
-[[&quot;I uh... found the error.&quot;|Error2]]
+[[&quot;I uh... found the error.&quot;|Error2][$assertiveness-=0.1]]
 
-[[&quot;It&#39;s your code that&#39;s breaking.&quot;|Blame]]</tw-passagedata><tw-passagedata pid="46" name="Destructor" tags="class-red" position="2351,2249" size="100,100">@@.red;&quot;I&#39;ve accounted for all of my variables.&quot; He replies. His eyes are glued to his phone.
+[[&quot;It&#39;s your code that&#39;s breaking.&quot;|Blame][$assertiveness+=0.5]]</tw-passagedata><tw-passagedata pid="46" name="Destructor" tags="class-red" position="2351,2249" size="100,100">@@.red;&quot;I&#39;ve accounted for all of my variables.&quot; He replies. His eyes are glued to his phone.
 
-[[&quot;It&#39;s your code that&#39;s the problem.&quot;|Blame2]]
+[[&quot;It&#39;s your code that&#39;s the problem.&quot;|Blame2][$assertiveness+=0.3]]
 
 [[(Fix the error.)|Fix]]</tw-passagedata><tw-passagedata pid="47" name="Error2" tags="class-red" position="2503,2247" size="100,100">@@.red;&quot;Then fix it.&quot;@@
 
-[[&quot;It&#39;s in your code, not mine.&quot;|Blame]]
+[[&quot;It&#39;s in your code, not mine.&quot;|Blame][$assertiveness+=0.3]]
 
 [[(Fix the error.)|Fix]]</tw-passagedata><tw-passagedata pid="48" name="Blame" tags="class-red" position="2653,2249" size="100,100">@@.red;&quot;Heh, that&#39;s cute. No, seriously, fix it.&quot;
 
-[[&quot;I&#39;m serious. It&#39;s in your code.&quot;|Blame2]]
+[[&quot;I&#39;m serious. It&#39;s in your code.&quot;|Blame2][$assertiveness+=0.1]]
 
 [[(Fix the error.)|Fix]]</tw-passagedata><tw-passagedata pid="49" name="Fix" tags="class-red" position="2501,2399" size="100,100">@@.red;[REDACTED]@@ finally looks up from his phone when he hears you begin to type.
 
@@ -558,25 +557,25 @@ You spend a few minutes going through the code trying to figure out what was cau
 
 [[&quot;You said to fix the error.&quot;|Fix2]]
 
-[[&quot;I told you why already.&quot;|Blame3]]
+[[&quot;I told you why already.&quot;|Blame3][$assertiveness+=0.2]]
 
-[[&quot;I&#39;m just doing what you told me.&quot;|Told]]</tw-passagedata><tw-passagedata pid="50" name="Blame2" tags="class-red" position="2651,2399" size="100,100">@@.red;&quot;What the fuck are you talking about??&quot;@@ His voice grows louder.
+[[&quot;I&#39;m just doing what you told me.&quot;|Told][$friendliness-=0.2]]</tw-passagedata><tw-passagedata pid="50" name="Blame2" tags="class-red" position="2651,2399" size="100,100">@@.red;&quot;What the fuck are you talking about??&quot;@@ His voice grows louder.
 
 @@.red;&quot;Fix your damn code.&quot;@@
 
-[[&quot;Your code is broken.&quot;|Blame3]]
+[[&quot;Your code is broken.&quot;|Blame3][$assertiveness+=0.5]]
 
-[[&quot;I&#39;m trying to fix the project.&quot;|Blame3]]
+[[&quot;I&#39;m trying to fix the project.&quot;|Blame3][$friendliness+=0.2]]
 
-[[&quot;Show me where the error is.&quot;|Blame3]]</tw-passagedata><tw-passagedata pid="51" name="Blame3" tags="class-red" position="2698,2700" size="100,100">@@.red;&quot;Oh my GOD. FIX YOUR FUCKING CODE.&quot;@@
+[[&quot;Show me where the error is.&quot;|Blame3][$assertiveness+=0.1]]</tw-passagedata><tw-passagedata pid="51" name="Blame3" tags="class-red" position="2698,2700" size="100,100">@@.red;&quot;Oh my GOD. FIX YOUR FUCKING CODE.&quot;@@
 
 By now the chatter in the class has died down. Everyone is sitting in awkward silence as @@.red;[REDACTED]@@ yells.
 
 [[(Look around for help.)|Help]]
 
-[[&quot;Stop yelling.&quot;|Yell]]
+[[&quot;Stop yelling.&quot;|Yell][$assertiveness+=0.1]]
 
-[[&quot;Show me where the error is.&quot;|Show]]</tw-passagedata><tw-passagedata pid="52" name="Help" tags="class" position="2516,2849" size="100,100">There are quite a few people you know in this class. Who do you turn to for help?
+[[&quot;Show me where the error is.&quot;|Show][$attentiveness-=0.1]]</tw-passagedata><tw-passagedata pid="52" name="Help" tags="class" position="2516,2849" size="100,100">There are quite a few people you know in this class. Who do you turn to for help?
 
 @@.orange;[[REDACTED|Orange]]@@
 
@@ -620,49 +619,49 @@ He then returns to his project like a coward.
 
 @@.red;&quot;You&#39;re never going to go anywhere if you can&#39;t figure out something so stupidly easy.&quot;@@
 
-[[&quot;Let&#39;s ask Professor [REDACTED] for help.&quot;|Professor]]
+[[&quot;Let&#39;s ask Professor [REDACTED] for help.&quot;|Professor][$attentiveness+=0.3]]
 
-[[&quot;Are you done?&quot;|Done]]
+[[&quot;Are you done?&quot;|Done][$friendliness-=0.4]]
 
-[[(Say nothing.)|Silent]]</tw-passagedata><tw-passagedata pid="61" name="Professor" tags="class-red" position="2474.6666666666665,3500.6666666666665" size="100,100">Upon hearing his name, Professor @@.purple;[REDACTED]@@ finally rises from his seat and lumbers over.
+[[(Say nothing.)|Silent][$assertiveness-=0.4]]</tw-passagedata><tw-passagedata pid="61" name="Professor" tags="class-red" position="2474,3500" size="100,100">Upon hearing his name, Professor @@.purple;[REDACTED]@@ finally rises from his seat and lumbers over.
 
 @@.purple;&quot;You rang?&quot;@@
 
-[[&quot;We&#39;re having a problem with the code.&quot;|Interrupt]]
+[[&quot;We&#39;re having a problem with the code.&quot;|Interrupt][$attentiveness+=0.1]]
 
-[[&quot;Can you make him stop?&quot;|Interrupt]]
+[[&quot;Can you make him stop?&quot;|Interrupt][$friendliness-=0.3]]
 
-[[(Say nothing.)|Interrupt]]</tw-passagedata><tw-passagedata pid="62" name="Done" tags="class-red" position="2623,3499" size="100,100">@@.red;&quot;YOU CAN SHUT THE FUCK UP!&quot;@@
+[[(Say nothing.)|Interrupt][$assertiveness-=0.1]]</tw-passagedata><tw-passagedata pid="62" name="Done" tags="class-red" position="2623,3499" size="100,100">@@.red;&quot;YOU CAN SHUT THE FUCK UP!&quot;@@
 
 This is finally enough to get Professor @@.purple;[REDACTED]@@ off of his ass. He lumbers over towards the two of you.
 
-[[&quot;Can you make him stop?&quot;|Interrupt]]
+[[&quot;Can you make him stop?&quot;|Interrupt][$friendliness-=0.3]]
 
-[[&quot;Can you help us fix our code?&quot;|Interrupt]]
+[[&quot;Can you help us fix our code?&quot;|Interrupt][$attentiveness+=0.1]]
 
-[[(Say nothing.)|Interrupt]]</tw-passagedata><tw-passagedata pid="63" name="Silent" tags="class-red" position="2773,3499" size="100,100">@@.red;&quot;I mean really. Good luck getting a games job or any job for that matter.&quot;@@
+[[(Say nothing.)|Interrupt][$assertiveness-=0.1]]</tw-passagedata><tw-passagedata pid="63" name="Silent" tags="class-red" position="2773,3499" size="100,100">@@.red;&quot;I mean really. Good luck getting a games job or any job for that matter.&quot;@@
 
 @@.red;&quot;Nobody would ever want to hire someone like you who can&#39;t even work with others.&quot;@@
 
 @@.red;&quot;Hell nobody would even want to hire someone so stupid who can&#39;t figure out how to fix a fucking memory leak.&quot;@@
 
-[[&quot;Can you shut the hell up?&quot;|Done]]
+[[&quot;Can you shut the hell up?&quot;|Done][$friendliness-=0.5]]
 
-[[&quot;Let&#39;s get the professor to help.&quot;|Professor]]
+[[&quot;Let&#39;s get the professor to help.&quot;|Professor][$attentiveness+=0.1]]
 
-[[(Stay silent.)|Silence]]</tw-passagedata><tw-passagedata pid="64" name="Fix2" tags="class-red" position="2198,2597" size="100,100">@@.red;&quot;The error isn&#39;t in my code. My code is perfect.&quot;@@
+[[(Stay silent.)|Silence][$assertiveness-=0.5]]</tw-passagedata><tw-passagedata pid="64" name="Fix2" tags="class-red" position="2198,2597" size="100,100">@@.red;&quot;The error isn&#39;t in my code. My code is perfect.&quot;@@
 
-[[&quot;Clearly not...&quot;|Blame3]]
+[[&quot;Clearly not...&quot;|Blame3][$assertiveness+=0.2]]
 
-[[&quot;You forgot a variable which is causing the leaks.&quot;|Blame3]]
+[[&quot;You forgot a variable which is causing the leaks.&quot;|Blame3][$friendliness+=0.1]]
 
-[[&quot;I&#39;m doing what you told me to.&quot;|Told]]</tw-passagedata><tw-passagedata pid="65" name="Told" tags="class-red" position="2498,2597" size="100,100">@@.red;&quot;I told you to fix //YOUR// code.&quot;@@ he replies, @@.red;&quot;Not mess around with mine.&quot;@@
+[[&quot;I&#39;m doing what you told me to.&quot;|Told][$assertiveness+=0.1]]</tw-passagedata><tw-passagedata pid="65" name="Told" tags="class-red" position="2498,2597" size="100,100">@@.red;&quot;I told you to fix //YOUR// code.&quot;@@ he replies, @@.red;&quot;Not mess around with mine.&quot;@@
 
-[[&quot;I can&#39;t fix what isn&#39;t broken.&quot;|Blame3]]
+[[&quot;I can&#39;t fix what isn&#39;t broken.&quot;|Blame3][$assertiveness+=0.1]]
 
-[[&quot;This is where the error is.&quot;|Blame]]
+[[&quot;This is where the error is.&quot;|Blame][$assertiveness+=0.1]]
 
-[[&quot;It&#39;s just a small fix...&quot;|Blame]]</tw-passagedata><tw-passagedata pid="66" name="Interrupt" tags="class-red" position="2626,3700" size="100,100">@@.red;&quot;This idiot can&#39;t even fix her stupid memory leak.&quot; [REDACTED]@@ cuts in.
+[[&quot;It&#39;s just a small fix...&quot;|Blame][$friendliness+=0.1]]</tw-passagedata><tw-passagedata pid="66" name="Interrupt" tags="class-red" position="2626,3700" size="100,100">@@.red;&quot;This idiot can&#39;t even fix her stupid memory leak.&quot; [REDACTED]@@ cuts in.
 
 @@.red;&quot;She&#39;s been completely useless this whole time.&quot;@@
 
@@ -676,7 +675,7 @@ On and on for over fifteen minutes, @@.red;[REDACTED]@@ yells about how you&#39;
 
 Class finally ends.
 
-[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="68" name="Proof" tags="class-red" position="2626,3850" size="100,100">Professor @@.purple;[REDACTED]@@ scans the code for a few minutes while @@.red;[REDACTED]@@ sits there fuming.
+[[&gt;&gt;|Survey]]</tw-passagedata><tw-passagedata pid="68" name="Proof" tags="class-red" position="2626,3848.3333333333335" size="100,100">Professor @@.purple;[REDACTED]@@ scans the code for a few minutes while @@.red;[REDACTED]@@ sits there fuming.
 
 @@.purple;&quot;Ah, I see where the leak is coming from.&quot;@@
 
@@ -688,11 +687,11 @@ He pats you on the head.
 
 @@.purple;&quot;Easy mistake to make, don&#39;t worry about it.&quot;@@
 
-[[&quot;Actually...&quot;|Actually]]
+[[&quot;Actually...&quot;|Actually][$assertiveness+=0.2]]
 
-[[&quot;That&#39;s not my part of the code.&quot;|Actually]]
+[[&quot;That&#39;s not my part of the code.&quot;|Actually][$assertiveness+=0.2]]
 
-[[(Say nothing.)|Actuallynt]]</tw-passagedata><tw-passagedata pid="69" name="Survey" tags="text" position="2901,3800" size="100,100">Congrats! You have made it to the end of the playable demo.
+[[(Say nothing.)|Actuallynt][$friendliness+=0.2]]</tw-passagedata><tw-passagedata pid="69" name="Survey" tags="text" position="2901,3800" size="100,100">Congrats! You have made it to the end of the playable demo.
 
 Take a moment to collect your thoughts, then head on over to our survey and tell us what you thought of it.
 
@@ -728,11 +727,11 @@ You and @@.red;[REDACTED]@@ are presenting second. He&#39;s not here yet.
 
 You&#39;re on a time crunch.
 
-[[Text Him|Text]]
+[[Text Him|Text][$friendliness+=0.1]]
 
-[[Review the new code|New Code]]
+[[Review the new code|New Code][$attentiveness+=0.3]]
 
-[[Pay close attention to the first presentation|Present]]</tw-passagedata><tw-passagedata pid="77" name="Text" tags="" position="3025,4447" size="100,100">You send him a quick &#39;Where are you?&#39; text. There&#39;s no response.
+[[Pay close attention to the first presentation|Present][$attentiveness+=0.3]]</tw-passagedata><tw-passagedata pid="77" name="Text" tags="" position="3025,4447" size="100,100">You send him a quick &#39;Where are you?&#39; text. There&#39;s no response.
 
 It looks like you&#39;re going to be presenting alone.
 
@@ -746,7 +745,7 @@ Now that you know the entire code base, you&#39;re pretty sure you can explain i
 
 [[&gt;&gt;|Presentation]]</tw-passagedata><tw-passagedata pid="80" name="Presentation" tags="" position="3200,4597" size="100,100">The first group finishes and sits down to some awkward forced applause. People always seem socially obligated to clap at the end of presentations.
 
-@@.purple;Professor [REDACTED]@@ calls out for you and @@.red;[REDACTED]@@ to go pull up your work at the front.</tw-passagedata><tw-passagedata pid="81" name="Interlude" tags="hallway" position="2198.3333333333335,1352.6666666666665" size="100,100">It has been two weeks since the start of the semester. Work is slow on your partner project as @@.red;[REDACTED]@@ demands that you do everything his way.
+@@.purple;Professor [REDACTED]@@ calls out for you and @@.red;[REDACTED]@@ to go pull up your work at the front.</tw-passagedata><tw-passagedata pid="81" name="Interlude" tags="hallway" position="2198,1352" size="100,100">It has been two weeks since the start of the semester. Work is slow on your partner project as @@.red;[REDACTED]@@ demands that you do everything his way.
 
 You&#39;re waiting once more outside of class. You know you need to go inside.
 
