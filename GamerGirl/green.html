@@ -116,7 +116,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 
 [[&quot;whatcha need?&quot;|Polite][$friendliness+=0.1]]
 
-[[(ignore him.)|Ignore][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="2" name="Escalation" tags="labs" position="2402,99" size="100,100">It&#39;s 8PM on a Wednesday night, two weeks into the semester. You&#39;re finishing up your web development homework in the labs.
+[[(ignore him.)|Ignore][$attentiveness -= 0.2]]</tw-passagedata><tw-passagedata pid="2" name="Escalation" tags="lab" position="2402,99" size="100,100">It&#39;s 8PM on a Wednesday night, two weeks into the semester. You&#39;re finishing up your web development homework in the labs.
 
 You are lucky to have finished so early. Half of the class is currently in the labs, and you&#39;ve heard quite a few students complaining about the long night ahead.
 
@@ -126,7 +126,7 @@ FRIENDLINESS: &lt;&lt;print $friendliness&gt;&gt;
 
 ATTENTIVENESS: &lt;&lt;print $attentiveness&gt;&gt;
 
-ASSERTIVENESS: &lt;&lt;print $assertiveness&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Assignment" tags="labs-green" position="2403,250" size="100,100">You submit your assignment to the dropbox and head to grab a bottle of water from the vending machine outside the labs.
+ASSERTIVENESS: &lt;&lt;print $assertiveness&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Assignment" tags="lab-green" position="2403,250" size="100,100">You submit your assignment to the dropbox and head to grab a bottle of water from the vending machine outside the labs.
 
 You return to the labs, water in hand, when @@.green;[REDACTED]@@ rushes out and starts looking around frantically.
 
@@ -134,31 +134,31 @@ You return to the labs, water in hand, when @@.green;[REDACTED]@@ rushes out and
 
 [[&quot;What are you doing?&quot;|Ask]]
 
-[[Say nothing|Nothing]]</tw-passagedata><tw-passagedata pid="4" name="Ask" tags="labs-green" position="2402,403" size="100,100">@@.green;&quot;Oh there you are! I didn&#39;t know where you went.&quot;@@
+[[Say nothing|Nothing]]</tw-passagedata><tw-passagedata pid="4" name="Ask" tags="lab-green" position="2402,403" size="100,100">@@.green;&quot;Oh there you are! I didn&#39;t know where you went.&quot;@@
 
 [[&quot;Umm.. I was just getting water.&quot;|Water]]
 
 [[&quot;Why is my location your concern?&quot;|Anger]]
 
-[[&quot;...What?&quot;|Worry]]</tw-passagedata><tw-passagedata pid="5" name="Nothing" tags="labs-green" position="2550,326" size="100,100">He keeps looking around frantically, like he lost something. Finally he makes eye contact and walks over.
+[[&quot;...What?&quot;|Worry]]</tw-passagedata><tw-passagedata pid="5" name="Nothing" tags="lab-green" position="2550,326" size="100,100">He keeps looking around frantically, like he lost something. Finally he makes eye contact and walks over.
 
 [[&quot;What&#39;s up?|Ask]]
 
 [[&quot;Did you lose something?&quot;|Ask]]
 
-[[(Say nothing.)|Ask]]</tw-passagedata><tw-passagedata pid="6" name="Water" tags="labs-green" position="2402,555" size="100,100">@@.green;&quot;Oh, ok. That&#39;s a relief.&quot;@@ He sighs. @@.green;&quot;Are you coming back inside now?&quot;@@
+[[(Say nothing.)|Ask]]</tw-passagedata><tw-passagedata pid="6" name="Water" tags="lab-green" position="2402,555" size="100,100">@@.green;&quot;Oh, ok. That&#39;s a relief.&quot;@@ He sighs. @@.green;&quot;Are you coming back inside now?&quot;@@
 
 [[&quot;I&#39;m actually done for the night.&quot;|Done]]
 
 [[&quot;No. I&#39;m not.&quot;|Done]]
 
-[[&quot;Why did you follow me out?&quot;|Interrogate]]</tw-passagedata><tw-passagedata pid="7" name="Anger" tags="labs-green" position="2706,556" size="100,100">@@.green;&quot;I was worried.&quot;@@ He replies. @@.green;&quot;You were there one minute then gone the next. Are you coming back inside now?&quot;@@
+[[&quot;Why did you follow me out?&quot;|Interrogate]]</tw-passagedata><tw-passagedata pid="7" name="Anger" tags="lab-green" position="2706,556" size="100,100">@@.green;&quot;I was worried.&quot;@@ He replies. @@.green;&quot;You were there one minute then gone the next. Are you coming back inside now?&quot;@@
 
 [[&quot;I&#39;m actually done for the night.&quot;|Done]]
 
 [[&quot;No. I&#39;m not.&quot;|Done]]
 
-[[&quot;Why did you follow me out?&quot;|Interrogate]]</tw-passagedata><tw-passagedata pid="8" name="Worry" tags="labs-green" position="2553,556" size="100,100">@@.green;&quot;I was worried.&quot;@@ He shrugs.
+[[&quot;Why did you follow me out?&quot;|Interrogate]]</tw-passagedata><tw-passagedata pid="8" name="Worry" tags="lab-green" position="2553,556" size="100,100">@@.green;&quot;I was worried.&quot;@@ He shrugs.
 
 @@.green;&quot;Are you coming back inside now?&quot;@@
 
@@ -166,19 +166,19 @@ You return to the labs, water in hand, when @@.green;[REDACTED]@@ rushes out and
 
 [[&quot;No. I&#39;m not.&quot;|Done]]
 
-[[&quot;Why did you follow me out?&quot;|Interrogate]]</tw-passagedata><tw-passagedata pid="9" name="Done" tags="labs-green" position="2401,702" size="100,100">@@.green;&quot;Oh, ok. Give me just a second then.&quot;@@
+[[&quot;Why did you follow me out?&quot;|Interrogate]]</tw-passagedata><tw-passagedata pid="9" name="Done" tags="lab-green" position="2401,702" size="100,100">@@.green;&quot;Oh, ok. Give me just a second then.&quot;@@
 
 @@.green;[REDACTED]@@ disappears into the labs.
 
 [[(Wait for him.)|Wait]]
 
-[[(Leave.)|Leave]]</tw-passagedata><tw-passagedata pid="10" name="Interrogate" tags="labs-green" position="2551,700.3333333333334" size="100,100">@@.green;&quot;I dont know... I just get lonesome. What&#39;s wrong with that?&quot;@@
+[[(Leave.)|Leave]]</tw-passagedata><tw-passagedata pid="10" name="Interrogate" tags="lab-green" position="2551,700" size="100,100">@@.green;&quot;I dont know... I just get lonesome. What&#39;s wrong with that?&quot;@@
 
 [[&quot;It&#39;s kind of creepy, dude.&quot;|Creepy]]
 
 [[&quot;I guess it&#39;s fine...&quot;|Fine]]
 
-[[&quot;Ok... I&#39;m gonig to head out.&quot;|Done]]</tw-passagedata><tw-passagedata pid="11" name="Wait" tags="labs-green" position="2353,855" size="100,100">@@.green;[REDACTED]@@ emerges a moment later with his bookbag.
+[[&quot;Ok... I&#39;m gonig to head out.&quot;|Done]]</tw-passagedata><tw-passagedata pid="11" name="Wait" tags="lab-green" position="2353,855" size="100,100">@@.green;[REDACTED]@@ emerges a moment later with his bookbag.
 
 @@.green;&quot;Alright. I&#39;m ready to go.&quot;@@
 
@@ -188,20 +188,20 @@ You return to the labs, water in hand, when @@.green;[REDACTED]@@ rushes out and
 
 [[(Start walking.)|Walk]]
 
-</tw-passagedata><tw-passagedata pid="12" name="Leave" tags="labs-green" position="2473,855" size="100,100">You get less than ten steps away from the labs when you hear someone running up behind you. Suddenly @@.green;[REDACTED]@@ is right next to you with his bookbag slung over one shoulder.
+</tw-passagedata><tw-passagedata pid="12" name="Leave" tags="lab-green" position="2473,855" size="100,100">You get less than ten steps away from the labs when you hear someone running up behind you. Suddenly @@.green;[REDACTED]@@ is right next to you with his bookbag slung over one shoulder.
 
 [[&quot;Where are you going?&quot;|Challenge]]
 
 [[&quot;What do you think you&#39;re doing?&quot;|Challenge]]
 
 [[Ignore him.|Walk]]
-</tw-passagedata><tw-passagedata pid="13" name="Creepy" tags="labs-green" position="2593,852" size="100,100">@@.green;&quot;What&#39;s wrong with making sure you&#39;re alright? I just didn&#39;t know when you were coming back to the labs.&quot;@@
+</tw-passagedata><tw-passagedata pid="13" name="Creepy" tags="lab-green" position="2593,852" size="100,100">@@.green;&quot;What&#39;s wrong with making sure you&#39;re alright? I just didn&#39;t know when you were coming back to the labs.&quot;@@
 
 [[&quot;I&#39;m actually done for the night.&quot;|Done]]
 
 [[&quot;I&#39;m going home.&quot;|Done]]
 
-[[(Leave.)|Leave]]</tw-passagedata><tw-passagedata pid="14" name="Fine" tags="labs-green" position="2713,852" size="100,100">@@.green;&quot;I&#39;m glad you&#39;re back now.&quot;@@ He smiles. @@.green;&quot;Are you coming inside now?&quot;@@
+[[(Leave.)|Leave]]</tw-passagedata><tw-passagedata pid="14" name="Fine" tags="lab-green" position="2713,852" size="100,100">@@.green;&quot;I&#39;m glad you&#39;re back now.&quot;@@ He smiles. @@.green;&quot;Are you coming inside now?&quot;@@
 
 [[&quot;I&#39;m actually done for the night.&quot;|Done]]
 
@@ -209,7 +209,7 @@ You return to the labs, water in hand, when @@.green;[REDACTED]@@ rushes out and
 
 [[(Leave.)|Leave]]</tw-passagedata><tw-passagedata pid="15" name="Allow" tags="outsideEvening-green" position="2203,1007" size="100,100">The two of you walk back to the dorms together, making awkward small talk.
 &lt;&lt;set $walk = &quot;talk&quot;&gt;&gt; 
-[[&gt;&gt;|Text Escalation 2]]</tw-passagedata><tw-passagedata pid="16" name="Challenge" tags="labs-green" position="2353,1005" size="100,100">@@.green;&quot;Walking home?&quot;@@
+[[&gt;&gt;|Text Escalation 2]]</tw-passagedata><tw-passagedata pid="16" name="Challenge" tags="lab-green" position="2353,1005" size="100,100">@@.green;&quot;Walking home?&quot;@@
 
 [[&quot;Leave me alone.&quot;|Alone]]
 
@@ -221,7 +221,7 @@ You return to the labs, water in hand, when @@.green;[REDACTED]@@ rushes out and
 
 You manage to walk home alone without any further trouble.
 &lt;&lt;set $walk = &quot;alone&quot;&gt;&gt; 
-[[&gt;&gt;|Text Escalation 2]]</tw-passagedata><tw-passagedata pid="19" name="Survey" tags="text" position="1702.6666666666667,4596.666666666666" size="100,100">Congrats! You have made it to the end of the playable demo.
+[[&gt;&gt;|Text Escalation 2]]</tw-passagedata><tw-passagedata pid="19" name="Survey" tags="text" position="1702,4596" size="100,100">Congrats! You have made it to the end of the playable demo.
 
 Take a moment to catch your breath, then head on over to our survey and tell us what you thought of it.
 
@@ -357,7 +357,7 @@ You hear his phone buzz from the other side of the door.
 
 You hear @@.green;[REDACTED]@@ walk away while your roommate unlocks the dorm room door.
 
-[[&gt;&gt;|RoommateLocked]]</tw-passagedata><tw-passagedata pid="38" name="NothingRoommate" tags="dorm" position="1248.6666666666667,799.3333333333334" size="100,100">&quot;Listen dude,&quot; Your roommate says, &quot;I&#39;ve had a long day of classes and I&#39;m dying to kick my feet back and relax. Can you please come back later?&quot;
+[[&gt;&gt;|RoommateLocked]]</tw-passagedata><tw-passagedata pid="38" name="NothingRoommate" tags="dorm" position="1248,799" size="100,100">&quot;Listen dude,&quot; Your roommate says, &quot;I&#39;ve had a long day of classes and I&#39;m dying to kick my feet back and relax. Can you please come back later?&quot;
 
 You can feel the tension from the other side of the door.
 
@@ -365,7 +365,7 @@ You can feel the tension from the other side of the door.
 
 You hear @@.green;[REDACTED]@@ walk away while your roommate unlocks the dorm room door.
 
-[[&gt;&gt;|RoommateLocked]]</tw-passagedata><tw-passagedata pid="39" name="IgnoreConvo2" tags="dorm" position="1103,997.3333333333334" size="100,100">Five minutes pass. You hear another knock on the door.&lt;&lt;set $ignoredKnock += 1&gt;&gt;
+[[&gt;&gt;|RoommateLocked]]</tw-passagedata><tw-passagedata pid="39" name="IgnoreConvo2" tags="dorm" position="1103,997" size="100,100">Five minutes pass. You hear another knock on the door.&lt;&lt;set $ignoredKnock += 1&gt;&gt;
 
 @@.green;&quot;Hello? Can I come in?&quot;@@
 
@@ -419,11 +419,11 @@ Your roommate beckons you into your shared dorm.
 
 &quot;See you around.&quot; Your roommate says, before closing the door.
 
-[[&gt;&gt;|RoommateLocked]]</tw-passagedata><tw-passagedata pid="46" name="WontStopHim" tags="dorm" position="1853.6666666666667,947.3333333333334" size="100,100">&quot;You seem really messed up about this.&quot; Your roommate muses.
+[[&gt;&gt;|RoommateLocked]]</tw-passagedata><tw-passagedata pid="46" name="WontStopHim" tags="dorm" position="1853,947" size="100,100">&quot;You seem really messed up about this.&quot; Your roommate muses.
 
 &quot;This has been a pretty rough start to the semester. Let&#39;s watch a movie and pretend that never happened.&quot;
 
-[[&gt;&gt;|Escalation]]</tw-passagedata><tw-passagedata pid="47" name="PleaseLeave" tags="dorm" position="700.6666666666666,1403" size="100,100">@@.green;&quot;I ummm... yeah. sure. I&#39;ll talk to you later.&quot;@@
+[[&gt;&gt;|Escalation]]</tw-passagedata><tw-passagedata pid="47" name="PleaseLeave" tags="dorm" position="700,1403" size="100,100">@@.green;&quot;I ummm... yeah. sure. I&#39;ll talk to you later.&quot;@@
 
 You wait in absolute silence for another couple of seconds until you finally hear him turn and lumber off down the hall.
 
@@ -453,7 +453,7 @@ You have no memory of ever stating where you lived.
 
 [[&quot;Can we do this later?&quot;|MakeHimLeave]]&lt;&lt;else&gt;&gt;[[&quot;I guess.&quot;|RoommateShows][$assertiveness -= 0.2]]
 
-[[&quot;Can we do this later?&quot;|MakeHimLeave]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="StopShowingUp" tags="dorm-green" position="303,1397.3333333333333" size="100,100">@@.green;&quot;Sorry, I guess.&quot;@@ He looks hurt.
+[[&quot;Can we do this later?&quot;|MakeHimLeave]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="StopShowingUp" tags="dorm-green" position="303,1397" size="100,100">@@.green;&quot;Sorry, I guess.&quot;@@ He looks hurt.
 
 @@.green;&quot;I won&#39;t do it again.&quot;@@
 
@@ -476,7 +476,7 @@ He hesitates for a moment.
 
 [[&quot;See you later.&quot;|MakeHimLeave][$friendliness += 0.1]]
 
-[[&quot;Bye.&quot;|MakeHimLeave][$friendliness -= 0.1]] </tw-passagedata><tw-passagedata pid="54" name="MakeHimLeave" tags="dorm-green" position="102.66666666666667,1601" size="100,100">@@.green;&quot;I ummm... yeah, I&#39;ll see you later.&quot;@@
+[[&quot;Bye.&quot;|MakeHimLeave][$friendliness -= 0.1]] </tw-passagedata><tw-passagedata pid="54" name="MakeHimLeave" tags="dorm-green" position="102,1601" size="100,100">@@.green;&quot;I ummm... yeah, I&#39;ll see you later.&quot;@@
 
 You follow him to the door and lock it after he leaves.
 
@@ -490,7 +490,7 @@ Your roommate enters and seems surprised to see @@.green;[REDACTED]@@ standing n
 
 [[&quot;Can I have my laptop charger?&quot;|LaptopCharger][$assertiveness += 0.1]]
 
-[[(Shoot him a &#39;help me&#39; look)|RoommateHelp]]</tw-passagedata><tw-passagedata pid="56" name="LaptopCharger" tags="dorm-green" position="328.6666666666667,1747.3333333333333" size="100,100">&quot;Sure thing.&quot; He fishes it out of his bag. &quot;Sorry for borrowing it for so long. My new one has been shipped and is hopefully on the way.&quot;
+[[(Shoot him a &#39;help me&#39; look)|RoommateHelp]]</tw-passagedata><tw-passagedata pid="56" name="LaptopCharger" tags="dorm-green" position="328,1747" size="100,100">&quot;Sure thing.&quot; He fishes it out of his bag. &quot;Sorry for borrowing it for so long. My new one has been shipped and is hopefully on the way.&quot;
 
 @@.green;&quot;Oh... I guess you have your charger now.&quot; [REDACTED]@@ seems to shrink back.
 
@@ -546,7 +546,7 @@ You see @@.green;[REDACTED]&#39;s@@ number on screen.
 
 [[&quot;What?&quot;|RespondFriendly]]
 
-[[(Ignore him)|RespondFriendly]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="RespondAttentive" tags="text" position="1799.6666666666667,1701.6666666666667" size="100,100">@@.green;Why do you keep ignoring me?@@
+[[(Ignore him)|RespondFriendly]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="RespondAttentive" tags="text" position="1799,1701" size="100,100">@@.green;Why do you keep ignoring me?@@
 
 @@.green;This isn&#39;t what friends do to each other@@
 
@@ -566,7 +566,7 @@ You see @@.green;[REDACTED]&#39;s@@ number on screen.
 
 [[I&#39;m sorry you feel hurt.|ApologizeAssertive]]
 
-[[(Ignore him.)|IgnoreAssertive]]</tw-passagedata><tw-passagedata pid="63" name="RespondFriendly" tags="text" position="2676.666666666667,1700" size="100,100">@@.green;I can read the writing on the wall@@
+[[(Ignore him.)|IgnoreAssertive]]</tw-passagedata><tw-passagedata pid="63" name="RespondFriendly" tags="text" position="2676,1700" size="100,100">@@.green;I can read the writing on the wall@@
 
 @@.green;I know you&#39;re in love with me@@
 
@@ -574,7 +574,7 @@ You see @@.green;[REDACTED]&#39;s@@ number on screen.
 
 [[I actually can&#39;t stand you.|Friendly2]]
 
-[[(Ignore him)|Friendly2]]</tw-passagedata><tw-passagedata pid="64" name="Friendly2" tags="text" position="2676.666666666667,1850" size="100,100">@@.green;You can try to deny it@@
+[[(Ignore him)|Friendly2]]</tw-passagedata><tw-passagedata pid="64" name="Friendly2" tags="text" position="2676,1850" size="100,100">@@.green;You can try to deny it@@
 
 @@.green;But I know you&#39;re just waiting for the courage to ask me out@@
 
@@ -586,7 +586,7 @@ You see @@.green;[REDACTED]&#39;s@@ number on screen.
 
 [[I don&#39;t want to date you.|Deny]]
 
-[[(Ignore him)|IgnoreFriendly]]</tw-passagedata><tw-passagedata pid="65" name="Deny" tags="text" position="2601.666666666667,2001.6666666666667" size="100,100">@@.green;Then... what?@@
+[[(Ignore him)|IgnoreFriendly]]</tw-passagedata><tw-passagedata pid="65" name="Deny" tags="text" position="2601,2001" size="100,100">@@.green;Then... what?@@
 
 @@.green;You just led me on?@@
 
@@ -598,13 +598,13 @@ You see @@.green;[REDACTED]&#39;s@@ number on screen.
 
 [[I didn&#39;t lead you on|LedOn]]
 
-[[(Ignore him.)|IgnoreUnfriendly]]</tw-passagedata><tw-passagedata pid="66" name="IgnoreFriendly" tags="text" position="2898.3333333333335,1803.3333333333333" size="100,100">@@.green;I know this is a lot to process@@
+[[(Ignore him.)|IgnoreUnfriendly]]</tw-passagedata><tw-passagedata pid="66" name="IgnoreFriendly" tags="text" position="2898,1803" size="100,100">@@.green;I know this is a lot to process@@
 
 @@.green;But we need to talk@@
 
 @@.green;I&#39;ll be right over@@
 
-[[&gt;&gt;|RomanticEscalation]]</tw-passagedata><tw-passagedata pid="67" name="NotFriend" tags="text" position="1800,1898.3333333333335" size="100,100">@@.green;How could you say that???@@
+[[&gt;&gt;|RomanticEscalation]]</tw-passagedata><tw-passagedata pid="67" name="NotFriend" tags="text" position="1800,1898" size="100,100">@@.green;How could you say that???@@
 
 @@.green;After all that i&#39;ve done for you...@@
 
@@ -616,7 +616,7 @@ You see @@.green;[REDACTED]&#39;s@@ number on screen.
 
 You hear a knock on your dorm room door.
 
-[[&gt;&gt;|AngeryEscalation2]]</tw-passagedata><tw-passagedata pid="68" name="IgnoreAttentive" tags="text" position="1399.6666666666665,1900" size="100,100">@@.green;SEE?? YOU&quot;RE DOING IT RIGHT NOW@@
+[[&gt;&gt;|AngeryEscalation2]]</tw-passagedata><tw-passagedata pid="68" name="IgnoreAttentive" tags="text" position="1399,1900" size="100,100">@@.green;SEE?? YOU&quot;RE DOING IT RIGHT NOW@@
 
 @@.green;thats it. we&#39;re settling this.@@
 
@@ -630,7 +630,7 @@ You here a knock on your dorm room door.
 
 [[I can&#39;t be there for you 24/7|CantAttentive]]
 
-[[(Ignore him.)|IgnoreAttentive]]</tw-passagedata><tw-passagedata pid="70" name="AngeryEscalation2" tags="dorm" position="1603,2598.3333333333335" size="100,100">@@.green;[REDACTED]@@ is here. It&#39;s late at night. Your roommate is gone, and this man you barely know is knocking on your room.&lt;&lt;set $ignoredKnock2 += 2&gt;&gt;
+[[(Ignore him.)|IgnoreAttentive]]</tw-passagedata><tw-passagedata pid="70" name="AngeryEscalation2" tags="dorm" position="1603,2598" size="100,100">@@.green;[REDACTED]@@ is here. It&#39;s late at night. Your roommate is gone, and this man you barely know is knocking on your room.&lt;&lt;set $ignoredKnock2 += 2&gt;&gt;
 
 And you&#39;re pretty sure he&#39;s pissed.
 
@@ -644,7 +644,7 @@ And you&#39;re pretty sure he&#39;s pissed.
 
 [[(Call public safety)|AngeryPS]]
 
-[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="71" name="CantAttentive" tags="text" position="1599.6666666666667,2050" size="100,100">@@.green;So you do hate me.@@
+[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="71" name="CantAttentive" tags="text" position="1599,2050" size="100,100">@@.green;So you do hate me.@@
 
 @@.green;Why don&#39;t you come out and say it, huh????@@
 
@@ -652,7 +652,7 @@ And you&#39;re pretty sure he&#39;s pissed.
 
 You here a knock on your dorm room door.
 
-[[&gt;&gt;|AngeryEscalation2]]</tw-passagedata><tw-passagedata pid="72" name="HappyEscalation2" tags="dorm" position="2201.666666666667,2599.1666666666665" size="100,100">@@.green;[REDACTED]@@ is here. It&#39;s late at night. Your roommate is gone, and this man you barely know is knocking on your room.
+[[&gt;&gt;|AngeryEscalation2]]</tw-passagedata><tw-passagedata pid="72" name="HappyEscalation2" tags="dorm" position="2201,2599" size="100,100">@@.green;[REDACTED]@@ is here. It&#39;s late at night. Your roommate is gone, and this man you barely know is knocking on your room.
 
 And you&#39;re pretty sure he&#39;s looking for some sort of heart to heart.
 
@@ -666,19 +666,19 @@ And you&#39;re pretty sure he&#39;s looking for some sort of heart to heart.
 
 [[(Call public safety)|AngeryPS]]
 
-[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="73" name="CanAttentive" tags="text" position="1799.6666666666667,2100" size="100,100">@@.green;Hmmm i guess i accept your apology.@@
+[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="73" name="CanAttentive" tags="text" position="1799,2100" size="100,100">@@.green;Hmmm i guess i accept your apology.@@
 
 @@.green;Let&#39;s shake on it@@
 
 You hear a knock at your dorm room door.
 
-[[&gt;&gt;|HappyEscalation2]]</tw-passagedata><tw-passagedata pid="74" name="ApologizeAssertive" tags="text" position="2199.6666666666665,1894.9999999999998" size="100,100">@@.green;I don&#39;t think you are sorry@@
+[[&gt;&gt;|HappyEscalation2]]</tw-passagedata><tw-passagedata pid="74" name="ApologizeAssertive" tags="text" position="2199,1894" size="100,100">@@.green;I don&#39;t think you are sorry@@
 
 [[You&#39;re right. I&#39;m not.|BreakingPoint]]
 
 [[I really am sorry.|CanAttentive]]
 
-[[(Ignore him.)|IgnoreAssertive]]</tw-passagedata><tw-passagedata pid="75" name="IgnoreAssertive" tags="text" position="1999.6666666666665,1900" size="100,100">@@.green;So i called you out for what you are and you&#39;re ignoring me???@@
+[[(Ignore him.)|IgnoreAssertive]]</tw-passagedata><tw-passagedata pid="75" name="IgnoreAssertive" tags="text" position="1999,1900" size="100,100">@@.green;So i called you out for what you are and you&#39;re ignoring me???@@
 
 @@.green;be a man and own up to being a bitch.@@
 
@@ -686,13 +686,13 @@ You hear a knock at your dorm room door.
 
 [[I&#39;m sorry for being a bitch|CanAttentive]]
 
-[[(Ignore him.)|BreakingPoint]]</tw-passagedata><tw-passagedata pid="76" name="BreakingPoint" tags="text" position="2101.3333333333335,2096.666666666667" size="100,100">@@.green;THAT&quot;S IT@@
+[[(Ignore him.)|BreakingPoint]]</tw-passagedata><tw-passagedata pid="76" name="BreakingPoint" tags="text" position="2101,2096" size="100,100">@@.green;THAT&quot;S IT@@
 
 @@green;WE&quot;RE SETTLING THIS RIGHT NOW@@
 
 You hear a knock on your dorm room door.
 
-[[&gt;&gt;|AngeryEscalation2]]</tw-passagedata><tw-passagedata pid="77" name="LedOn" tags="text" position="2600.0000000000005,2196.6666666666665" size="100,100">@@.green;Sure sure, like you werent flirting with me this whole time@@
+[[&gt;&gt;|AngeryEscalation2]]</tw-passagedata><tw-passagedata pid="77" name="LedOn" tags="text" position="2600,2196" size="100,100">@@.green;Sure sure, like you werent flirting with me this whole time@@
 
 @@.green;Am i not good enough for you??@@
 
@@ -700,7 +700,7 @@ You hear a knock on your dorm room door.
 
 [[I don&#39;t want to date you.|LedOn2]]
 
-[[(Ignore him.)|IgnoreUnfriendly]]</tw-passagedata><tw-passagedata pid="78" name="IgnoreUnfriendly" tags="text" position="2800,2101.6666666666665" size="100,100">@@.green;Don&#39;t you ignore me now.@@
+[[(Ignore him.)|IgnoreUnfriendly]]</tw-passagedata><tw-passagedata pid="78" name="IgnoreUnfriendly" tags="text" position="2800,2101" size="100,100">@@.green;Don&#39;t you ignore me now.@@
 
 @@.green;We need to figure this out.@@
 
@@ -724,7 +724,7 @@ And you&#39;re pretty sure he&#39;s looking for some action.
 
 [[(Call public safety)|AngeryPS]]
 
-[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="80" name="LedOn2" tags="text" position="2601.666666666667,2398.3333333333335" size="100,100">@@.green;How dare you play with my emotions?@@
+[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="80" name="LedOn2" tags="text" position="2601,2398" size="100,100">@@.green;How dare you play with my emotions?@@
 
 @@.green;Don&#39;t you ever think about how I feel?!!@@
 
@@ -732,13 +732,13 @@ And you&#39;re pretty sure he&#39;s looking for some action.
 
 [[This isn&#39;t my problem|BreakingPoint]]
 
-[[(Ignore him.)|IgnoreUnfriendly]]</tw-passagedata><tw-passagedata pid="81" name="TextEscalation2.5" tags="" position="2499.6666666666665,1500.8333333333335" size="100,100">@@.green;We need to talk@@&lt;&lt;set $mostExtreme to &quot;attentiveness&quot;&gt;&gt;&lt;&lt;if $aggressiveness &gt; 0.3&gt;&gt;&lt;&lt;set $mostExtreme to &quot;aggressiveness&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $friendliness &gt; 0.3&gt;&gt;&lt;&lt;set $mostExtreme to &quot;friendliness&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $attentiveness &lt; 0&gt;&gt;&lt;&lt;set $mostExtreme to &quot;attentiveness&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[(Ignore him.)|IgnoreUnfriendly]]</tw-passagedata><tw-passagedata pid="81" name="TextEscalation2.5" tags="" position="2499,1500" size="100,100">@@.green;We need to talk@@&lt;&lt;set $mostExtreme to &quot;attentiveness&quot;&gt;&gt;&lt;&lt;if $aggressiveness &gt; 0.3&gt;&gt;&lt;&lt;set $mostExtreme to &quot;aggressiveness&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $friendliness &gt; 0.3&gt;&gt;&lt;&lt;set $mostExtreme to &quot;friendliness&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $attentiveness &lt; 0&gt;&gt;&lt;&lt;set $mostExtreme to &quot;attentiveness&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 [[About What?|Respond]]
 
 [[What&#39;s wrong?|Respond]]
 
-[[(Ignore him)|Respond]]</tw-passagedata><tw-passagedata pid="82" name="AngeryIgnored" tags="dorm" position="1347.9999999999998,2898.3333333333335" size="100,100">The knocking turns into pounding on the door.&lt;&lt;set $ignoredKnock2 += 1&gt;&gt;
+[[(Ignore him)|Respond]]</tw-passagedata><tw-passagedata pid="82" name="AngeryIgnored" tags="dorm" position="1347,2898" size="100,100">The knocking turns into pounding on the door.&lt;&lt;set $ignoredKnock2 += 1&gt;&gt;
 
 @@.green;&quot;LET ME IN.&quot;@@ he screams.
 
@@ -752,7 +752,7 @@ And you&#39;re pretty sure he&#39;s looking for some action.
 
 [[(Call public safety)|AngeryPS]]
 
-&lt;&lt;if $ignoredKnock2 &lt; 5&gt;&gt;[[(Ignore him.)|AngeryIgnored][$assertiveness += 0.1]]&lt;&lt;else&gt;&gt;[[(Ignore him.)|AngeryIgnoreFinal][$assertiveness += 0.2]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="83" name="AngeryAway" tags="dorm" position="1201.3333333333333,2901.666666666667" size="100,100">@@.green;&quot;NO!&quot;@@
+&lt;&lt;if $ignoredKnock2 &lt; 5&gt;&gt;[[(Ignore him.)|AngeryIgnored][$assertiveness += 0.1]]&lt;&lt;else&gt;&gt;[[(Ignore him.)|AngeryIgnoreFinal][$assertiveness += 0.2]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="83" name="AngeryAway" tags="dorm" position="1201,2901" size="100,100">@@.green;&quot;NO!&quot;@@
 
 @@.green;&quot;Let me in NOW&quot;@@&lt;&lt;set $ignoredKnock2 += 1&gt;&gt;
 
@@ -766,13 +766,13 @@ And you&#39;re pretty sure he&#39;s looking for some action.
 
 [[(Call public safety)|AngeryPS]]
 
-&lt;&lt;if $ignoredKnock2 &lt; 5&gt;&gt;[[(Ignore him.)|AngeryIgnored][$assertiveness += 0.1]]&lt;&lt;else&gt;&gt;[[(Ignore him.)|AngeryIgnoreFinal][$assertiveness += 0.2]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="84" name="AngeryRA" tags="dorm" position="1499.6666666666665,2901.666666666667" size="100,100">You call your RA. She answers on the last ring.
+&lt;&lt;if $ignoredKnock2 &lt; 5&gt;&gt;[[(Ignore him.)|AngeryIgnored][$assertiveness += 0.1]]&lt;&lt;else&gt;&gt;[[(Ignore him.)|AngeryIgnoreFinal][$assertiveness += 0.2]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="84" name="AngeryRA" tags="dorm" position="1499,2901" size="100,100">You call your RA. She answers on the last ring.
 
 [[&quot;There&#39;s someone trying to break into my room&quot;|RAHelp]]
 
 [[&quot;Make the dude outside my room leave&quot;|RAHelp]]
 
-[[&quot;Please help me&quot;|RAHelp]]</tw-passagedata><tw-passagedata pid="85" name="AngeryRoommate" tags="dorm" position="1649.6666666666665,2901.666666666667" size="100,100">Your roommate picks up after the second attempt to call him.
+[[&quot;Please help me&quot;|RAHelp]]</tw-passagedata><tw-passagedata pid="85" name="AngeryRoommate" tags="dorm" position="1649,2901" size="100,100">Your roommate picks up after the second attempt to call him.
 
 &quot;What&#39;s up?&quot; He sounds sleepy, but concerned.
 
@@ -780,12 +780,12 @@ And you&#39;re pretty sure he&#39;s looking for some action.
 
 [[&quot;My crazy project partner is trying to kill me.&quot;|RoommateHelper]]
 
-[[&quot;I need you home. Now.&quot;|RoommateHelper]]</tw-passagedata><tw-passagedata pid="86" name="AngeryPS" tags="dorm" position="1799.6666666666665,2901.666666666667" size="100,100">&quot;Public Safety, what&#39;s your emergency.&quot;
+[[&quot;I need you home. Now.&quot;|RoommateHelper]]</tw-passagedata><tw-passagedata pid="86" name="AngeryPS" tags="dorm" position="1799,2901" size="100,100">&quot;Public Safety, what&#39;s your emergency.&quot;
 
 [[&quot;Someone is breaking into my dorm room.&quot;|Threaten]]
 
 [[&quot;A student is outside my door threatening me.&quot;|Threaten]]
-</tw-passagedata><tw-passagedata pid="87" name="RAHelp" tags="dorm" position="1499.6666666666665,3051.666666666667" size="100,100">You hear a door open somewhere down the hall, then a pair of slippered feet approaching.
+</tw-passagedata><tw-passagedata pid="87" name="RAHelp" tags="dorm" position="1499,3051" size="100,100">You hear a door open somewhere down the hall, then a pair of slippered feet approaching.
 
 &quot;Hi there. Do you live on this floor?&quot; You hear your RA&#39;s voice.
 
@@ -799,7 +799,7 @@ And you&#39;re pretty sure he&#39;s looking for some action.
 
 You hear @@.green;[REDACTED]@@ slowly rise to his feet and then trudge his way down the hall.
 
-[[&gt;&gt;|RAHelp2]]</tw-passagedata><tw-passagedata pid="88" name="RoommateHelper" tags="dorm" position="1649.6666666666665,3051.666666666667" size="100,100">&quot;I&#39;ll be right there.&quot; He says, &quot;Hold tight.&quot;
+[[&gt;&gt;|RAHelp2]]</tw-passagedata><tw-passagedata pid="88" name="RoommateHelper" tags="dorm" position="1649,3051" size="100,100">&quot;I&#39;ll be right there.&quot; He says, &quot;Hold tight.&quot;
 
 You wait in silence for your roommate to arrive.
 
@@ -809,7 +809,7 @@ Finally your hear the flip-flop slaps of what has to be your roommate barreling 
 
 You hear @@.green;[REDACTED]@@ scramble to his feet.
 
-[[&gt;&gt;|RoommateHelper2]]</tw-passagedata><tw-passagedata pid="89" name="RoommateHelper2" tags="dorm" position="1649.6666666666665,3201.666666666667" size="100,100">&quot;What are you doing?&quot; He asks.
+[[&gt;&gt;|RoommateHelper2]]</tw-passagedata><tw-passagedata pid="89" name="RoommateHelper2" tags="dorm" position="1649,3201" size="100,100">&quot;What are you doing?&quot; He asks.
 
 @@.green;&quot;I need to talk to the girl in this room.&quot;@@
 
@@ -831,13 +831,13 @@ Your roommate waits a few minutes before opening the door.
 
 [[&quot;I owe you one.&quot;|RoommateHelper3]]
 
-[[&quot;That was... something.&quot;|RoommateHelper3]]</tw-passagedata><tw-passagedata pid="90" name="AngeryIgnoreFinal" tags="dorm" position="1347.9999999999998,3048.3333333333335" size="100,100">@@.green;[REDACTED]&#39;s@@ yelling turns to loud weeping and pathetic open hand slaps on the door&#39;s wooden surface.
+[[&quot;That was... something.&quot;|RoommateHelper3]]</tw-passagedata><tw-passagedata pid="90" name="AngeryIgnoreFinal" tags="dorm" position="1347,3048" size="100,100">@@.green;[REDACTED]&#39;s@@ yelling turns to loud weeping and pathetic open hand slaps on the door&#39;s wooden surface.
 
 This eventually fades into soft crying. As far as you can tell, he&#39;s curled up in a ball on the floor right outside.
 
 You wait in silence.
 
-[[&gt;&gt;|AngeryIgnoreFinal2]]</tw-passagedata><tw-passagedata pid="91" name="Threaten" tags="dorm" position="1801.333333333333,3098.3333333333335" size="100,100">You stay on the line as the operator gathers your information. He assures you that an officer was on their way and asks you to not hang up until the officer gets there.
+[[&gt;&gt;|AngeryIgnoreFinal2]]</tw-passagedata><tw-passagedata pid="91" name="Threaten" tags="dorm" position="1801,3098" size="100,100">You stay on the line as the operator gathers your information. He assures you that an officer was on their way and asks you to not hang up until the officer gets there.
 
 @@.green;[REDACTED]&#39;s@@ banging slowly turns to loud weeping and pathetic open hand slaps on the door&#39;s wooden surface.
 
@@ -845,7 +845,7 @@ You wait in silence as the phone operator talks to you softly.
 
 Finally, you here the stairwell open and the sound of leather boots on cheap dorm carpet. You then hear @@.green;[REDACTED]@@ stand and dash towards the other direction.
 
-[[&gt;&gt;|Threaten2]]</tw-passagedata><tw-passagedata pid="92" name="HappyAway" tags="dorm" position="2200.0000000000005,2800.833333333333" size="100,100">@@.green;&quot;Don&#39;t be like that...&quot;@@
+[[&gt;&gt;|Threaten2]]</tw-passagedata><tw-passagedata pid="92" name="HappyAway" tags="dorm" position="2200,2800" size="100,100">@@.green;&quot;Don&#39;t be like that...&quot;@@
 
 @@.green;&quot;I thought we were going to resolve our problems...&quot;@@
 
@@ -873,20 +873,20 @@ Finally, you here the stairwell open and the sound of leather boots on cheap dor
 
 [[(Call public safety)|AngeryPS]]
 
-[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="94" name="Threaten2" tags="dorm" position="1801.333333333333,3248.3333333333335" size="100,100">The officer takes your statement. You have no evidence that it was @@.green;[REDACTED]@@ outside your door, so he just tells you to heelp your door locked and call the RA if there&#39;s any more trouble.
+[[(Ignore him)|AngeryIgnored]]</tw-passagedata><tw-passagedata pid="94" name="Threaten2" tags="dorm" position="1801,3248" size="100,100">The officer takes your statement. You have no evidence that it was @@.green;[REDACTED]@@ outside your door, so he just tells you to heelp your door locked and call the RA if there&#39;s any more trouble.
 
 You don&#39;t sleep much that night, fearing his return.
 
 [[&gt;&gt;|PresentationDay]]
-</tw-passagedata><tw-passagedata pid="95" name="PresentationDay" tags="hall" position="1899.6666666666663,3701.666666666667" size="100,100">It&#39;s presentation day.
+</tw-passagedata><tw-passagedata pid="95" name="PresentationDay" tags="hall" position="1899,3701" size="100,100">It&#39;s presentation day.
 
-[[&gt;&gt;|Presentation Day2]]</tw-passagedata><tw-passagedata pid="96" name="RoommateHelper3" tags="dorm" position="1649.6666666666665,3351.666666666667" size="100,100">&quot;So that was fucking insane.&quot; Your roommate says. &quot;Should we uh... should we call someone about that?&quot;
+[[&gt;&gt;|Presentation Day2]]</tw-passagedata><tw-passagedata pid="96" name="RoommateHelper3" tags="dorm" position="1649,3351" size="100,100">&quot;So that was fucking insane.&quot; Your roommate says. &quot;Should we uh... should we call someone about that?&quot;
 
 [[&quot;It won&#39;t do much.&quot;|RoommateHelper4]]
 
 [[&quot;What can an RA do against that?&quot;|RoommateHelper4]]
 
-[[&quot;What proof do we have?&quot;|RoommateHelper4]]</tw-passagedata><tw-passagedata pid="97" name="RoommateHelper4" tags="dorm" position="1649.6666666666665,3501.666666666667" size="100,100">Your roommate shrugs.
+[[&quot;What proof do we have?&quot;|RoommateHelper4]]</tw-passagedata><tw-passagedata pid="97" name="RoommateHelper4" tags="dorm" position="1649,3501" size="100,100">Your roommate shrugs.
 
 &quot;I guess you&#39;re right.&quot;
 
@@ -898,39 +898,39 @@ You make sure to double check that your door is locked before going to bed.
 
 You don&#39;t sleep much that night, fearing his return.
 
-[[&gt;&gt;|PresentationDay]]</tw-passagedata><tw-passagedata pid="98" name="RAHelp2" tags="text" position="1499.6666666666665,3201.666666666667" size="100,100">Let me know if he gives you anymore trouble.
+[[&gt;&gt;|PresentationDay]]</tw-passagedata><tw-passagedata pid="98" name="RAHelp2" tags="text" position="1499,3201" size="100,100">Let me know if he gives you anymore trouble.
 
 [[Thank you for helping me|RAHelp3]]
 
 [[Ok|RAHelp3]]
 
-[[I will|RAHelp3]]</tw-passagedata><tw-passagedata pid="99" name="RAHelp3" tags="dorm" position="1499.6666666666665,3351.666666666667" size="100,100">You make sure to double check that your door is locked before going back to bed.
+[[I will|RAHelp3]]</tw-passagedata><tw-passagedata pid="99" name="RAHelp3" tags="dorm" position="1499,3351" size="100,100">You make sure to double check that your door is locked before going back to bed.
 
 You don&#39;t sleep much that night, fearing his return.
 
-[[&gt;&gt;|PresentationDay]]</tw-passagedata><tw-passagedata pid="100" name="AngeryIgnoreFinal2" tags="dorm" position="1347.9999999999998,3198.3333333333335" size="100,100">At around 5AM you finally hear him get up and walk away.
+[[&gt;&gt;|PresentationDay]]</tw-passagedata><tw-passagedata pid="100" name="AngeryIgnoreFinal2" tags="dorm" position="1347,3198" size="100,100">At around 5AM you finally hear him get up and walk away.
 
 You make sure to double check that your door is locked before going back to bed.
 
 You don&#39;t sleep much that night, fearing his return.
 
-[[&gt;&gt;|PresentationDay]]</tw-passagedata><tw-passagedata pid="101" name="Presentation Day2" tags="hall" position="1899.6666666666663,3851.666666666667" size="100,100">You&#39;ve spent the last few days finishing your part of the project. Ever since he tried to get into your dorm late at night, @@.green;[REDACTED]&#39;s@@ been ignoring you.
+[[&gt;&gt;|PresentationDay]]</tw-passagedata><tw-passagedata pid="101" name="Presentation Day2" tags="hall" position="1899,3851" size="100,100">You&#39;ve spent the last few days finishing your part of the project. Ever since he tried to get into your dorm late at night, @@.green;[REDACTED]&#39;s@@ been ignoring you.
 
 You just want this project to be over.
 
-[[&gt;&gt;|Presentation Day3]]</tw-passagedata><tw-passagedata pid="102" name="Presentation Day3" tags="hall-green" position="1899.6666666666663,4001.666666666667" size="100,100">You arrive to class early. There are students milling around the hallway outside of class like they always do. @@.green;[REDACTED]@@ is on the other side of the hallway. His eyes are rimmed with red, like he&#39;s been crying nonstop.
+[[&gt;&gt;|Presentation Day3]]</tw-passagedata><tw-passagedata pid="102" name="Presentation Day3" tags="hall-green" position="1899,4001" size="100,100">You arrive to class early. There are students milling around the hallway outside of class like they always do. @@.green;[REDACTED]@@ is on the other side of the hallway. His eyes are rimmed with red, like he&#39;s been crying nonstop.
 
 The other students occassionally glance at you during their conversations. Ever since @@.green;he@@ started avoiding you like the plague, you&#39;ve become a point of interest - something to glance at and then turn away.
 
-[[&gt;&gt;|Presentation Day4]]</tw-passagedata><tw-passagedata pid="103" name="Presentation Day4" tags="class" position="1899.6666666666663,4151.666666666667" size="100,100">@@.purple;Professor [REDACTED]@@ arrives and students start streaming into the class. You find your seat and login to your computer.
+[[&gt;&gt;|Presentation Day4]]</tw-passagedata><tw-passagedata pid="103" name="Presentation Day4" tags="class" position="1899,4151" size="100,100">@@.purple;Professor [REDACTED]@@ arrives and students start streaming into the class. You find your seat and login to your computer.
 
 You pull up the finished project code and start rehearsing how you plan to walk through the assignment, which is difficult since your partner refuses to acknowledge your existence.
 
-[[&gt;&gt;|Presentation Day5]]</tw-passagedata><tw-passagedata pid="104" name="Presentation Day5" tags="class" position="1899.6666666666663,4301.666666666667" size="100,100">@@.purple;&quot;Alright guys, it&#39;s presentation day. I&#39;ve posted the presentation order on the class forums, so get ready to go.&quot;@@
+[[&gt;&gt;|Presentation Day5]]</tw-passagedata><tw-passagedata pid="104" name="Presentation Day5" tags="class" position="1899,4301" size="100,100">@@.purple;&quot;Alright guys, it&#39;s presentation day. I&#39;ve posted the presentation order on the class forums, so get ready to go.&quot;@@
 
 You and @@.green;[REDACTED]@@ are up first. Professor @@.purple;[REDACTED]@@ waits a few minutes for the class to settle in before calling the two of you up to the front.
 
-[[&gt;&gt;|Presentation1]]</tw-passagedata><tw-passagedata pid="105" name="Presentation1" tags="class-green" position="1899.6666666666663,4451.666666666667" size="100,100">You pull up the presentation you made as well as the project. You go through first, explaining your part of the code as well as how you approached the different problems.
+[[&gt;&gt;|Presentation1]]</tw-passagedata><tw-passagedata pid="105" name="Presentation1" tags="class-green" position="1899,4451" size="100,100">You pull up the presentation you made as well as the project. You go through first, explaining your part of the code as well as how you approached the different problems.
 
 @@.green;[REDACTED]@@ goes next. He goes through his code quickly before running the project a few times. The project works. It isn&#39;t elegant, or even efficient, but it works.
 
