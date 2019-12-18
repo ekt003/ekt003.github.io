@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Jomhuria|Mansalva|Roboto|Share+Tech|Suranna|VT323&display=swap');
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    font-size: 18px;
+}
+
+#passages {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.passage {
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    position: fixed;
+    right: 0;
+    margin-right: 50px;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    font-size: 1.1em;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.passage a {
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    display: block;
+    text-align: center;
+}
+
+.passage a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+/* Brosona Typography  */
+
+.red {
+    font-family: 'VT323', monospace;
+    color: #ff7878;
+    font-size: 1.3em;
+}
+
+.blue {
+    font-family: 'Suranna', serif;
+    color: #86d1fc;
+    font-size: 1.2em;
+}
+
+.green {
+    font-family: 'Fredoka One', cursive;
+    color: #a1ffce;
+}
+
+.yellow {
+    font-family: 'Jomhuria', cursive;
+    color: #fafc86;
+    font-size: 2em;
+}
+
+.orange {
+    font-family: 'Share Tech', sans-serif;
+    color: #ffa463;
+    font-size: 1.1em;
+}
+
+.purple {
+    font-family: 'Mansalva', cursive;
+    color: #debdff;
+    font-size: 1.1em;
+}
+
+#redChoice {
+    font-family: 'VT323', monospace;
+    color: #ff7878;
+    font-size: 1.3em;
+}
+
+#orangeChoice {
+    font-family: 'Share Tech', sans-serif;
+    color: #ffa463;
+    font-size: 1.1em;
+}
+
+#yellowChoice {
+    font-family: 'Jomhuria', cursive;
+    color: #fafc86;
+    font-size: 2em;
+}
+
+#blueChoice {
+    font-family: 'Suranna', serif;
+    color: #86d1fc;
+    font-size: 1.2em;
+}
+
+#greenChoice {
+    font-family: 'Fredoka One', cursive;
+    color: #a1ffce;
+}
+
+/* text styles */
+
+html[data-tags~="text"] body {
+    background-color: black;
+}
+
+html[data-tags~="text"] #story {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+html[data-tags~="text"] .passage {
+    background-color: white;
+    color: black;
+    position: static;
+    margin: auto;
+    width: 800px;
+    border-radius: 30px;
+    right: auto;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+html[data-tags~="text"] .passage a {
+    border-radius: 20px;
+    color: black;
+    background-color: #EAEAEA;
+    padding: 10px;
+    float: right;
+    width: auto;
+}
+
+html[data-tags~="text"] .passage a:hover {
+    background-color: #CECECE;
+}
+
+html[data-tags~="text"] .orange {
+    border-radius: 20px;
+    color: white;
+    background-color: #ffa463;
+    padding: 10px;
+}
+
+/* Text Typography */
+
+html[data-tags~="text"] .orange {
+    border-radius: 20px;
+    color: white;
+    background-color: #ffa463;
+    padding: 10px;
+}
+
+html[data-tags~="text"] .yellow {
+    border-radius: 20px;
+    color: white;
+    background-color: #d6c722;
+    padding: 10px;
+}
+
+html[data-tags~="text"] .green {
+    border-radius: 20px;
+    color: white;
+    background-color: #3ce88f;
+    padding: 10px;
+}
+
+html[data-tags~="text"] .red {
+    border-radius: 20px;
+    color: white;
+    background-color: #ff7878;
+    padding: 10px;
+}
+
+html[data-tags~="text"] .blue {
+    border-radius: 20px;
+    color: white;
+    background-color: #86d1fc;
+    padding: 10px;
+}
+
+/* background styles */
+
+html[data-tags~="lab"] body {
+    background: url('../media/labs.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="lab-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("../media/labs.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="lab-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("../media/labs.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="lab-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/labs.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="lab-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("../media/labs.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="lab-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("../media/labs.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="college"] body {
+    background: url('../media/college.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="hall"] body {
+    background: url('../media/hallway.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="hall-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("http://www.emilykturner.com/GamerGirl/media/hallway.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="hall-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("http://www.emilykturner.com/GamerGirl/media/hallway.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="hall-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("http://www.emilykturner.com/GamerGirl/media/hallway.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="hall-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("http://www.emilykturner.com/GamerGirl/media/hallway.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="hall-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("http://www.emilykturner.com/GamerGirl/media/hallway.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="class"] body {
+    background: url('../media/classroom.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="class-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("../media/classroom.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="class-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("../media/classroom.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="class-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/classroom.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="class-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("../media/classroom.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="class-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("../media/classroom.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside"] body {
+    background: url('../media/outside2.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="outside-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("../media/outside2.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("../media/outside2.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/outside2.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("../media/outside2.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("../media/outside2.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside2"] body {
+    background: url('../media/outside1.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="outside2-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside2-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside2-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside2-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outside2-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outsideEvening"] body {
+    background: url('../media/outside1.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="outsideEvening-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outsideEvening-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outsideEvening-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outsideEvening-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="outsideEvening-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("../media/outside1.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="library"] body {
+    background: url('../media/library.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="library-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("../media/library.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="library-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("../media/library.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="library-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/library.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="library-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("../media/library.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="library-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("../media/library.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="dorm"] body {
+    background: url('../media/dorm.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="dorm-red"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/red.png?raw=true") no-repeat fixed, url("../media/dorm.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="dorm-orange"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/orange.png?raw=true") no-repeat fixed, url("../media/dorm.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="dorm-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/dorm.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="dorm-green"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/green.png?raw=true") no-repeat fixed, url("../media/dorm.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="dorm-blue"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/blue.png?raw=true") no-repeat fixed, url("../media/dorm.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+html[data-tags~="apartment"] body {
+    background: url('../media/apartment.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html[data-tags~="apartment-yellow"] body {
+    background: url("https://github.com/ekt003/ekt003.github.io/blob/master/GamerGirl/art/yellow.png?raw=true") no-repeat fixed, url("../media/apartment.png") no-repeat fixed;
+    background-size: 40%, cover;
+    background-position: 10% bottom, center;
+}
+
+/* ----------Mobile----------- */
+
+@media (max-width: 768px) {
+    .passage, html[data-tags~="text"] .passage, #passages {
+        position: absolute;
+        min-height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+    }
+    #ui-bar {
+        width: 0;
+        display: none;
+    }
+}
