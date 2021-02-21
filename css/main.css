@@ -51,10 +51,17 @@ body{
 #content{
     grid-column: 3/span 2;
     margin-left: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 #content p{
     margin-bottom: 3%;
+}
+
+#content div img{
+    margin-top:50px;
+    min-width:300px;
 }
 
 /*Nav Bar CSS*/
@@ -442,6 +449,10 @@ button:hover{
         position: fixed;
         max-width:200px;
         margin: 1%;
+    }
+
+    #content{
+        grid-template-columns: 1fr;
     }
 
     .link:visited{
