@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>IDrawCatsWrong</title>
+</head>
+<body>
+
+    <div id="featureBackground">
+        <img id="featuredImage" src="media/002BekaBeesKringle.png"/>
+        <p id="prevNextText"><i onclick="prevImage()">PREV</i> / <i onclick="nextImage()">NEXT</i></p>
+    </div>
+
+    <div id="navbar">
+        <div>
+            <h1>i draw cats wrong.</h1>
+            <h2>A CHARITABLE PROJECT BY SKYLER MONCADA</h2>
+        </div>
+
+        <ul id="navbarLinks">
+            <li id="active">WRONG CATS</li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="store.html">STORE</a></li>
+        </ul>
+        <img id="leave" onclick="backToPage()" src="media/icons/ExitButton.png"/>
+    </div>
+
+    <div id="cats">
+        <img src="media/003NinjaBunny99.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of two siamese cats curled up together."/>
+        <img src="media/004Hannah.jpg" onclick="showLargeImage(this)" alt="2D drawing of a brown and tan cat in a sitting position."/>
+        <img src="media/005Yodel.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a white and tan cat laying down with its two front paws extended."/>
+        <img src="media/006Megerrs.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of brown cat laying down with one leg stuck up in the air."/>
+        <img src="media/007GASD.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a black cat lying on its back with glowing green eyes."/>
+        <img src="media/008Tracey.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of two cats, one gray and one tan, sitting next to each other."/>
+        <img src="media/009Dozyee.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a brown cat hiding behind a small hump and getting ready to pounce."/>
+        <img src="media/010Linkdawink__JC.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of an orange and white cat with stretched out limbs fast asleep."/>
+        <img src="media/011Ami.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a brown stripped cat looking at the viewer."/>
+        <img src="media/012Hitokeke.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray and white cat laying down with its two front paws extended."/>
+        <img src="media/013FruitC4ke.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a black and white cat curled up and facing the viewer."/>
+        <img src="media/014Nova.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray cat with a light blue hat on its head."/>
+        <img src="media/015Dersisch.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a black cat with bright yellow eyes."/>
+        <img src="media/016Naymar_V.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a light yellow-green lizard."/>
+        <img src="media/017EffieCrow.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a white and tan cat laying on top of a black cat."/>
+        <img src="media/018Cure0666.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a red and white cat standing and facing the viewer. There is a box partially encompassing it."/>
+        <img src="media/019Aug.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a black and white cat floating near the center of a target."/>
+        <img src="media/021NicoHom.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a German Shepherd laying on the ground asleep, with a black and white cat as well as a brown striped cat piled on top."/>
+        <img src="media/022KingBall.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray and white striped cat laying down and stretching its legs in different directions."/>
+        <img src="media/023Wayside.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of six animals, two sleeping dogs and four awake cats, piled on top of each other."/>
+        <img src="media/024Monphar.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray and white cat laying down with a back leg stuck up in the air. There are beads of sweat on the cats face."/>
+        <img src="media/025KapteynKatie.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a black and white cat partially draped over a corner, with its front right paw dangling in the air."/>
+        <img src="media/026Milky.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray and white cat laying down in a white basket with blue trim."/>
+        <img src="media/027Tom.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a tan cat sitting with its butt facing the viewer."/>
+        <img src="media/029Loki.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a black and white cat laying on its back and a brown and white cat watching it."/>
+        <img src="media/030SlimeRancher.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a black and white cat with its front left paw pushing against a pink line."/>
+        <img src="media/031Jessicawastaken.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of two red cats. One cat is playing with the other cat's tail."/>
+        <img src="media/032OptimusPalms.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a red cat holding up its front left paw to stop a large white and brown spotted dog from approaching."/>
+        <img src="media/034RatSmacker.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a white and tan striped cat with a flower collar that surrounds its head with large pink petals."/>
+        <img src="media/035Random.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray cat being pet by a human hand. The cat is walking forward towards the hand."/>
+        <img src="media/036CookieCrumbler.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a fat golden retriever sitting down with its eyes closed."/>
+        <img src="media/037MrGullible.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of three small dogs, one gray, one tan, and one brown, posing together in front of a blue background."/>
+        <img src="media/038Random.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray and white dog with a yellow collar sitting on the ground."/>
+        <img src="media/039Random.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a gray cat with its limbs spread falling through the frame."/>
+        <img src="media/040Finneli.jpg" onclick="showLargeImage(this)" alt="A 2D drawing of a calico cat sitting in a box with a turquoise shadow of the same cat holding a knife."/>
+    </div>
+
+    <script src="scripts/imageFeatureScript.js"></script>
+
+</body>
+</html>
+
+<!--f67280-->
