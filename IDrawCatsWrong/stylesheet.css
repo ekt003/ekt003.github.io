@@ -1,5 +1,5 @@
 html{
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
     font-size: 1rem;
     margin:0;
     padding:0;
@@ -82,17 +82,18 @@ body{
 }
 
 #cats{
-    display: flex;
+    display: grid;
     width: 90vw;
-    padding-top: 95px;
+    padding-top: 120px;
     margin: 0px auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 25px;
+
 }
 
 #cats img{
-    margin-top:25px;
-    height:235px;
+    width:100%;
     text-align: center;
     padding:5px;
 }
@@ -139,6 +140,10 @@ body{
     font-weight: lighter;
     font-size: 0.9rem;
     color:#bbb;
+}
+
+#social{
+    padding-left: 0px;
 }
 
 #social li img{
@@ -235,6 +240,10 @@ body{
     right: 10vh;
 }
 
+#mobileMenu{
+    display:none;
+}
+
 #leave:hover{
     cursor: pointer;
 }
@@ -249,3 +258,148 @@ body{
     cursor: pointer;
 }
 
+#mobileHeader{
+    display: none;
+}
+
+#mobileNavbarLinks{
+    position: fixed;
+    top:0;
+    left:0;
+    font-size: 1.3rem;
+    width:100%;
+    margin:0;
+    padding-top: 10px;
+    background-color: white;
+    display:none;
+}
+
+#mobileNavbarLinks li{
+    padding:10px;
+    display: block;
+}
+
+/*Weird About Page Scaling Fixes*/
+@media screen and (max-width:1065px){
+    #about{
+        flex-wrap: wrap;
+    }
+
+    #about img{
+        width:70vw;
+        margin:150px auto 20px auto;
+    }
+
+    #bio{
+        margin:auto;
+        width:70vw;
+    }
+
+    #social{
+        margin-top:-175px;
+    }
+}
+
+
+/*Tablet Resolution*/
+@media screen and (max-width:861px){
+
+    /*nav bar changes*/
+    #navbar ul li{
+        display: block;
+        text-align: right;
+    }
+
+    /* featured image changes */
+    #featuredImage{
+        margin-top: 25vh;
+        width:95%;
+    }
+
+    #cats{
+        margin-top: 20px; 
+        grid-gap: 20px;
+    }
+
+    
+
+}
+
+
+/*Phone Resolution*/
+@media screen and (max-width:635px){
+
+    #navbar{
+        display: none;
+    }
+
+    #mobileHeader{
+        display: flex;
+        height:100vh;
+        width:100vw;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #mobileMenu{
+        position: fixed;
+        top:10px;
+        right:10px;
+        display:block;
+        text-align: right;
+        height:40px;
+        z-index: 2;
+    }
+
+    #mobileHeader h1{
+        margin-top:170px;
+        color: #f67280;
+        font-size: 2.5rem;
+        width:90%;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 3px;
+    }
+
+    #mobileHeader h2{
+        margin-top:-100px;
+        padding:0px 50px;
+        font-size: 1.1rem;
+        width:70%;
+        text-align: center;
+    }
+
+    #mobileHeader img{
+        margin-top:-120px;
+        width:40px;
+    }
+
+    #navbarLinks{
+        display: none;
+    }
+
+    #cats{
+        margin-top:0px;
+        padding-top: 50px;
+        width:100%;
+    }
+
+    #cats img{
+        padding:0px;
+    }
+    
+    #about img{
+        width:90vw;
+        margin:20px auto 20px auto;
+    }
+
+    #bio{
+        width:90vw;
+    }
+
+    #social{
+        margin-top: -40px;
+    }
+
+}

@@ -35,21 +35,23 @@ function init(){
 
     indexBody = document.querySelector('body');
 
+
 }
 
 function showLargeImage(image){
     //window.scrollTo(0,0);
-
-    featureBackground.style.opacity = "1";
-    featureBackground.style.zIndex = "2";
-
-    featureImage.setAttribute("src", image.src);
-
-    document.querySelector("#navbarLinks").style.display="none";
-    document.querySelector("#leave").style.display="block";
-
-    indexBody.style.overflow="hidden";
-
+    if(screen.width > 636){
+        featureBackground.style.opacity = "1";
+        featureBackground.style.zIndex = "2";
+    
+        featureImage.setAttribute("src", image.src);
+    
+        document.querySelector("#navbarLinks").style.display="none";
+        document.querySelector("#leave").style.display="block";
+    
+        indexBody.style.overflow="hidden";
+    }
+    
 }
 
 function backToPage(){
