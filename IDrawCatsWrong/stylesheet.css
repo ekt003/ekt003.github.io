@@ -4,14 +4,20 @@ html{
     margin:0;
     padding:0;
     color:#616161;
-    font-family: CooperBook, sans-serif;
 }
 
 @font-face{
     font-family: CooperBook;
-    src: url(media/fonts/CooperHewitt-Book.otf)
+    src: url(media/fonts/CooperHewitt-Book.otf);
+         
 }
 
+@font-face{
+    font-family: CooperBold;
+    src: url(media/fonts/CooperHewitt-Medium.otf);
+}
+
+/* General Formatting */
 a{
     color:#616161;
 }
@@ -27,8 +33,10 @@ ul li{
 body{
     margin: 0;
     padding: 0;
+    font-family: CooperBook, sans-serif;
 }
 
+/* nav bar formatting */
 #navbar h1{
     color: #f67280;
     padding:0px 0px 0px 75px;
@@ -78,8 +86,10 @@ body{
 
 #active{
     color:black;
-    font-weight: bold;
+    font-family: CooperBold;
 }
+
+/* Wrong Cat Page */
 
 #cats{
     display: grid;
@@ -103,6 +113,38 @@ body{
     cursor: pointer;
     transition-duration: 0.3s;
 }
+
+/* On Hover Image Select Formatting */
+#featureBackground{
+    z-index: -1;
+    opacity: 0;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:99vw;
+    height:100vh;
+    transition-duration: 0.2s;
+    background-color: white;
+    text-align: center;
+}
+
+#featuredImage{
+    margin-top:15vh;
+    width:75%;
+}
+
+#featureBackground p{
+    margin-top: 0px;
+}
+
+#leave{
+    display:none;
+    width:20px;
+    position: fixed;
+    top: 4vh;
+    right: 10vh;
+}
+
 
 /* About Page */
 #about{
@@ -129,11 +171,12 @@ body{
 }
 
 #sansFont{
-    font-family: CooperBook, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #pink{
     color: #f67280;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #bio i{
@@ -210,35 +253,7 @@ body{
 }
 
 
-#featureBackground{
-    z-index: -1;
-    opacity: 0;
-    position: fixed;
-    top:0px;
-    left:0px;
-    width:99vw;
-    height:100vh;
-    transition-duration: 0.2s;
-    background-color: white;
-    text-align: center;
-}
 
-#featuredImage{
-    margin-top:15vh;
-    width:75%;
-}
-
-#featureBackground p{
-    margin-top: 0px;
-}
-
-#leave{
-    display:none;
-    width:20px;
-    position: fixed;
-    top: 4vh;
-    right: 10vh;
-}
 
 #mobileMenu{
     display:none;

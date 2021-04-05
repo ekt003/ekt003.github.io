@@ -1,15 +1,6 @@
 "use strict";
 
-
-window.onload = init;
-
-let navBar;
-
-function init(){
-
-    navBar = document.querySelector('#mobileNavbarLinks');
-
-}
+let navBar = document.querySelector('#mobileNavbarLinks');
 
 function showNav(){
     if(navBar.style.display=="block"){
