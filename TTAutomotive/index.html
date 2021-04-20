@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="stylesheet.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>T&T Automotive</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+        </ul>
+    </nav>
+
+    <div id="title">
+        <div id="name">
+            <h2>T&T Automotive</h2>
+        </div>
+
+        <div id="tagline">
+            <h1>
+                Locally Owned and<br>Operated since 1974
+            </h1>
+            <h2>
+                Dedicated to providing quick, effective, <br>and afforable vehicle maintenance to the<br>greater Baltimore County area.
+            </h2>
+        </div>
+    </div>
+
+    <div id="services">
+        <h1>Our Services</h1>
+        <div id="serviceGrid">
+            <div id="oilChange">
+                <img src="media/chuttersnap-gts_Eh4g1lk-unsplash.jpg" alt="service1"/>
+            </div>
+            <div id="brakeSystem">
+                <img src="media/neonbrand-ZSz1m4JPDqU-unsplash.jpg" alt="service2"/>
+            </div>
+            <div id="tireRotations">
+                <img src="media/serge-kutuzov-nm_UwlzQe_Q-unsplash.jpg" alt="service3"/>
+            </div>
+            <div id="batteryChange">
+                <img src="media/serge-kutuzov-nm_UwlzQe_Q-unsplash.jpg" alt="service1"/>
+            </div>
+            <div id="generalInspection">
+                <img src="media/chuttersnap-gts_Eh4g1lk-unsplash.jpg" alt="service2"/>
+            </div>
+            <div id="airFilter">
+                <img src="media/neonbrand-ZSz1m4JPDqU-unsplash.jpg" alt="service3"/>
+            </div>
+        </div>
+    </div>
+    <div id="location">
+        <div id="hourslocation">
+            <div id="hours">
+                <h3 id="status">Hours</h3>
+                <table id="days">
+                    <tr class="day">
+                        <td>Monday:</td>
+                        <td>8:00AM - 6:00PM</td>
+                    </tr>
+                    <tr class="day">
+                        <td>Tuesday:</td>
+                        <td>8:00AM - 6:00PM</td>
+                    </tr>
+                    <tr class="day">
+                        <td>Wednesday:</td>
+                        <td>8:00AM - 6:00PM</td>
+                    </tr>
+                    <tr class="day">
+                        <td>Thursday:</td>
+                        <td>8:00AM - 6:00PM</td>
+                    </tr>
+                    <tr class="day">
+                        <td>Friday:</td>
+                        <td>8:00AM - 6:00PM</td>
+                    </tr>
+                    <tr class="day">
+                        <td>Saturday:</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr class="day">
+                        <td>Sunday:</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+                <h3 id="status"></h3>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.3835668756906!2d-76.65048938463225!3d39.48325267948458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8127129643be7%3A0x8de9db3083f56598!2sT%20%26%20T%20Automotive!5e0!3m2!1sen!2sus!4v1592261702151!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" id="map" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="appointments">
+        <h1>Make an Appointment Today</h1>
+        <div id="phone">
+            <img src="media/telephone.png" alt="phone icon"/> <h2>(410) 771-1185</h2>
+        </div>
+        
+    </div>
+
+<script>
+    let date, day, daysElement, dayElement, hour, status, reviewIndex, reviewElement, reviewsElement;
+
+    let reviews = [];
+
+    window.onload = init;
+
+    window.onscroll = function() {scrollfunction()};
+
+    function init(){
+
+        calcTimeVariables();
+
+        window.setInterval(calcTimeVariables, 60000);
+
+    }
+
+    function calcTimeVariables(){
+        date= new Date();
+        day = date.getDay();
+        hour = date.getHours();
+
+        let dElement = document.querySelectorAll('.day');
+
+        dayElement = dElement[date.getDay()-1];
+
+        dayElement.style.fontWeight = "bold";
+
+        status = document.querySelector('#status');
+
+        calcTime();
+    }
+
+    function calcTime(){
+        if(day == 0 || day == 6){ //closed on weekends
+            dayElement.setAttribute('id', 'closed');
+            status.innerHTML = "Hours: We are currently closed.";
+        }
+        else if((day == 5 && hour == 15) || (day != 5 && day !=6 && day !=0 && hour == 17)){ //closing soon
+            dayElement.setAttribute('id', 'soon');
+            status.innerHTML = "Hours: We are closing soon.";
+        }
+        else if((day !=6 && day !=0 && hour == 7)){ //opening soon
+            dayElement.setAttribute('id',  'soon');
+            status.innerHTML = "Hours: We are opening soon!";
+        }
+        else if (day !=0 && day!=6){ //regular day open or closed logic
+            if(day == 5){
+                if(hour > 8 && hour < 15){
+                    dayElement.setAttribute('id', 'open');
+                    status.innerHTML = "Hours: Open now!";
+                }
+                else{
+                    dayElement.setAttribute('id', 'closed');
+                    status.innerHTML = "Hours: We are currently closed.";
+                }
+            }
+            else if( hour >8 && hour < 17){
+                dayElement.setAttribute('id', 'open');
+                status.innerHTML = "Hours: Open now!";
+            } else{
+                dayElement.setAttribute('id', 'closed');
+                status.innerHTML = "Hours: We are currently closed.";
+            }
+        }
+    }
+
+    function scrollfunction() {
+        if(document.body.scrollTop > (window.innerHeight-50) || document.documentElement.scrollTop > (window.innerHeight-50)){
+            document.querySelector('nav').id = "navBackground";
+        } else{
+            document.querySelector('nav').id = "";
+        }
+    }
+
+
+</script>
+    
+</body>
+</html>
