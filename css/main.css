@@ -22,6 +22,13 @@ body{
     font-size:20px;
 }
 
+#gamesGrid{
+    display:grid;
+    grid-template-columns: 11% 1fr 1fr 1fr 1fr 11%;
+    font-family: 'Dosis', sans-serif;
+    font-size:20px;
+}
+
 /*Section Formatting*/
 #sectionTitleBox{
     width: 79%;
@@ -35,7 +42,7 @@ body{
 }
 
 #sectionTitle{
-    grid-column: 1/ span 5;
+    grid-column: 1/ span 6;
     height: 55vh;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -160,7 +167,7 @@ a:hover{
 
 /*Footer CSS*/
 #footer{
-    grid-column: span 5;
+    grid-column: span 6;
     color: white;
     height: 10vh;
 }
@@ -336,7 +343,7 @@ button:hover{
 }
 
 .projectImg{
-    grid-column: 2/span 3;
+    grid-column: 2/span 4;
     margin-top: 0px;
 }
 
@@ -354,7 +361,7 @@ button:hover{
 }
 
 .projectDescription{
-    grid-column: 3/span 2;
+    grid-column: 3/span 3;
     margin-top: 2%;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -420,8 +427,12 @@ button:hover{
 
 #social{
     display:flex;
-    justify-content: space-between;
-    margin-bottom: 10%;
+
+    margin: 5%;
+}
+
+#social a{
+    padding-right:30px;
 }
 
 
@@ -487,7 +498,7 @@ button:hover{
     }
 
     #sectionTitle{
-        grid-column: 1/span 4;
+        grid-column: 1/span 5;
     }
 
     #sectionTitleBox{
