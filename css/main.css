@@ -493,12 +493,12 @@ button:hover{
     }
     
     #title{
-        grid-column: 1/span 4;
-        
+        grid-column: 1/span 5;
+        height:80vh;
     }
 
     #sectionTitle{
-        grid-column: 1/span 5;
+        grid-column: 1/span 6;
     }
 
     #sectionTitleBox{
@@ -539,27 +539,44 @@ button:hover{
     }
     
     #footer{
-        grid-column: 1/span 4;
+        grid-column: 1/span 6;
         order: 2;
     }
 
     .projectImg{
-        grid-column: 1/span 4;
+        grid-column: 1/span 6;
+    }
+
+    .projectImg img{
+        min-height:150px;
+        border-radius: 0px;
     }
 
     .projectDescription{
-        grid-column: 2/span 1;
+        grid-column: 2/span 4;
         margin:0;
         padding: 0;
         margin-bottom: 40px;
     }
 
     .projectTech{
-        grid-column: 2/span 1;
+        grid-column: 2/span 4;
         margin:0;
         padding: 0;
         border:none;
         border-bottom: 1px dashed black;
+    }
+
+    label{
+        display:block;
+    }
+
+    #news{
+        text-align: center;
+    }
+
+    #news a{
+        padding:10px;
     }
 
 }

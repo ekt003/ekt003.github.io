@@ -25,6 +25,15 @@
     color: #a291ff;
 }
 
+.link:visited{
+    color: #5334ff;
+    text-decoration: none;
+}
+
 i:hover{
     color: #bda1ff;
+}
+
+#mobileNav{
+    background-color: #5334ff;
 }
