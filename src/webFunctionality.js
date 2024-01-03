@@ -16,19 +16,19 @@ function init(){
 
     let styleSheet= document.querySelector("#theme");
     
-    //sunrise from 4AM to 9AM
-    if(hour>=4 && hour<9){
+    //sunrise from 4AM to 7AM
+    if(hour>=4 && hour<7){
       styleSheet.setAttribute("href", "css/themes/sunrise.css");
     }
        
-    //day from 9AM to 4PM
-    if(hour>=9 && hour<16){
+    //day from 7AM to 6PM
+    if(hour>=7 && hour<18){
       styleSheet.setAttribute("href", "css/themes/day.css");
     }
 
 
-    //sunset from 4PM to 8PM
-    if(hour>=16 && hour<20){
+    //sunset from 6PM to 8PM
+    if(hour>=18 && hour<20){
       styleSheet.setAttribute("href", "css/themes/sunset.css");
     }
 

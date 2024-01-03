@@ -4,6 +4,10 @@
     background-color: #0077aa;
 }
 
+body{
+    background-color: rgb(200, 255, 255);    
+}
+
 #navbarDiv, #footer{
     background-color: #0077aa;
 }
@@ -16,24 +20,7 @@
     background-color: #0077aa;
 }
 
-#profile{
-    background-color: #0099cc;
-    border: 5px solid #0077aa;
-}
-
-.link{
-    color: #0077aa;
-}
-
-.link:visited{
-    color: #003355;
-    text-decoration: none;
-}
-
 i:hover{
     color: #3fb5f4;
 }
 
-#mobileNav{
-    background-color: #0077aa;
-}

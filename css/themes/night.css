@@ -4,6 +4,10 @@
     background-color: #0022aa;
 }
 
+body{
+    background-color: rgb(180, 200, 255);    
+}
+
 #navbarDiv, #footer{
     background-color: #0022aa;
 }

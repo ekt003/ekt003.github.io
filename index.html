@@ -11,33 +11,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    
-    <div id="navbarDiv">
-        <ul class="navbar">
-            <li><a href="contact.html" class="nonbutton">Contact</a></li>
-            
-            <li class="dropdown">
-                <a href="games.html"><button class="dropbtn">Projects</button></a>
-                    <div class="dropdown-content">
-                        <a href="games.html#marvel">MARVEL: World of Heroes</a>
-                        <a href="games.html#ara">Ara: History Untold</a>
-                        <a href="games.html#ggs">Gamer Girl</a>
-                        <a href="games.html#liesBeneath">What Lies Beneath</a>
-                    </div>
-            </li> 
-
-            <li><a href="#grid" class="active nonbutton">Home</a></li>
-        </ul>
-    </div>
-
-    <div id="mobileNav">
-        <i class="fas fa-bars fa-3x" id="ham" onclick="toggleHamburger()"></i>
-        <ul id="navLinks">
-            <li href="#content"><a href="index.html">Home</a></li>
-            <li><a href="games.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
 
     <div id="welcome"></div>
     
@@ -50,77 +23,186 @@
                 <a href="#welcome"><img src="arrow.svg" alt="arrow"></a>
             </div>
         </div>
-        
-        <div id="news">
-            <!-- <h2>Latest and Greatest</h2>
-            <p>Pushing Daisies</p>
-            <p>November 29. 2018</p>
 
-            <p>Overwatch Dubrovnik Design</p>
-            <p>November 18. 2018</p>
-
-            <p>Stellar Standoff</p>
-            <p>November 11. 2018</p>
-
-            <p>Card Clash</p>
-            <p>October 30. 2018</p>
-
-            <p>Kiting: Newest Build</p>
-            <p>October 21. 2018</p> -->
-
-            
-
-            <form action="https://formspree.io/ekt6170@rit.edu" method="POST" id="mainForm">
-                <h2>Let's Get In Touch</h2>
-                <div>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name">
-                </div>
-                <div>
-                  <label for="mail">Email:</label>
-                  <input type="email" id="mail" name="user_mail">
-                </div>
-                <div>
-                  <label for="msg">Message:</label>
-                  <textarea id="msg" name="user_message"></textarea>
-                </div>
-                <div class="button">
-                    <button type="submit" id="formButton">Slide Into Those DMs</button>
-                </div>
-            </form>
-
-        </div>
         <div id="content">
             <div>
                 <h2>
                     Hey There, Cool Cat
                 </h2>
                 <p>
-                    My name is Emily Turner. I’m a dev, designer, and dork located in Los Angeles, California. I am a Systems / Technical Designer with over 3 years of experience in the Games Industry.
+                    My name is <b>Emily Turner</b>. I’m a dev, designer, and dork located in Los Angeles, California. I am a Game Designer with almost 4 years of experience in the Games Industry.
                 </p>
                 <p>
-                    I have recently finished a short stint at Niantic Interactive as a Systems Designer on Marvel: World of Heroes before being impacted by a studio closure. 
+                    I am happily employed at <b>Zenimax Online Studios</b>, working as an Economy Designer on an unannounced Triple A project. Before that I worked at Niantic on Marvel: World of Heroes and at Oxide Games on Ara: History Untold.
                 </p>
                 <p>
-                    Before that I worked as a Systems/Technical Designer on Ara: History Untold, at Oxide Games for Microsoft Publishing.
-                </p>
-                <p>
-                    If you have any exciting new opportunities where I can put my skills to use, please don't hesitate to reach out!
+                    Please drop a line if you're itching to connect or just want to say hi!
                 </p>
                 
             </div>
-            
-            <div>
-                <img id= "profile" src="profilePic.png" alt="profilePic">
+
+            <div class="lineBreak">
+                <img src="pageBreak.svg"/>
             </div>
 
-        </div>
+            <div>
+                <h2>
+                    Let's Talk Shop
+                </h2>
+                <div id="talkShop">
+                    <div>
+                        <h3>Design + Tech = Games</h3>
+                        <p><b>The Technical</b></p>
+                         <ul>
+                             <li>I come equipped with knowledge of multiple programming languages (C++, C#, JavaScript) and game engines (Unity, Unreal, and Twine). I'm not afraid to dive into code when needed.</li>
+                             <li>I'm a user of collaborative coding practices, namely code reviews, with experience as both a reviewer and a reviewee.</li>
+                             <li>I'm an author of custom design-side tooling to automate data creation and standardization.</li>
+                         </ul>
+                         <p><b>The Design</b></p>
+                         <ul>
+                             <li>I've got intimate familiarity with the design process from concept to peer review to implementation.</li>
+                             <li>I have lots of experience with rapid design iteration based on internal and external feedback as well as player telemetry.</li>
+                             <li>I contain an unhealthy obsession with spreadsheets and proper documentation using Excel and Confluence.</li>
+                         </ul>
+                    </div>
+                   
+                </div>
+            </div>
 
-        <div id="carousel">
-            
-        </div>
-        <div id="footer">
-            
+            <div class="lineBreak">
+                <img src="pageBreak.svg"/>
+            </div>
+
+            <div>
+                <h2>
+                    Stuff I've Worked On
+                </h2>
+                <div id="projectsGrid">
+                    <div class="projectImage">
+                        <img src="projectImages/zenimaxOnline.png"/>
+                    </div>
+                    <div>
+                        <h3>Unannounced Project - Economy Designer - Zenimax Online Studios</h3>
+                        <p>
+                            I am working as an Economy Designer at Zenimax on an unannounced Triple A title. I'll be happy to share more about this project when it's time!
+                        </p>
+                    </div>
+
+                    <div class="projectBreak">
+                    </div>
+
+                    <div class="projectImage">
+                        <img src="projectImages/marvelWohTitle.jpg"/>
+                        <img src="projectImages/marvelWohPitch.jpg" class="projImg"/>
+                        <img src="projectImages/marvelWohCombat.jpg" class="projImg"/>
+                    </div>
+                    <div class="projectDesc">
+                        <h3>Marvel: World of Heroes - Systems Designer - Niantic</h3>
+                        
+                        <p>
+                            I worked at Niantic for a span of 5 months in the first half of 2023 before being impacted by a studio layoff. During that time I performed a variety of functions within the World of Heroes team.
+                        </p>
+
+                        <div>
+                            <p>
+                                <b>Tool Creation</b><br>I dedicated a significant portion of my time to developing a spreadsheet tool to automate data entry for the design team, resulting in a 50% decrease in the time to complete data creation/editing tasks. The 
+                                tool interfaced with a custom Unity exporter provided by our tools programmers, importing and displaying data in a Google spreadsheet for easy adjustments by designers.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <b>Economy Design</b><br>I worked closely with our game’s Project Manager to iterate on the F2P progression of our game’s economy. Our goal was to encourage the player to play wide (ie team up with a variety of different heroes) 
+                                instead of tall (progressing through a single hero’s storyline).
+                            </p>
+                            <p>
+                                To this end, we had the large majority of the game’s heroes available on game start instead of being unlocked over the course of the campaign. We hoped this change would apply pressure towards our game’s main soft currency sink of Quest Slots.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <p>
+                                <b>Combat Design</b><br>I worked with our Senior Combat Designer to create game pillars for the game’s combat and work to redefine the system within those constraints. 
+                                Combat was especially difficult to design since it had to be both satisfying and quick due to being on mobile.
+                            </p>
+                            <p>
+                                This applies doubly so in a location based alternative reality game - we wanted players to be able to briefly jump into combat, beat up a bad guy, and get their rewards, all without walking in front of a bus.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="projectBreak">
+                    </div>
+
+                    <div class="projectImage">
+                        <img src="projectImages/araTitle.jpg"/>
+                        <img src="projectImages/araConcept.jpg" class="projImg"/>
+                        <img src="projectImages/araInGame.jpg" class="projImg"/>
+                        <img src="projectImages/araLateGame.jpg" class="projImg"/>
+                    </div>
+                    <div class="projectDesc">
+                        <h3>Ara: History Untold - Systems / Technical Designer - Oxide Games</h3>
+
+                        <p>
+                            I worked at Oxide Games for three years on Ara:History Untold, a historical turn based strategy game.
+                        </p>
+
+                        <p>
+                            <b>Systems Design</b><br>Systems Design: I created detailed documentation for new game systems, ensuring comprehensive and accessible resources for the development team. This included outlining mechanics, formulae, and edge cases for easier 
+                            implementation. I also leveraged my experience with creating formulaic spreadsheets to calculate, update, and format game data.
+                        </p>
+                        <p>
+                            <b>AI Design and Development</b><br>I wrote documentation detailing behaviors for our trait-based AI system and actively participated in its implementation. This involved defining behavior patterns, specifying rule-sets per trait, 
+                            and collaborating with the team to ensure the AI system aligned with design objectives and player expectations. This also involved a significant amount of research as the personalities we were seeking to emulate were those of 
+                            highly regarded historical figures.
+                        
+                        </p>
+                        <p>
+                            <b>Gameplay Programming and UI Engineering</b><br>I contributed to both the UI engineering and gameplay programming teams, collaborating with them to implement user interface features and enhance player experiences within the game including 
+                            tooltips, popups, and smaller UI screens. I was also responsible for performing code reviews on certain gameplay programming tasks which featured large equations or other math that design needed to verify.
+                        
+                        </p>
+                        <p>
+                            <b>Accessibility and Localization Support:</b><br>I assisted with localization efforts, ensuring that the game was adapted to different languages and cultures, thereby broadening its accessibility to a global audience.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineBreak">
+                <img src="pageBreak.svg"/>
+            </div>
+            <div id="contactInfo">
+                <form action="https://formspree.io/ekt6170@rit.edu" method="POST" id="mainForm">
+                    <h2>Let's Get In Touch</h2>
+                    <div>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                      <label for="mail">Email:</label>
+                      <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                      <label for="msg">Message:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit" id="formButton">Slide Into Those DMs</button>
+                    </div>
+                </form>
+                <div id="socials">
+                    <h2>Stalk Me On Social Media</h2>
+                    <div id="social">
+                        <a href="https://www.linkedin.com/in/emily-turner-662135127/"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href="https://github.com/ekt003"><i class="fab fa-github fa-3x"></i></a>
+                        <a href="https://twitter.com/i_am_leviathan"><i class="fab fa-twitter fa-3x"></i></a>
+                    </div>
+
+                    <a href="Turner_Resume.pdf"><button id="resume">Download Resume</button></a>
+            </div>
         </div>
 
     </div>
