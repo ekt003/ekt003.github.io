@@ -378,13 +378,10 @@ button:hover{
 }
 
 @media (max-width: 600px){
-    #grid{
-        grid-template-columns: 0px 1fr 1fr 1fr 0px;
-        font-size:36px;
-    }
+
 
     #content {
-        padding: 0px;
+        padding: 20px;
     }
 
     #titleBox span{
@@ -392,7 +389,8 @@ button:hover{
     }
 
     #mainForm {
-        width:70vw;
+        max-width:100vw;
+
     }
 
     #resume{
@@ -400,7 +398,10 @@ button:hover{
     }
 
     #titleBox {
-        margin-top: 5vh;
-    }
+        margin-top: 2vh;
+    } 
 
+    #social a {
+        margin: 0px 10px;
+    }
 }
