@@ -178,14 +178,19 @@ button:hover{
 
 .projectDesc{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .projectDesc h3{
     margin:0;
     padding:0;
     
+}
+
+.projectDesc p{
+    margin: 25px 0px 0px 0px;
+    padding:0;
 }
 
 .projectBreak{
