@@ -183,7 +183,14 @@ main{
 
 @media (max-width: 600px){
     #navbar{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: inline;
+        margin-left: 10px;
     }
 
     #projectGrid iframe{
@@ -191,6 +198,11 @@ main{
     }
 
     #aboutSubsection{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
+
+    #intro p{
+        width:90%
+    }
+
 }
