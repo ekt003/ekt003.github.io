@@ -20,10 +20,11 @@ nav{
     top:0;
     left:0;
     width:90vw;
-    margin: 2vw 5vw;
+    padding: 2vw 5vw;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    background-image: linear-gradient(#242a36, #242a3611);
 }
 
 nav ul{
@@ -130,4 +131,66 @@ main{
 #resume a:hover{
     color:rgb(66, 218, 245);
     background-color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1800px){
+
+    #projectGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 1000px){
+    header{
+        margin: 20vw 0 8vw 0;
+    }
+
+    #projectGrid{
+        grid-template-columns: 1fr;
+    }
+
+    #intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #intro p{
+        width:75%
+    }
+
+    #projectGrid iframe{
+        width:50vw;
+    }
+
+    #aboutSubsection{
+        width:75%;
+    }
+
+    #whitewater{
+        display:none;
+    }
+
+    #navbar{
+        justify-content: center;
+        background-image: linear-gradient(#242a36, #242a3646);
+    }
+
+}
+
+@media (max-width: 600px){
+    #navbar{
+        font-size: 1.5rem;
+    }
+
+    #projectGrid iframe{
+        width:75vw;
+    }
+
+    #aboutSubsection{
+        font-size: 1.5rem;
+    }
 }
